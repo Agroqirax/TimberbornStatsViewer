@@ -1,0 +1,6206 @@
+{
+  "app": {
+    "lang.supported": [
+      "en",
+      "de",
+      "es",
+      "fr",
+      "it",
+      "ja",
+      "ko",
+      "pl",
+      "pt",
+      "ru",
+      "th",
+      "tr",
+      "uk",
+      "zh",
+      "nl"
+    ],
+    "mods.supported": [
+      "KnatteAnka.frogstatue",
+      "KnatteAnka.Staircase",
+      "tobbert.ladder"
+    ],
+    "icons": {
+      "Svg": {
+        "Folktails": "res/static/icons/Folktails.svg",
+        "IronTeeth": "res/static/icons/IronTeeth.svg"
+      }
+    },
+    "debug": {
+      "enabled": true,
+      "messages": {
+        "dataScriptError": "#ERROR",
+        "notDeveloped": "#NODEV",
+        "notAvailable": "#NOTAVAILABLE",
+        "onlyInFolktails": "#ONLYFOLKTAILS",
+        "onlyInIronTeeth": "#ONLYIRONTEETH",
+        "array": [
+          "#ERROR",
+          "#NODEV",
+          "#NOTAVAILABLE",
+          "#ONLYFOLKTAILS",
+          "#ONLYIRONTEETH"
+        ]
+      }
+    },
+    "version": "v0.6.1.2"
+  },
+  "game": {
+    "StorageTypes": [
+      "Inventory:SimpleOutputInventory",
+      "Inventory:Stockpile",
+      "Inventory:Manufactory",
+      "Inventory:Goodstack"
+    ],
+    "Goods": {
+      "Algae": {
+        "Id": "Algae",
+        "Name": "Algae",
+        "TranslationId": "algae",
+        "Type": "Ingredients",
+        "ProducedBy": ["HydroponicGarden"],
+        "RequiredBy": ["FoodFactory"],
+        "StoredIn": ["SmallPile", "LargePile", "UndergroundPile"]
+      },
+      "AlgaeRation": {
+        "Id": "AlgaeRation",
+        "Name": "Algae ration",
+        "TranslationId": "algaeRation",
+        "Type": "Food",
+        "ProducedBy": ["FoodFactory"],
+        "RequiredBy": ["BeaverAdult", "BeaverChild"],
+        "StoredIn": ["SmallPile", "LargePile", "UndergroundPile"]
+      },
+      "Antidote": {
+        "Id": "Antidote",
+        "Name": "Antidote",
+        "TranslationId": "antidote",
+        "Type": "Materials",
+        "ProducedBy": ["Herbalist"],
+        "RequiredBy": ["MedicalBed"],
+        "StoredIn": ["SmallTank", "MediumTank", "LargeTank"]
+      },
+      "Badwater": {
+        "Id": "Badwater",
+        "Name": "Badwater",
+        "TranslationId": "badwater",
+        "Type": "Materials",
+        "ProducedBy": ["BadwaterPump"],
+        "RequiredBy": ["Centrifuge"],
+        "StoredIn": ["SmallTank", "MediumTank", "LargeTank"]
+      },
+      "Berries": {
+        "Id": "Berries",
+        "Name": "Berries",
+        "TranslationId": "berries",
+        "Type": "Food",
+        "ProducedBy": ["GathererFlag"],
+        "RequiredBy": ["BeaverAdult", "BeaverChild"],
+        "StoredIn": ["SmallPile", "LargePile", "UndergroundPile"]
+      },
+      "Biofuel": {
+        "Id": "Biofuel",
+        "Name": "Biofuel",
+        "TranslationId": "biofuel",
+        "Type": "Materials",
+        "ProducedBy": ["Refinery"],
+        "RequiredBy": null,
+        "StoredIn": ["SmallTank", "MediumTank", "LargeTank"]
+      },
+      "Book": {
+        "Id": "Book",
+        "Name": "Book",
+        "TranslationId": "book",
+        "Type": "Materials",
+        "ProducedBy": ["PrintingPress"],
+        "RequiredBy": ["BeaverAdult", "BeaverChild"],
+        "StoredIn": ["SmallWarehouse", "MediumWarehouse", "LargeWarehouse"]
+      },
+      "BotChassis": {
+        "Id": "BotChassis",
+        "Name": "Bot chassis",
+        "TranslationId": "botChassis",
+        "Type": "Materials",
+        "ProducedBy": ["BotPartFactory"],
+        "RequiredBy": ["BotAssembler"],
+        "StoredIn": ["SmallWarehouse", "MediumWarehouse", "LargeWarehouse"]
+      },
+      "BotHead": {
+        "Id": "BotHead",
+        "Name": "Bot head",
+        "TranslationId": "botHead",
+        "Type": "Materials",
+        "ProducedBy": ["BotPartFactory"],
+        "RequiredBy": ["BotAssembler"],
+        "StoredIn": ["SmallWarehouse", "MediumWarehouse", "LargeWarehouse"]
+      },
+      "BotLimb": {
+        "Id": "BotLimb",
+        "Name": "Bot limb",
+        "TranslationId": "botLimb",
+        "Type": "Materials",
+        "ProducedBy": ["BotPartFactory"],
+        "RequiredBy": ["BotAssembler"],
+        "StoredIn": ["SmallWarehouse", "MediumWarehouse", "LargeWarehouse"]
+      },
+      "Bread": {
+        "Id": "Bread",
+        "Name": "Bread",
+        "TranslationId": "bread",
+        "Type": "Food",
+        "ProducedBy": ["Bakery"],
+        "RequiredBy": ["BeaverAdult", "BeaverChild"],
+        "StoredIn": ["SmallWarehouse", "MediumWarehouse", "LargeWarehouse"]
+      },
+      "CanolaOil": {
+        "Id": "CanolaOil",
+        "Name": "Canola oil",
+        "TranslationId": "canolaOil",
+        "Type": "Ingredients",
+        "ProducedBy": ["OilPress"],
+        "RequiredBy": ["Fermenter"],
+        "StoredIn": ["SmallTank", "MediumTank", "LargeTank"]
+      },
+      "CanolaSeeds": {
+        "Id": "CanolaSeeds",
+        "Name": "Canola seeds",
+        "TranslationId": "canolaSeeds",
+        "Type": "Ingredients",
+        "ProducedBy": ["FarmHouse"],
+        "RequiredBy": ["OilPress"],
+        "StoredIn": ["SmallWarehouse", "MediumWarehouse", "LargeWarehouse"]
+      },
+      "Carrot": {
+        "Id": "Carrot",
+        "Name": "Carrot",
+        "TranslationId": "carrot",
+        "Type": "Food",
+        "ProducedBy": ["FarmHouse"],
+        "RequiredBy": ["BeaverAdult", "BeaverChild"],
+        "StoredIn": ["SmallWarehouse", "MediumWarehouse", "LargeWarehouse"]
+      },
+      "Cassava": {
+        "Id": "Cassava",
+        "Name": "Cassava",
+        "TranslationId": "cassava",
+        "Type": "Ingredients",
+        "ProducedBy": ["FarmHouse"],
+        "RequiredBy": ["Fermenter"],
+        "StoredIn": ["SmallWarehouse", "MediumWarehouse", "LargeWarehouse"]
+      },
+      "Catalyst": {
+        "Id": "Catalyst",
+        "Name": "Catalyst",
+        "TranslationId": "catalyst",
+        "Type": "Materials",
+        "ProducedBy": ["Refinery"],
+        "RequiredBy": null,
+        "StoredIn": ["SmallTank", "MediumTank", "LargeTank"]
+      },
+      "CattailCracker": {
+        "Id": "CattailCracker",
+        "Name": "Cattail cracker",
+        "TranslationId": "cattailCracker",
+        "Type": "Food",
+        "ProducedBy": ["Bakery"],
+        "RequiredBy": ["BeaverAdult", "BeaverChild"],
+        "StoredIn": ["SmallWarehouse", "MediumWarehouse", "LargeWarehouse"]
+      },
+      "CattailFlour": {
+        "Id": "CattailFlour",
+        "Name": "Cattail flour",
+        "TranslationId": "cattailFlour",
+        "Type": "Ingredients",
+        "ProducedBy": ["Gristmill"],
+        "RequiredBy": null,
+        "StoredIn": ["SmallWarehouse", "MediumWarehouse", "LargeWarehouse"]
+      },
+      "CattailRoot": {
+        "Id": "CattailRoot",
+        "Name": "Cattail root",
+        "TranslationId": "cattailRoot",
+        "Type": "Materials",
+        "ProducedBy": ["AquaticFarmhouse"],
+        "RequiredBy": null,
+        "StoredIn": ["SmallWarehouse", "MediumWarehouse", "LargeWarehouse"]
+      },
+      "Chestnut": {
+        "Id": "Chestnut",
+        "Name": "Chestnut",
+        "TranslationId": "chestnut",
+        "Type": "Ingredients",
+        "ProducedBy": ["GathererFlag"],
+        "RequiredBy": ["Grill"],
+        "StoredIn": ["SmallWarehouse", "MediumWarehouse", "LargeWarehouse"]
+      },
+      "Coffee": {
+        "Id": "Coffee",
+        "Name": "Coffee",
+        "TranslationId": "coffee",
+        "Type": "Food",
+        "ProducedBy": ["CoffeeBrewery"],
+        "RequiredBy": ["BeaverAdult", "BeaverChild"],
+        "StoredIn": ["SmallTank", "MediumTank", "LargeTank"]
+      },
+      "CoffeeBean": {
+        "Id": "CoffeeBean",
+        "Name": "Coffee bean",
+        "TranslationId": "coffeeBean",
+        "Type": "Ingredients",
+        "ProducedBy": ["GathererFlag"],
+        "RequiredBy": null,
+        "StoredIn": ["SmallWarehouse", "MediumWarehouse", "LargeWarehouse"]
+      },
+      "Corn": {
+        "Id": "Corn",
+        "Name": "Corn",
+        "TranslationId": "corn",
+        "Type": "Ingredients",
+        "ProducedBy": ["FarmHouse"],
+        "RequiredBy": ["FoodFactory"],
+        "StoredIn": ["SmallWarehouse", "MediumWarehouse", "LargeWarehouse"]
+      },
+      "CornRation": {
+        "Id": "CornRation",
+        "Name": "Corn ration",
+        "TranslationId": "cornRation",
+        "Type": "Food",
+        "ProducedBy": ["FoodFactory"],
+        "RequiredBy": ["BeaverAdult", "BeaverChild"],
+        "StoredIn": ["SmallWarehouse", "MediumWarehouse", "LargeWarehouse"]
+      },
+      "Dandelion": {
+        "Id": "Dandelion",
+        "Name": "Dandelion",
+        "TranslationId": "dandelion",
+        "Type": "Ingredients",
+        "ProducedBy": ["GathererFlag"],
+        "RequiredBy": null,
+        "StoredIn": ["SmallWarehouse", "MediumWarehouse", "LargeWarehouse"]
+      },
+      "Dirt": {
+        "Id": "Dirt",
+        "Name": "Dirt",
+        "TranslationId": "dirt",
+        "Type": "Materials",
+        "ProducedBy": ["DirtExcavator"],
+        "RequiredBy": null,
+        "StoredIn": ["SmallPile", "LargePile", "UndergroundPile"]
+      },
+      "Eggplant": {
+        "Id": "Eggplant",
+        "Name": "Eggplant",
+        "TranslationId": "eggplant",
+        "Type": "Ingredients",
+        "ProducedBy": ["FarmHouse"],
+        "RequiredBy": ["FoodFactory"],
+        "StoredIn": ["SmallWarehouse", "MediumWarehouse", "LargeWarehouse"]
+      },
+      "EggplantRation": {
+        "Id": "EggplantRation",
+        "Name": "Eggplant ration",
+        "TranslationId": "eggplantRation",
+        "Type": "Food",
+        "ProducedBy": ["FoodFactory"],
+        "RequiredBy": ["BeaverAdult", "BeaverChild"],
+        "StoredIn": ["SmallWarehouse", "MediumWarehouse", "LargeWarehouse"]
+      },
+      "Explosives": {
+        "Id": "Explosives",
+        "Name": "Explosives",
+        "TranslationId": "explosives",
+        "Type": "Materials",
+        "ProducedBy": ["ExplosivesFactory"],
+        "RequiredBy": null,
+        "StoredIn": ["SmallWarehouse", "MediumWarehouse", "LargeWarehouse"]
+      },
+      "Extract": {
+        "Id": "Extract",
+        "Name": "Extract",
+        "TranslationId": "extract",
+        "Type": "Materials",
+        "ProducedBy": ["Centrifuge"],
+        "RequiredBy": null,
+        "StoredIn": ["SmallTank", "MediumTank", "LargeTank"]
+      },
+      "FermentedCassava": {
+        "Id": "FermentedCassava",
+        "Name": "Fermented cassava",
+        "TranslationId": "fermentedCassava",
+        "Type": "Food",
+        "ProducedBy": ["Fermenter"],
+        "RequiredBy": ["BeaverAdult", "BeaverChild"],
+        "StoredIn": ["SmallWarehouse", "MediumWarehouse", "LargeWarehouse"]
+      },
+      "FermentedMushroom": {
+        "Id": "FermentedMushroom",
+        "Name": "Fermented mushroom",
+        "TranslationId": "fermentedMushroom",
+        "Type": "Food",
+        "ProducedBy": ["Fermenter"],
+        "RequiredBy": ["BeaverAdult", "BeaverChild"],
+        "StoredIn": ["SmallWarehouse", "MediumWarehouse", "LargeWarehouse"]
+      },
+      "FermentedSoybean": {
+        "Id": "FermentedSoybean",
+        "Name": "Fermented soybean",
+        "TranslationId": "fermentedSoybean",
+        "Type": "Food",
+        "ProducedBy": ["Fermenter"],
+        "RequiredBy": ["BeaverAdult", "BeaverChild"],
+        "StoredIn": ["SmallWarehouse", "MediumWarehouse", "LargeWarehouse"]
+      },
+      "Gear": {
+        "Id": "Gear",
+        "Name": "Gear",
+        "TranslationId": "gear",
+        "Type": "Materials",
+        "ProducedBy": ["GearWorkshop"],
+        "RequiredBy": null,
+        "StoredIn": ["SmallWarehouse", "MediumWarehouse", "LargeWarehouse"]
+      },
+      "Grease": {
+        "Id": "Grease",
+        "Name": "Grease",
+        "TranslationId": "grease",
+        "Type": "Materials",
+        "ProducedBy": null,
+        "RequiredBy": ["Bot"],
+        "StoredIn": ["SmallTank", "MediumTank", "LargeTank"]
+      },
+      "GrilledChestnut": {
+        "Id": "GrilledChestnut",
+        "Name": "Grilled chestnut",
+        "TranslationId": "grilledChestnut",
+        "Type": "Food",
+        "ProducedBy": ["Grill"],
+        "RequiredBy": ["BeaverAdult", "BeaverChild"],
+        "StoredIn": ["SmallWarehouse", "MediumWarehouse", "LargeWarehouse"]
+      },
+      "GrilledPotato": {
+        "Id": "GrilledPotato",
+        "Name": "Grilled potato",
+        "TranslationId": "grilledPotato",
+        "Type": "Food",
+        "ProducedBy": ["Grill"],
+        "RequiredBy": ["BeaverAdult", "BeaverChild"],
+        "StoredIn": ["SmallWarehouse", "MediumWarehouse", "LargeWarehouse"]
+      },
+      "GrilledSpadderdock": {
+        "Id": "GrilledSpadderdock",
+        "Name": "Grilled spadderdock",
+        "TranslationId": "grilledSpadderdock",
+        "Type": "Food",
+        "ProducedBy": ["Grill"],
+        "RequiredBy": ["BeaverAdult", "BeaverChild"],
+        "StoredIn": ["SmallWarehouse", "MediumWarehouse", "LargeWarehouse"]
+      },
+      "Kohlrabi": {
+        "Id": "Kohlrabi",
+        "Name": "Kohlrabi",
+        "TranslationId": "kohlrabi",
+        "Type": "Food",
+        "ProducedBy": ["FarmHouse"],
+        "RequiredBy": ["BeaverAdult", "BeaverChild"],
+        "StoredIn": ["SmallWarehouse", "MediumWarehouse", "LargeWarehouse"]
+      },
+      "Log": {
+        "Id": "Log",
+        "Name": "Log",
+        "TranslationId": "log",
+        "Type": "Materials",
+        "ProducedBy": ["LumberjackFlag"],
+        "RequiredBy": [
+          "Bakery",
+          "Centrifuge",
+          "Grill",
+          "LumberMill",
+          "Smelter"
+        ],
+        "StoredIn": ["SmallPile", "LargePile", "UndergroundPile"]
+      },
+      "MangroveFruit": {
+        "Id": "MangroveFruit",
+        "Name": "Mangrove fruit",
+        "TranslationId": "mangroveFruit",
+        "Type": "Food",
+        "ProducedBy": ["GathererFlag"],
+        "RequiredBy": ["BeaverAdult", "BeaverChild"],
+        "StoredIn": ["SmallWarehouse", "MediumWarehouse", "LargeWarehouse"]
+      },
+      "MaplePastry": {
+        "Id": "MaplePastry",
+        "Name": "Maple pastry",
+        "TranslationId": "maplePastry",
+        "Type": "Food",
+        "ProducedBy": ["Bakery"],
+        "RequiredBy": ["BeaverAdult", "BeaverChild"],
+        "StoredIn": ["SmallTank", "MediumTank", "LargeTank"]
+      },
+      "MaplySyrup": {
+        "Id": "MaplySyrup",
+        "Name": "Maply syrup",
+        "TranslationId": "maplySyrup",
+        "Type": "Ingredients",
+        "ProducedBy": ["TappersShack"],
+        "RequiredBy": ["Bakery"],
+        "StoredIn": ["SmallTank", "MediumTank", "LargeTank"]
+      },
+      "MetalBlock": {
+        "Id": "MetalBlock",
+        "Name": "Metal block",
+        "TranslationId": "metalBlock",
+        "Type": "Materials",
+        "ProducedBy": ["Smelter"],
+        "RequiredBy": null,
+        "StoredIn": ["SmallWarehouse", "MediumWarehouse", "LargeWarehouse"]
+      },
+      "Mushroom": {
+        "Id": "Mushroom",
+        "Name": "Mushroom",
+        "TranslationId": "mushroom",
+        "Type": "Ingredients",
+        "ProducedBy": ["HydroponicGarden"],
+        "RequiredBy": ["Fermenter"],
+        "StoredIn": ["SmallWarehouse", "MediumWarehouse", "LargeWarehouse"]
+      },
+      "Paper": {
+        "Id": "Paper",
+        "Name": "Paper",
+        "TranslationId": "paper",
+        "Type": "Materials",
+        "ProducedBy": ["PaperMill"],
+        "RequiredBy": ["PrintingPress", "ExplosivesFactory"],
+        "StoredIn": ["SmallWarehouse", "MediumWarehouse", "LargeWarehouse"]
+      },
+      "PineResin": {
+        "Id": "PineResin",
+        "Name": "Pine resin",
+        "TranslationId": "pineResin",
+        "Type": "Materials",
+        "ProducedBy": ["TappersShack"],
+        "RequiredBy": null,
+        "StoredIn": ["SmallWarehouse", "MediumWarehouse", "LargeWarehouse"]
+      },
+      "Plank": {
+        "Id": "Plank",
+        "Name": "Plank",
+        "TranslationId": "plank",
+        "Type": "Materials",
+        "ProducedBy": ["LumberMill"],
+        "RequiredBy": ["GearWorkshop"],
+        "StoredIn": ["SmallPile", "LargePile", "UndergroundPile"]
+      },
+      "Potato": {
+        "Id": "Potato",
+        "Name": "Potato",
+        "TranslationId": "potato",
+        "Type": "Ingredients",
+        "ProducedBy": ["FarmHouse"],
+        "RequiredBy": ["Grill"],
+        "StoredIn": ["SmallWarehouse", "MediumWarehouse", "LargeWarehouse"]
+      },
+      "PunchCard": {
+        "Id": "PunchCard",
+        "Name": "Punch card",
+        "TranslationId": "punchCard",
+        "Type": "Materials",
+        "ProducedBy": ["PrintingPress"],
+        "RequiredBy": ["BeaverAdult", "BeaverChild"],
+        "StoredIn": ["SmallWarehouse", "MediumWarehouse", "LargeWarehouse"]
+      },
+      "ScrapMetal": {
+        "Id": "ScrapMetal",
+        "Name": "Scrap metal",
+        "TranslationId": "scrapMetal",
+        "Type": "Materials",
+        "ProducedBy": ["ScavengerFlag"],
+        "RequiredBy": ["Smelter"],
+        "StoredIn": ["SmallPile", "LargePile", "UndergroundPile"]
+      },
+      "Soybean": {
+        "Id": "Soybean",
+        "Name": "Soybean",
+        "TranslationId": "soybean",
+        "Type": "Ingredients",
+        "ProducedBy": ["FarmHouse"],
+        "RequiredBy": ["Fermenter"],
+        "StoredIn": ["SmallWarehouse", "MediumWarehouse", "LargeWarehouse"]
+      },
+      "Spadderdock": {
+        "Id": "Spadderdock",
+        "Name": "Spadderdock",
+        "TranslationId": "spadderdock",
+        "Type": "Ingredients",
+        "ProducedBy": ["AquaticFarmhouse"],
+        "RequiredBy": ["Grill"],
+        "StoredIn": ["SmallWarehouse", "MediumWarehouse", "LargeWarehouse"]
+      },
+      "SunflowerSeeds": {
+        "Id": "SunflowerSeeds",
+        "Name": "Sunflower seeds",
+        "TranslationId": "sunflowerSeeds",
+        "Type": "Food",
+        "ProducedBy": ["FarmHouse"],
+        "RequiredBy": ["BeaverAdult", "BeaverChild"],
+        "StoredIn": ["SmallWarehouse", "MediumWarehouse", "LargeWarehouse"]
+      },
+      "TreatedPlank": {
+        "Id": "TreatedPlank",
+        "Name": "Treated plank",
+        "TranslationId": "treatedPlank",
+        "Type": "Materials",
+        "ProducedBy": ["WoodWorkshop"],
+        "RequiredBy": null,
+        "StoredIn": ["SmallPile", "LargePile", "UndergroundPile"]
+      },
+      "Water": {
+        "Id": "Water",
+        "Name": "Water",
+        "TranslationId": "water",
+        "Type": "Food",
+        "ProducedBy": ["WaterPump"],
+        "RequiredBy": ["BeaverAdult", "BeaverChild"],
+        "StoredIn": ["SmallTank", "MediumTank", "LargeTank"]
+      },
+      "Wheat": {
+        "Id": "Wheat",
+        "Name": "Wheat",
+        "TranslationId": "wheat",
+        "Type": "Ingredients",
+        "ProducedBy": ["FarmHouse"],
+        "RequiredBy": ["Gristmill"],
+        "StoredIn": ["SmallPile", "LargePile", "UndergroundPile"]
+      },
+      "WheatFlour": {
+        "Id": "WheatFlour",
+        "Name": "Wheat flour",
+        "TranslationId": "wheatFlour",
+        "Type": "Ingredients",
+        "ProducedBy": ["Gristmill"],
+        "RequiredBy": ["Bakery"],
+        "StoredIn": ["SmallPile", "LargePile", "UndergroundPile"]
+      },
+      "Science": {
+        "Id": "Science",
+        "Name": "Science",
+        "TranslationId": "science",
+        "Type": "Materials",
+        "ProducedBy": ["Inventor", "Observatory", "Mine"],
+        "RequiredBy": null,
+        "StoredIn": null
+      },
+      "Energy": {
+        "Id": "Energy",
+        "Name": "Energy",
+        "TranslationId": "energy",
+        "Type": "Materials",
+        "ProducedBy": [
+          "DevPowerGenerator",
+          "WaterWheel",
+          "PowerWheel",
+          "Windmill",
+          "Engine"
+        ],
+        "RequiredBy": null,
+        "StoredIn": null
+      },
+      "Wellbeing": {
+        "Id": "Wellbeing",
+        "Name": "Wellbeing",
+        "TranslationId": "wellbeing",
+        "Type": "Materials",
+        "ProducedBy": ["FountainOfJoy"],
+        "RequiredBy": null,
+        "StoredIn": null
+      }
+    },
+    "Entities": {
+      "DistrictCenter": {
+        "Id": "DistrictCenter",
+        "Name": "District center",
+        "TranslationId": "districtCenter",
+        "Category": "DistricManagement",
+        "Versions": [
+          {
+            "TemplateId": "DistrictCenter.Folktails",
+            "Faction": "Folktails",
+            "MaxWorkers": 4
+          },
+          {
+            "TemplateId": "DistrictCenter.IronTeeth",
+            "Faction": "Folktails",
+            "MaxWorkers": 4
+          }
+        ]
+      },
+      "BeaverAdult": {
+        "Id": "BeaverAdult",
+        "Name": "Adult beaver",
+        "TranslatId": "beaverAdult",
+        "Category": "Beavers",
+        "Versions": [
+          {
+            "TemplateId": "BeaverAdult",
+            "Faction": "Folktails",
+            "Recipes": {
+              ".default": {
+                ".duration": 24,
+                ".duringWorkingHours": false,
+                "Input": {
+                  "Water": 3,
+                  "Berries": 2
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "BeaverAdult",
+            "Faction": "IronTeeth",
+            "Recipes": {
+              ".default": {
+                ".duration": 24,
+                ".duringWorkingHours": false,
+                "Input": {
+                  "Water": 3,
+                  "Berries": 2
+                }
+              }
+            }
+          }
+        ]
+      },
+      "BeaverChild": {
+        "Id": "BeaverChild",
+        "Name": "Child beaver",
+        "TranslatId": "beaverChild",
+        "Category": "Beavers",
+        "Versions": [
+          {
+            "TemplateId": "BeaverChild",
+            "Faction": "Folktails",
+            "Recipes": {
+              ".default": {
+                ".duration": 24,
+                ".duringWorkingHours": false,
+                "Input": {
+                  "Water": 3,
+                  "Berries": 2
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "BeaverChild",
+            "Faction": "IronTeeth",
+            "Recipes": {
+              ".default": {
+                ".duration": 24,
+                ".duringWorkingHours": false,
+                "Input": {
+                  "Water": 3,
+                  "Berries": 2
+                }
+              }
+            }
+          }
+        ]
+      },
+      "Bot": {
+        "Id": "Bot",
+        "Name": "Bot",
+        "TranslatId": "bot",
+        "Category": "Beavers",
+        "Versions": [
+          {
+            "TemplateId": "Bot",
+            "Faction": "Folktails"
+          },
+          {
+            "TemplateId": "Bot",
+            "Faction": "IronTeeth"
+          }
+        ]
+      },
+      "Path": {
+        "Id": "Path",
+        "Name": "Path",
+        "TranslatId": "path",
+        "Category": "Paths",
+        "Versions": [
+          {
+            "TemplateId": "Path.Folktails",
+            "Faction": "Folktails"
+          },
+          {
+            "TemplateId": "Path.IronTeeth",
+            "Faction": "IronTeeth"
+          }
+        ]
+      },
+      "Slope1": {
+        "Id": "Slope1",
+        "Name": "Slope",
+        "TranslatId": "slope",
+        "Category": "Paths",
+        "Versions": [
+          {
+            "TemplateId": "Slope1",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "Dirt": 3
+            }
+          },
+          {
+            "TemplateId": "Slope1",
+            "Faction": "IronTeeth",
+            "BuildingMaterials": {
+              "Dirt": 3
+            }
+          }
+        ]
+      },
+      "WoodenStairs": {
+        "Id": "WoodenStairs",
+        "Name": "Wooden stairs",
+        "TranslatId": "woodenStairs",
+        "Category": "Paths",
+        "Versions": [
+          {
+            "TemplateId": "WoodenStairs.Folktails",
+            "Faction": "Folktails",
+            "Science": 70,
+            "BuildingMaterials": {
+              "Log": 1,
+              "Plank": 4
+            }
+          },
+          {
+            "TemplateId": "WoodenStairs.IronTeeth",
+            "Faction": "IronTeeth",
+            "Science": 70,
+            "BuildingMaterials": {
+              "Log": 1,
+              "plank": 4
+            }
+          }
+        ]
+      },
+      "Platform": {
+        "Id": "Platform",
+        "Name": "Platform",
+        "TranslatId": "platform",
+        "Category": "Paths",
+        "Versions": [
+          {
+            "TemplateId": "Platform.Folktails",
+            "Faction": "Folktails",
+            "Science": 100,
+            "BuildingMaterials": {
+              "Log": 2,
+              "Plank": 4
+            }
+          },
+          {
+            "TemplateId": "Platform.IronTeeth",
+            "Faction": "IronTeeth",
+            "Science": 100,
+            "BuildingMaterials": {
+              "Log": 2,
+              "Plank": 4
+            }
+          }
+        ]
+      },
+      "DoublePlatform": {
+        "Id": "PoublePlatform",
+        "Name": "Double platform",
+        "TranslatId": "doublePlatform",
+        "Category": "Paths",
+        "Versions": [
+          {
+            "TemplateId": "DoublePlatform.Folktails",
+            "Faction": "Folktails",
+            "Science": 150,
+            "BuildingMaterials": {
+              "Log": 4,
+              "Plank": 4
+            }
+          },
+          {
+            "TemplateId": "DoublePlatform.IronTeeth",
+            "Faction": "IronTeeth",
+            "Science": 150,
+            "BuildingMaterials": {
+              "Log": 4,
+              "Plank": 4
+            }
+          }
+        ]
+      },
+      "TriplePlatform": {
+        "Id": "TriplePlatform",
+        "Name": "Triple platform",
+        "TranslatId": "triplePlatform",
+        "Category": "Paths",
+        "Versions": [
+          {
+            "TemplateId": "TriplePlatform.Folktails",
+            "Faction": "Folktails",
+            "Science": 200,
+            "BuildingMaterials": {
+              "Log": 6,
+              "Plank": 4
+            }
+          },
+          {
+            "TemplateId": "TriplePlatform.IronTeeth",
+            "Faction": "IronTeeth",
+            "Science": 200,
+            "BuildingMaterials": {
+              "Log": 6,
+              "Plank": 4
+            }
+          }
+        ]
+      },
+      "SuspensionBridge1x1": {
+        "Id": "SuspensionBridge1x1",
+        "Name": "Suspension bridge",
+        "TranslatId": "suspensionBridge1x1",
+        "Category": "Paths",
+        "Versions": [
+          {
+            "TemplateId": "SuspensionBridge1x1.Folktails",
+            "Faction": "Folktails",
+            "Science": 100,
+            "BuildingMaterials": {
+              "Log": 4,
+              "plank": 4
+            }
+          },
+          {
+            "TemplateId": "SuspensionBridge1x1.IronTeeth",
+            "Faction": "IronTeeth",
+            "Science": 100,
+            "BuildingMaterials": {
+              "Log": 4,
+              "Plank": 4
+            }
+          }
+        ]
+      },
+      "SuspensionBridge2x1": {
+        "Id": "SuspensionBridge2x1",
+        "Name": "Suspension bridge",
+        "TranslatId": "suspensionBridge2x1",
+        "Category": "Paths",
+        "Versions": [
+          {
+            "TemplateId": "SuspensionBridge2x1.Folktails",
+            "Faction": "Folktails",
+            "Science": 200,
+            "BuildingMaterials": {
+              "Log": 8,
+              "Plank": 8
+            }
+          },
+          {
+            "TemplateId": "SuspensionBridge2x1.IronTeeth",
+            "Faction": "IronTeeth",
+            "Science": 200,
+            "BuildingMaterials": {
+              "Log": 8,
+              "Plank": 8
+            }
+          }
+        ]
+      },
+      "SuspensionBridge3x1": {
+        "Id": "SuspensionBridge3x1",
+        "Name": "Suspension bridge",
+        "TranslatId": "suspensionBridge3x1",
+        "Category": "Paths",
+        "Versions": [
+          {
+            "TemplateId": "SuspensionBridge3x1.Folktails",
+            "Faction": "Folktails",
+            "Science": 400,
+            "BuildingMaterials": {
+              "Log": 12,
+              "Plank": 12
+            }
+          },
+          {
+            "TemplateId": "SuspensionBridge3x1.IronTeeth",
+            "Faction": "IronTeeth",
+            "Science": 400,
+            "BuildingMaterials": {
+              "Log": 12,
+              "Plank": 12
+            }
+          }
+        ]
+      },
+      "SuspensionBridge4x1": {
+        "Id": "SuspensionBridge4x1",
+        "Name": "Suspension bridge",
+        "TranslatId": "suspensionBridge4x1",
+        "Category": "Paths",
+        "Versions": [
+          {
+            "TemplateId": "SuspensionBridge4x1.Folktails",
+            "Faction": "Folktails",
+            "Science": 800,
+            "BuildingMaterials": {
+              "Log": 16,
+              "Plank": 16
+            }
+          },
+          {
+            "TemplateId": "SuspensionBridge4x1.IronTeeth",
+            "Faction": "IronTeeth",
+            "Science": 800,
+            "BuildingMaterials": {
+              "Log": 16,
+              "Plank": 16
+            }
+          }
+        ]
+      },
+      "SuspensionBridge5x1": {
+        "Id": "SuspensionBridge5x1",
+        "Name": "Suspension bridge 5x1",
+        "TranslatId": "suspensionBridge5x1",
+        "Category": "Paths",
+        "Versions": [
+          {
+            "TemplateId": "SuspensionBridge5x1.Folktails",
+            "Faction": "Folktails",
+            "Science": 1500,
+            "BuildingMaterials": {
+              "Log": 20,
+              "Plank": 20
+            }
+          },
+          {
+            "TemplateId": "SuspensionBridge5x1.IronTeeth",
+            "Faction": "IronTeeth",
+            "Science": 1500,
+            "BuildingMaterials": {
+              "Log": 20,
+              "Plank": 20
+            }
+          }
+        ]
+      },
+      "SuspensionBridge6x1": {
+        "Id": "SuspensionBridge6x1",
+        "Name": "Suspension bridge 6x1",
+        "TranslatId": "suspensionBridge6x1",
+        "Category": "Paths",
+        "Versions": [
+          {
+            "TemplateId": "SuspensionBridge6x1.Folktails",
+            "Faction": "Folktails",
+            "Science": 3200,
+            "BuildingMaterials": {
+              "Log": 24,
+              "Plank": 24
+            }
+          },
+          {
+            "TemplateId": "SuspensionBridge6x1.IronTeeth",
+            "Faction": "IronTeeth",
+            "Science": 3200,
+            "BuildingMaterials": {
+              "Log": 24,
+              "Plank": 24
+            }
+          }
+        ]
+      },
+      "Overhang2x1": {
+        "Id": "Overhang2x1",
+        "Name": "Overhang 2x1",
+        "TranslatId": "overhang2x1",
+        "Category": "Paths",
+        "Versions": [
+          {
+            "TemplateId": "Overhang2x1.Folktails",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "Log": 10,
+              "Plank": 10,
+              "MetalBlock": 4
+            }
+          },
+          {
+            "TemplateId": "Overhang2x1.IronTeeth",
+            "Faction": "IronTeeth",
+            "Science": 350,
+            "BuildingMaterials": {
+              "Log": 10,
+              "Plank": 10,
+              "MetalBlock": 4
+            }
+          }
+        ]
+      },
+      "Overhang3x1": {
+        "Id": "Overhang3x1",
+        "Name": "Overhang 3x1",
+        "TranslatId": "overhang3x1",
+        "Category": "Paths",
+        "Versions": [
+          {
+            "TemplateId": "Overhang3x1.Folktails",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "Log": 15,
+              "Plank": 15,
+              "MetalBlock": 6
+            }
+          },
+          {
+            "TemplateId": "Overhang3x1.IronTeeth",
+            "Faction": "IronTeeth",
+            "Science": 550,
+            "BuildingMaterials": {
+              "Log": 15,
+              "Plank": 15,
+              "MetalBlock": 6
+            }
+          }
+        ]
+      },
+      "Overhang4x1": {
+        "Id": "Overhang4x1",
+        "Name": "Overhang 4x1",
+        "TranslatId": "overhang4x1",
+        "Category": "Paths",
+        "Versions": [
+          {
+            "TemplateId": "Overhang3x1.Folktails",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "Log": 20,
+              "Plank": 20,
+              "MetalBlock": 8
+            }
+          },
+          {
+            "TemplateId": "Overhang4x1.IronTeeth",
+            "Faction": "IronTeeth",
+            "Science": 1000,
+            "BuildingMaterials": {
+              "Log": 20,
+              "Plank": 20,
+              "MetalBlock": 8
+            }
+          }
+        ]
+      },
+      "Overhang5x1": {
+        "Id": "Overhang5x1",
+        "Name": "Overhang 5x1",
+        "TranslatId": "overhang5x1",
+        "Category": "Paths",
+        "Versions": [
+          {
+            "TemplateId": "Overhang5x1.Folktails",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "Log": 30,
+              "Plank": 30,
+              "MetalBlock": 10
+            }
+          },
+          {
+            "TemplateId": "Overhang5x1.IronTeeth",
+            "Faction": "IronTeeth",
+            "Science": 1800,
+            "BuildingMaterials": {
+              "Log": 30,
+              "Plank": 30,
+              "MetalBlock": 10
+            }
+          }
+        ]
+      },
+      "Overhang6x1": {
+        "Id": "Overhang6x1",
+        "Name": "Overhang 6x1",
+        "TranslatId": "overhang6x1",
+        "Category": "Paths",
+        "Versions": [
+          {
+            "TemplateId": "Overhang6x1.Folktails",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "Log": 36,
+              "Plank": 36,
+              "MetalBlock": 12
+            }
+          },
+          {
+            "TemplateId": "Overhang6x1.IronTeeth",
+            "Faction": "IronTeeth",
+            "Science": 3000,
+            "BuildingMaterials": {
+              "Log": 36,
+              "Plank": 36,
+              "MetalBlock": 12
+            }
+          }
+        ]
+      },
+      "Dam": {
+        "Id": "Dam",
+        "Name": "Dam",
+        "TranslatId": "dam",
+        "Category": "Landscaping",
+        "Versions": [
+          {
+            "TemplateId": "Dam.Folktails",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "Log": 20
+            }
+          },
+          {
+            "TemplateId": "Dam.IronTeeth",
+            "Faction": "IronTeeth",
+            "BuildingMaterials": {
+              "Log": 20
+            }
+          }
+        ]
+      },
+      "Levee": {
+        "Id": "Levee",
+        "Name": "Levee",
+        "TranslatId": "levee",
+        "Category": "Landscaping",
+        "Versions": [
+          {
+            "TemplateId": "Levee.Folktails",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "Log": 12
+            }
+          },
+          {
+            "TemplateId": "Levee.IronTeeth",
+            "Faction": "IronTeeth",
+            "Science": 120,
+            "BuildingMaterials": {
+              "Log": 12
+            }
+          }
+        ]
+      },
+      "Floodgate": {
+        "Id": "Floodgate",
+        "Name": "Floodgate",
+        "TranslatId": "floodgate",
+        "Category": "Landscaping",
+        "Versions": [
+          {
+            "TemplateId": "Floodgate.Folktails",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "Log": 10,
+              "Plank": 5
+            }
+          },
+          {
+            "TemplateId": "Floodgate.IronTeeth",
+            "Faction": "IronTeeth",
+            "Science": 150,
+            "BuildingMaterials": {
+              "Log": 10,
+              "Plank": 5
+            }
+          }
+        ]
+      },
+      "DoubleFloodgate": {
+        "Id": "DoubleFloodgate",
+        "Name": "Double floodgate",
+        "TranslatId": "doubleFloodgate",
+        "Category": "Landscaping",
+        "Versions": [
+          {
+            "TemplateId": "DoubleFloodgate.Folktails",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "Log": 20,
+              "Plank": 10
+            }
+          },
+          {
+            "TemplateId": "DoubleFloodgate.IronTeeth",
+            "Faction": "IronTeeth",
+            "Science": 250,
+            "BuildingMaterials": {
+              "Log": 20,
+              "Plank": 10
+            }
+          }
+        ]
+      },
+      "TripleFloodgate": {
+        "Id": "TripleFloodgate",
+        "Name": "Triple floodgate",
+        "TranslatId": "tripleFloodgate",
+        "Category": "Landscaping",
+        "Versions": [
+          {
+            "TemplateId": "TripleFloodgate.Folktails",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "Log": 30,
+              "Plank": 15
+            }
+          },
+          {
+            "TemplateId": "TripleFloodgate.IronTeeth",
+            "Faction": "IronTeeth",
+            "Science": 500,
+            "BuildingMaterials": {
+              "Log": 30,
+              "Plank": 15
+            }
+          }
+        ]
+      },
+      "Sluice": {
+        "Id": "Sluice",
+        "Name": "Sluice",
+        "TranslatId": "sluice",
+        "Category": "Landscaping",
+        "Versions": [
+          {
+            "TemplateId": "Sluice.Folktails",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "Plank": 5,
+              "MetalBlock": 5
+            }
+          },
+          {
+            "TemplateId": "Sluice.IronTeeth",
+            "Faction": "IronTeeth",
+            "Science": 400,
+            "BuildingMaterials": {
+              "Plank": 5,
+              "MetalBlock": 5
+            }
+          }
+        ]
+      },
+      "ImperameableFloor": {
+        "Id": "ImperameableFloor",
+        "Name": "Imperameable floor",
+        "TranslatId": "imperameableFloor",
+        "Category": "Landscaping",
+        "Versions": [
+          {
+            "TemplateId": "ImperameableFloor.Folktails",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "MetalBlock": 1
+            }
+          },
+          {
+            "TemplateId": "ImperameableFloor.IronTeeth",
+            "Faction": "IronTeeth",
+            "Science": 200,
+            "BuildingMaterials": {
+              "MetalBlock": 1
+            }
+          }
+        ]
+      },
+      "ContaminationBarrier": {
+        "Id": "ContaminationBarrier",
+        "Name": "Contamination barrier",
+        "TranslatId": "contaminationBarrier",
+        "Category": "Landscaping",
+        "Versions": [
+          {
+            "TemplateId": "ContaminationBarrier.Folktails",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "Plank": 5,
+              "MetalBlock": 1
+            }
+          },
+          {
+            "TemplateId": "ContaminationBarrier.IronTeeth",
+            "Faction": "IronTeeth",
+            "science": 400,
+            "BuildingMaterials": {
+              "Plank": 5,
+              "MetalBlock": 1
+            }
+          }
+        ]
+      },
+      "ExplosivesFactory": {
+        "Id": "ExplosivesFactory",
+        "Name": "Explosives factory",
+        "TranslatId": "explosivesFactory",
+        "Category": "Landscaping",
+        "Versions": [
+          {
+            "TemplateId": "ExplosivesFactory.Folktails",
+            "Faction": "Folktails",
+            "MaxWorkers": 1,
+            "Energy": 150,
+            "BuildingMaterials": {
+              "Plank": 30,
+              "Gear": 30,
+              "MetalBlock": 30
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 3,
+                "Input": {
+                  "Badwater": 5
+                },
+                "Output": {
+                  "Explosives": 1
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "ExplosivesFactory.IronTeeth",
+            "Faction": "IronTeeth",
+            "Science": 400,
+            "MaxWorkers": 1,
+            "Energy": 150,
+            "BuildingMaterials": {
+              "Plank": 30,
+              "Gear": 30,
+              "MetalBlock": 30
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 3,
+                "Input": {
+                  "Badwater": 5
+                },
+                "Output": {
+                  "Explosives": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "Dynamite": {
+        "Id": "Dynamite",
+        "Name": "Dynamite",
+        "TranslatId": "dynamite",
+        "Category": "Landscaping",
+        "Versions": [
+          {
+            "TemplateId": "Dynamite.Folktails",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "Explosives": 1
+            }
+          },
+          {
+            "TemplateId": "Dynamite.IronTeeth",
+            "Faction": "IronTeeth",
+            "Science": 600,
+            "BuildingMaterials": {
+              "Explosives": 1
+            }
+          }
+        ]
+      },
+      "DoubleDynamite": {
+        "Id": "DoubleDynamite",
+        "Name": "Double dynamite",
+        "TranslatId": "doubleDynamite",
+        "Category": "Landscaping",
+        "Versions": [
+          {
+            "TemplateId": "DoubleDynamite.Folktails",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "Explosives": 1,
+              "Extract": 1
+            }
+          },
+          {
+            "TemplateId": "DoubleDynamite.IronTeeth",
+            "Faction": "IronTeeth",
+            "Science": 900,
+            "BuildingMaterials": {
+              "Explosives": 1,
+              "Extract": 1
+            }
+          }
+        ]
+      },
+      "TripleDynamite": {
+        "Id": "TripleDynamite",
+        "Name": "Triple dynamite",
+        "TranslatId": "tripleDynamite",
+        "Category": "Landscaping",
+        "Versions": [
+          {
+            "TemplateId": "TripleDynamite.Folktails",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "Explosives": 1,
+              "Extract": 2
+            }
+          },
+          {
+            "TemplateId": "TripleDynamite.IronTeeth",
+            "Faction": "IronTeeth",
+            "Science": 1200,
+            "BuildingMaterials": {
+              "Explosives": 1,
+              "Extract": 2
+            }
+          }
+        ]
+      },
+      "DirtExcavator": {
+        "Id": "DirtExcavator",
+        "Name": "Dirt excavator",
+        "TranslatId": "dirtExcavator",
+        "Category": "Landscaping",
+        "Versions": [
+          {
+            "TemplateId": "DirtExcavator.Folktails",
+            "Faction": "Folktails",
+            "MaxWorkers": 4,
+            "Energy": 200,
+            "BuildingMaterials": {
+              "Gear": 100,
+              "TreatedPlank": 100,
+              "MetalBlock": 50
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 2,
+                "Storage": {
+                  "Extract": 12,
+                  "Dirt": 72
+                },
+                "Input": {
+                  "Exctract": 1
+                },
+                "Output": {
+                  "Dirt": 6
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "DirtExcavator.IronTeeth",
+            "Faction": "IronTeeth",
+            "Science": 2000,
+            "MaxWorkers": 4,
+            "Energy": 200,
+            "BuildingMaterials": {
+              "Gear": 100,
+              "TreatedPlank": 100,
+              "MetalBlock": 50
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 2,
+                "Storage": {
+                  "Extract": 12,
+                  "Dirt": 72
+                },
+                "Input": {
+                  "Exctract": 1
+                },
+                "Output": {
+                  "Dirt": 6
+                }
+              }
+            }
+          }
+        ]
+      },
+      "ReinforcedBlock": {
+        "Id": "ReinforcedBlock",
+        "Name": "Reinforced block",
+        "TranslatId": "reinforcedBlock",
+        "Category": "Landscaping",
+        "Versions": [
+          {
+            "TemplateId": "ReinforcedBlock.Folktails",
+            "Faction": "Folktails",
+            "ConstructionOnly": true,
+            "BuildingMaterials": {
+              "Dirt": 6,
+              "Log": 24
+            }
+          },
+          {
+            "TemplateId": "ReinforcedBlock.IronTeeth",
+            "Faction": "IronTeeth",
+            "Science": 2000,
+            "BuildingMaterials": {
+              "Dirt": 6,
+              "Log": 24
+            }
+          }
+        ]
+      },
+      "Block": {
+        "Id": "Block",
+        "Name": "Block",
+        "TranslatId": "block",
+        "Category": "Landscaping",
+        "Versions": [
+          {
+            "TemplateId": "Block.Folktails",
+            "Faction": "Folktails",
+            "ConstructionOnly": true,
+            "BuildingMaterials": {
+              "Dirt": 6
+            }
+          },
+          {
+            "TemplateId": "Block.IronTeeth",
+            "Faction": "IronTeeth",
+            "Science": 1000,
+            "BuildingMaterials": {
+              "Dirt": 6
+            }
+          }
+        ]
+      },
+      "SmallPile": {
+        "Id": "SmallPile",
+        "Name": "Small pile",
+        "TranslatId": "smallPile",
+        "Category": "Storage",
+        "Versions": [
+          {
+            "TemplateId": "SmallPile.Folktails",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "Log": 2
+            },
+            "Recipes": {
+              ".default": {
+                "Storage": {
+                  ".any": 30
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "SmallPile.IronTeeth",
+            "Faction": "IronTeeth",
+            "BuildingMaterials": {
+              "Log": 2
+            },
+            "Recipes": {
+              ".default": {
+                "Storage": {
+                  ".any": 30
+                }
+              }
+            }
+          }
+        ]
+      },
+      "LargePile": {
+        "Id": "LargePile",
+        "Name": "Large pile",
+        "TranslatId": "largePile",
+        "Category": "Storage",
+        "Versions": [
+          {
+            "TemplateId": "LargePile.Folktails",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "Log": 6
+            },
+            "Recipes": {
+              ".default": {
+                "Storage": {
+                  ".any": 30
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "LargePile.IronTeeth",
+            "Faction": "IronTeeth",
+            "BuildingMaterials": {
+              "Log": 6
+            },
+            "Recipes": {
+              ".default": {
+                "Storage": {
+                  ".any": 30
+                }
+              }
+            }
+          }
+        ]
+      },
+      "UndergroundPile": {
+        "Id": "UndergroundPile",
+        "Name": "Underground pile",
+        "TranslatId": "mediumPile",
+        "Category": "Storage",
+        "Versions": [
+          {
+            "TemplateId": "UndergroundPile.Folktails",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "Log": 20,
+              "Plank": 80,
+              "Gear": 40
+            },
+            "Recipes": {
+              ".default": {
+                "Storage": {
+                  ".any": 30
+                }
+              }
+            }
+          }
+        ]
+      },
+      "SmallWarehouse": {
+        "Id": "SmallWarehouse",
+        "Name": "Small warehouse",
+        "TranslatId": "smallWarehouse",
+        "Category": "Storage",
+        "Versions": [
+          {
+            "TemplateId": "SmallWarehouse.Folktails",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "Log": 3
+            },
+            "Recipes": {
+              ".default": {
+                "Storage": {
+                  ".any": 30
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "SmallWarehouse.IronTeeth",
+            "Faction": "IronTeeth",
+            "BuildingMaterials": {
+              "Log": 3
+            },
+            "Recipes": {
+              ".default": {
+                "Storage": {
+                  ".any": 30
+                }
+              }
+            }
+          }
+        ]
+      },
+      "MediumWarehouse": {
+        "Id": "MediumWarehouse",
+        "Name": "Medium warehouse",
+        "TranslatId": "largeWarehouse",
+        "Category": "Storage",
+        "Versions": [
+          {
+            "TemplateId": "MediumWarehouse.Folktails",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "Log": 15
+            },
+            "Recipes": {
+              ".default": {
+                "Storage": {
+                  ".any": 30
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "MediumWarehouse.IronTeeth",
+            "Faction": "IronTeeth",
+            "BuildingMaterials": {
+              "Log": 15
+            },
+            "Recipes": {
+              ".default": {
+                "Storage": {
+                  ".any": 30
+                }
+              }
+            }
+          }
+        ]
+      },
+      "LargeWarehouse": {
+        "Id": "LargeWarehouse",
+        "Name": "Large warehouse",
+        "TranslatId": "largeWarehouse",
+        "Category": "Storage",
+        "Versions": [
+          {
+            "TemplateId": "LargeWarehouse.Folktails",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "Log": 60,
+              "Plank": 80
+            },
+            "Recipes": {
+              ".default": {
+                "Storage": {
+                  ".any": 30
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "LargeWarehouse.IronTeeth",
+            "Faction": "IronTeeth",
+            "BuildingMaterials": {
+              "Log": 60,
+              "Plank": 80
+            },
+            "Recipes": {
+              ".default": {
+                "Storage": {
+                  ".any": 30
+                }
+              }
+            }
+          }
+        ]
+      },
+      "SmallTank": {
+        "Id": "SmallTank",
+        "Name": "Small tank",
+        "TranslatId": "smallTank",
+        "Category": "Storage",
+        "Versions": [
+          {
+            "TemplateId": "SmallTank.Folktails",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "Log": 15
+            },
+            "Recipes": {
+              ".default": {
+                "Storage": {
+                  ".any": 30
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "SmallTank.IronTeeth",
+            "Faction": "IronTeeth",
+            "BuildingMaterials": {
+              "Log": 15
+            },
+            "Recipes": {
+              ".default": {
+                "Storage": {
+                  ".any": 30
+                }
+              }
+            }
+          }
+        ]
+      },
+      "MediumTank": {
+        "Id": "MediumTank",
+        "Name": "Medium tank",
+        "TranslatId": "mediumTank",
+        "Category": "Storage",
+        "Versions": [
+          {
+            "TemplateId": "MediumTank.Folktails",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "Plank": 30,
+              "Gear": 20
+            },
+            "Recipes": {
+              ".default": {
+                "Storage": {
+                  ".any": 30
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "MediumTank.IronTeeth",
+            "Faction": "IronTeeth",
+            "BuildingMaterials": {
+              "Plank": 30,
+              "Gear": 20
+            },
+            "Recipes": {
+              ".default": {
+                "Storage": {
+                  ".any": 30
+                }
+              }
+            }
+          }
+        ]
+      },
+      "LargeTank": {
+        "Id": "LargeTank",
+        "Name": "Large tank",
+        "TranslatId": "largeTank",
+        "Category": "Storage",
+        "Versions": [
+          {
+            "TemplateId": "LargeTank.Folktails",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "Plank": 80,
+              "Gear": 60,
+              "MetalBlock": 30
+            },
+            "Recipes": {
+              ".default": {
+                "Storage": {
+                  ".any": 30
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "LargeTank.IronTeeth",
+            "Faction": "IronTeeth",
+            "BuildingMaterials": {
+              "Plank": 80,
+              "Gear": 60,
+              "MetalBlock": 30
+            },
+            "Recipes": {
+              ".default": {
+                "Storage": {
+                  ".any": 30
+                }
+              }
+            }
+          }
+        ]
+      },
+      "HaulingPost": {
+        "Id": "HaulingPost",
+        "Name": "Hauling post",
+        "TranslationId": "haulingPost",
+        "Category": "DistricManagement",
+        "Versions": [
+          {
+            "TemplateId": "HaulingPost.Folktails",
+            "Faction": "Folktails",
+            "MaxWorkers": 10,
+            "BuildingMaterials": {
+              "Log": 20,
+              "Plank": 10
+            }
+          },
+          {
+            "TemplateId": "HaulingPost.IronTeeth",
+            "Faction": "Folktails",
+            "MaxWorkers": 10,
+            "BuildingMaterials": {
+              "Log": 20,
+              "Plank": 10
+            }
+          }
+        ]
+      },
+      "BuildersHut": {
+        "Id": "BuildersHut",
+        "Name": "Builders hut",
+        "TranslationId": "buildersHut",
+        "Category": "DistricManagement",
+        "Versions": [
+          {
+            "TemplateId": "BuildersHut.Folktails",
+            "Faction": "Folktails",
+            "MaxWorkers": 4,
+            "BuildingMaterials": {
+              "Log": 20,
+              "Plank": 10
+            }
+          },
+          {
+            "TemplateId": "BuildersHut.IronTeeth",
+            "Faction": "Folktails",
+            "MaxWorkers": 4,
+            "BuildingMaterials": {
+              "Log": 20,
+              "Plank": 10
+            }
+          }
+        ]
+      },
+      "DistrictCrossing": {
+        "Id": "DistrictCrossing",
+        "Name": "District crossing",
+        "TranslationId": "districtCrossing",
+        "Category": "DistricManagement",
+        "Versions": [
+          {
+            "TemplateId": "DistrictCrossing.Folktails",
+            "Faction": "Folktails",
+            "MaxWorkers": 10,
+            "BuildingMaterials": {
+              "Log": 30,
+              "Plank": 15
+            }
+          },
+          {
+            "TemplateId": "DistrictCrossing.IronTeeth",
+            "Faction": "Folktails",
+            "MaxWorkers": 10,
+            "BuildingMaterials": {
+              "Log": 30,
+              "Plank": 15
+            }
+          }
+        ]
+      },
+      "Lodge": {
+        "Id": "Lodge",
+        "Name": "Lodge",
+        "TranslationId": "lodge",
+        "Category": "Housing",
+        "Versions": [
+          {
+            "TemplateId": "Lodge.Folktails",
+            "Faction": "Folktails",
+            "MaxInhabitants": 3,
+            "BuildingMaterials": {
+              "Log": 12
+            }
+          }
+        ]
+      },
+      "MiniLodge": {
+        "Id": "MiniLodge",
+        "Name": "Mini lodge",
+        "TranslationId": "miniLodge",
+        "Category": "Housing",
+        "Versions": [
+          {
+            "TemplateId": "MiniLodge.Folktails",
+            "Faction": "Folktails",
+            "MaxInhabitants": 1,
+            "BuildingMaterials": {
+              "Log": 5
+            }
+          }
+        ]
+      },
+      "DoubleLodge": {
+        "Id": "DoubleLodge",
+        "Name": "Double lodge",
+        "TranslationId": "doubleLodge",
+        "Category": "Housing",
+        "Versions": [
+          {
+            "TemplateId": "DoubleLodge.Folktails",
+            "Faction": "Folktails",
+            "MaxInhabitants": 6,
+            "BuildingMaterials": {
+              "Log": 20
+            }
+          }
+        ]
+      },
+      "TripleLodge": {
+        "Id": "TripleLodge",
+        "Name": "Triple lodge",
+        "TranslationId": "tripleLodge",
+        "Category": "Housing",
+        "Versions": [
+          {
+            "TemplateId": "TripleLodge.Folktails",
+            "Faction": "Folktails",
+            "MaxInhabitants": 9,
+            "BuildingMaterials": {
+              "Log": 35
+            }
+          }
+        ]
+      },
+      "WaterPump": {
+        "Id": "WaterPump",
+        "Name": "Water pump",
+        "TranslatId": "waterPump",
+        "Category": "Water",
+        "Versions": [
+          {
+            "TemplateId": "WaterPump.Folktails",
+            "Faction": "Folktails",
+            "MaxWorkers": 1,
+            "BuildingMaterials": {
+              "Log": 12
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 0.33,
+                "Storage": {
+                  "Water": 15
+                },
+                "Output": {
+                  "Water": 1
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "LargeWaterPump.Folktails",
+            "Faction": "Folktails",
+            "MaxWorkers": 3,
+            "BuildingMaterials": {
+              "Log": 20,
+              "Gear": 5,
+              "TreatedPlank": 10
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 0.33,
+                "Storage": {
+                  "Water": 60
+                },
+                "Output": {
+                  "Water": 5
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "DeepWaterPump.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxWorkers": 1,
+            "BuildingMaterials": {
+              "Log": 12
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 0.33,
+                "Storage": {
+                  "Water": 15
+                },
+                "Output": {
+                  "Water": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "BadwaterPump": {
+        "Id": "BadwaterPump",
+        "Name": "Badwater pump",
+        "TranslatId": "badwaterPump",
+        "Category": "Water",
+        "Versions": [
+          {
+            "TemplateId": "BadwaterPump.Folktails",
+            "Faction": "Folktails",
+            "MaxWorkers": 1,
+            "BuildingMaterials": {
+              "Log": 20,
+              "Gear": 10,
+              "MetalBlock": 5
+            },
+            "Storage": {
+              "Badwater": 15
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 0.33,
+                "Output": {
+                  "Badwater": 1
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "BadwaterRig.Folktails",
+            "Faction": "Folktails",
+            "MaxWorkers": 10,
+            "BuildingMaterials": {
+              "Gear": 400,
+              "TreatedPlank": 200,
+              "MetalBlock": 150
+            },
+            "Storage": {
+              "Badwater": 1200
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Badwater": 40
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "DeepBadwaterPump.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxWorkers": 1,
+            "BuildingMaterials": {
+              "Log": 20,
+              "Gear": 10,
+              "MetalBlock": 5
+            },
+            "Storage": {
+              "Badwater": 15
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 0.33,
+                "Output": {
+                  "Badwater": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "FluidDump": {
+        "Id": "FluidDump",
+        "Name": "Fluid dump",
+        "TranslationId": "fluidDump",
+        "Category": "Water",
+        "Versions": [
+          {
+            "TemplateId": "FluidDump.Folktails",
+            "Faction": "Folktails",
+            "MaxWorkers": 1,
+            "BuildingMaterials": {
+              "Log": 10,
+              "Plank": 10
+            },
+            "Recipes": {
+              "Badwater": {
+                ".duration": 1,
+                "Storage": {
+                  "Badwater": 15
+                },
+                "Input": {
+                  "Badwater": 3
+                }
+              },
+              "Water": {
+                ".duration": 1,
+                "Storage": {
+                  "Water": 15
+                },
+                "Input": {
+                  "Water": 3
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "FluidDump.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxWorkers": 1,
+            "BuildingMaterials": {
+              "Log": 10,
+              "Plank": 10
+            },
+            "Recipes": {
+              "Badwater": {
+                ".duration": 1,
+                "Storage": {
+                  "Badwater": 15
+                },
+                "Input": {
+                  "Badwater": 3
+                }
+              },
+              "Water": {
+                ".duration": 1,
+                "Storage": {
+                  "Water": 15
+                },
+                "Input": {
+                  "Water": 3
+                }
+              }
+            }
+          }
+        ]
+      },
+      "StreamGauge": {
+        "Id": "StreamGauge",
+        "Name": "Stream gauge",
+        "TranslatId": "streamGauge",
+        "Category": "Water",
+        "Versions": [
+          {
+            "TemplateId": "StreamGauge.Folktails",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "Log": 2,
+              "Plank": 4
+            }
+          },
+          {
+            "TemplateId": "StreamGauge.IronTeeth",
+            "Faction": "IronTeeth",
+            "BuildingMaterials": {
+              "Log": 2,
+              "Plank": 4
+            }
+          }
+        ]
+      },
+      "Centrifuge": {
+        "Id": "Centrifuge",
+        "Name": "Centrifuge",
+        "TranslatId": "centrifuge",
+        "Category": "Water",
+        "Versions": [
+          {
+            "TemplateId": "Centrifuge.Folktails",
+            "Faction": "Folktails",
+            "MaxWorkers": 1,
+            "BuildingMaterials": {
+              "Plank": 60,
+              "Gear": 40,
+              "MetalBlock": 30
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 0.75,
+                "Storage": {
+                  "Badwater": 80,
+                  "Log": 5,
+                  "Extract": 20
+                },
+                "Input": {
+                  "Badwater": 4,
+                  "Log": 0.1
+                },
+                "Output": {
+                  "Extract": 1
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "Centrifuge.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxWorkers": 1,
+            "BuildingMaterials": {
+              "Plank": 60,
+              "Gear": 40,
+              "MetalBlock": 30
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 0.75,
+                "Storage": {
+                  "Badwater": 80,
+                  "Log": 5,
+                  "Extract": 20
+                },
+                "Input": {
+                  "Badwater": 4,
+                  "Log": 0.1
+                },
+                "Output": {
+                  "Extract": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "BadwaterDome": {
+        "Id": "BadwaterDome",
+        "Name": "Badwater dome",
+        "TranslatId": "badwaterDome",
+        "Category": "Water",
+        "Versions": [
+          {
+            "TemplateId": "BadwaterDome.Folktails",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "Plank": 100,
+              "Gear": 200,
+              "MetalBlock": 100
+            }
+          },
+          {
+            "TemplateId": "Centrifuge.IronTeeth",
+            "Faction": "IronTeeth",
+            "BuildingMaterials": {
+              "Plank": 100,
+              "Gear": 200,
+              "MetalBlock": 100
+            }
+          }
+        ]
+      },
+      "GathererFlag": {
+        "Id": "GathererFlag",
+        "Name": "Gatherer flag",
+        "TranslatId": "gathererFlag",
+        "Category": "Food",
+        "Versions": [
+          {
+            "TemplateId": "GathererFlag.Folktails",
+            "Faction": "Folktails",
+            "MaxWorkers": 1,
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Berries": 1,
+                  "Chestnut": 1,
+                  "CoffeeBean": 1,
+                  "Dandelion": 1,
+                  "MangroveFruit": 1
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "GathererFlag.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxWorkers": 1,
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Berries": 1,
+                  "Chestnut": 1,
+                  "CoffeeBean": 1,
+                  "Dandelion": 1,
+                  "MangroveFruit": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "FarmHouse": {
+        "Id": "FarmHouse",
+        "Name": "Farm house",
+        "TranslatId": "farmHouse",
+        "Category": "Food",
+        "Versions": [
+          {
+            "TemplateId": "EfficientFarmHouse.Folktails",
+            "Faction": "Folktails",
+            "MaxWorkers": 3,
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Carrot": 1,
+                  "SunFlowerSeeds": 1,
+                  "Potato": 1,
+                  "Wheat": 1
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "FarmHouse.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxWorkers": 1,
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "CanolaSeeds": 1,
+                  "Cassava": 1,
+                  "Corn": 1,
+                  "Eggplant": 1,
+                  "Kohlrabi": 1,
+                  "Soybean": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "AquaticFarmhouse": {
+        "Id": "AquaticFarmhouse",
+        "Name": "Aquatic farmhouse",
+        "TranslatId": "aquaticFarmhouse",
+        "Category": "Food",
+        "Versions": [
+          {
+            "TemplateId": "AquaticFarmhouse.Folktails",
+            "Faction": "Folktails",
+            "MaxWorkers": 3,
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Cattail": 1,
+                  "Spadderdock": 1
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "AquaticFarmhouse.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxWorkers": 1,
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Cattail": 1,
+                  "Spadderdock": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "Grill": {
+        "Id": "Grill",
+        "Name": "Grill",
+        "TranslatId": "grill",
+        "Category": "Food",
+        "Versions": [
+          {
+            "TemplateId": "Grill.Folktails",
+            "Faction": "Folktails",
+            "MaxWorkers": 1,
+            "Recipes": {
+              "GrilledPotatoes": {
+                ".duration": 0.52,
+                "Storage": {
+                  "Potato": 30,
+                  "Log": 5,
+                  "GrilledPotato": 120
+                },
+                "Input": {
+                  "Potato": 1,
+                  "Log": 0.1
+                },
+                "Output": {
+                  "GrilledPotato": 4
+                }
+              },
+              "GrilledChestnuts": {
+                ".duration": 0.33,
+                "Storage": {
+                  "Chestnut": 30,
+                  "Log": 5,
+                  "GrilledChestnut": 60
+                },
+                "Input": {
+                  "Chestnut": 1,
+                  "Log": 0.1
+                },
+                "Output": {
+                  "GrilledChestnuts": 2
+                }
+              },
+              "GrilledSpadderdock": {
+                ".duration": 0.4,
+                "Storage": {
+                  "Spadderdock": 30,
+                  "Log": 5,
+                  "GrilledSpadderdock": 90
+                },
+                "Input": {
+                  "Chestnut": 1,
+                  "Log": 0.1
+                },
+                "Output": {
+                  "GrilledChestnuts": 3
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "Grill.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxWorkers": 1,
+            "Recipes": {
+              "GrilledPotatoes": {
+                ".duration": 0.52,
+                "Storage": {
+                  "Potato": 30,
+                  "Log": 5,
+                  "GrilledPotato": 120
+                },
+                "Input": {
+                  "Potato": 1,
+                  "Log": 0.1
+                },
+                "Output": {
+                  "GrilledPotato": 4
+                }
+              },
+              "GrilledChestnuts": {
+                ".duration": 0.33,
+                "Storage": {
+                  "Chestnut": 30,
+                  "Log": 5,
+                  "GrilledChestnut": 60
+                },
+                "Input": {
+                  "Chestnut": 1,
+                  "Log": 0.1
+                },
+                "Output": {
+                  "GrilledChestnuts": 2
+                }
+              },
+              "GrilledSpadderdock": {
+                ".duration": 0.4,
+                "Storage": {
+                  "Spadderdock": 30,
+                  "Log": 5,
+                  "GrilledSpadderdock": 90
+                },
+                "Input": {
+                  "Chestnut": 1,
+                  "Log": 0.1
+                },
+                "Output": {
+                  "GrilledChestnuts": 3
+                }
+              }
+            }
+          }
+        ]
+      },
+      "Gristmill": {
+        "Id": "Gristmill",
+        "Name": "Gristmill",
+        "TranslatId": "gristmill",
+        "Category": "Food",
+        "Versions": [
+          {
+            "TemplateId": "Gristmill.Folktails",
+            "Faction": "Folktails",
+            "MaxWorkers": 1,
+            "Recipes": {
+              "WheatFlour": {
+                ".duration": 0.5,
+                "Storage": {
+                  "Wheat": 20,
+                  "Log": 20
+                },
+                "Input": {
+                  "Wheat": 1
+                },
+                "Output": {
+                  "WheatFlour": 1
+                }
+              },
+              "CattailFlour": {
+                ".duration": 0.25,
+                "Storage": {
+                  "CattailRoot": 20,
+                  "CattailFlour": 20
+                },
+                "Input": {
+                  "CattailRoot": 1
+                },
+                "Output": {
+                  "CattailFlour": 1
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "Grill.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxWorkers": 1,
+            "Recipes": {
+              "GrilledPotatoes": {
+                ".duration": 0.52,
+                "Storage": {
+                  "Potato": 30,
+                  "Log": 5,
+                  "GrilledPotato": 120
+                },
+                "Input": {
+                  "Potato": 1,
+                  "Log": 0.1
+                },
+                "Output": {
+                  "GrilledPotato": 4
+                }
+              },
+              "GrilledChestnuts": {
+                ".duration": 0.33,
+                "Storage": {
+                  "Chestnut": 30,
+                  "Log": 5,
+                  "GrilledChestnut": 60
+                },
+                "Input": {
+                  "Chestnut": 1,
+                  "Log": 0.1
+                },
+                "Output": {
+                  "GrilledChestnuts": 2
+                }
+              },
+              "GrilledSpadderdock": {
+                ".duration": 0.4,
+                "Storage": {
+                  "Spadderdock": 30,
+                  "Log": 5,
+                  "GrilledSpadderdock": 90
+                },
+                "Input": {
+                  "Chestnut": 1,
+                  "Log": 0.1
+                },
+                "Output": {
+                  "GrilledChestnuts": 3
+                }
+              }
+            }
+          }
+        ]
+      },
+      "Bakery": {
+        "Id": "Bakery",
+        "Name": "Bakery",
+        "TranslatId": "bakery",
+        "Category": "Food",
+        "Versions": [
+          {
+            "TemplateId": "Bakery.Folktails",
+            "Faction": "Folktails",
+            "MaxWorkers": 1,
+            "Recipes": {
+              "Bread": {
+                ".duration": 1,
+                "Storage": {
+                  "WheatFlour": 38,
+                  "Log": 5,
+                  "Bread": 190
+                },
+                "Input": {
+                  "WheatFlour": 1,
+                  "Log": 0.1
+                },
+                "Output": {
+                  "Bread": 5
+                }
+              },
+              "CattailCracker": {
+                ".duration": 0.5,
+                "Storage": {
+                  "CattailFlour": 20,
+                  "Log": 5,
+                  "CattailCracker": 80
+                },
+                "Input": {
+                  "CattailFlour": 1,
+                  "Log": 0.1
+                },
+                "Output": {
+                  "CattailCracker": 4
+                }
+              },
+              "MaplePastry": {
+                ".duration": 1.5,
+                "Storage": {
+                  "WheatFlour": 20,
+                  "MapleSyrup": 20,
+                  "Log": 5,
+                  "MaplePastry": 60
+                },
+                "Input": {
+                  "WheatFlour": 1,
+                  "MapleSyrup": 1,
+                  "Log": 0.1
+                },
+                "Output": {
+                  "MaplePastry": 3
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "Bakery.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxWorkers": 1,
+            "Recipes": {
+              "Bread": {
+                ".duration": 1,
+                "Storage": {
+                  "WheatFlour": 38,
+                  "Log": 5,
+                  "Bread": 190
+                },
+                "Input": {
+                  "WheatFlour": 1,
+                  "Log": 0.1
+                },
+                "Output": {
+                  "Bread": 5
+                }
+              },
+              "CattailCracker": {
+                ".duration": 0.5,
+                "Storage": {
+                  "CattailFlour": 20,
+                  "Log": 5,
+                  "CattailCracker": 80
+                },
+                "Input": {
+                  "CattailFlour": 1,
+                  "Log": 0.1
+                },
+                "Output": {
+                  "CattailCracker": 4
+                }
+              },
+              "MaplePastry": {
+                ".duration": 1.5,
+                "Storage": {
+                  "WheatFlour": 20,
+                  "MapleSyrup": 20,
+                  "Log": 5,
+                  "MaplePastry": 60
+                },
+                "Input": {
+                  "WheatFlour": 1,
+                  "MapleSyrup": 1,
+                  "Log": 0.1
+                },
+                "Output": {
+                  "MaplePastry": 3
+                }
+              }
+            }
+          }
+        ]
+      },
+      "Beehive": {
+        "Id": "Beehive",
+        "Name": "Beehive",
+        "TranslatId": "beehive",
+        "Category": "Food",
+        "Versions": [
+          {
+            "TemplateId": "Beehive.Folktails",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "Log": 10,
+              "Plank": 15,
+              "Paper": 20
+            }
+          }
+        ]
+      },
+      "LumberjackFlag": {
+        "Id": "LumberjackFlag",
+        "Name": "LumberjackFlag",
+        "TranslatId": "lumberjackFlag",
+        "Category": "Wood",
+        "Versions": [
+          {
+            "TemplateId": "LumberjackFlag.Folktails",
+            "Faction": "Folktails",
+            "MaxWorkers": 1,
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Log": 1
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "LumberjackFlag.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxWorkers": 1,
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Log": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "LumberMill": {
+        "Id": "LumberMill",
+        "Name": "Lumber mill",
+        "TranslatId": "lumberMill",
+        "Category": "Wood",
+        "Versions": [
+          {
+            "TemplateId": "LumberMill.Folktails",
+            "Faction": "Folktails",
+            "MaxWorkers": 1,
+            "Recipes": {
+              ".default": {
+                ".duration": 1.3,
+                "Storage": {
+                  "Log": 13,
+                  "Plank": 13
+                },
+                "Input": {
+                  "Log": 1
+                },
+                "Output": {
+                  "Plank": 1
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "IndustrialLumberMill.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxWorkers": 1,
+            "Recipes": {
+              ".default": {
+                ".duration": 1.3,
+                "Storage": {
+                  "Log": 13,
+                  "Plank": 13
+                },
+                "Input": {
+                  "Log": 1
+                },
+                "Output": {
+                  "Plank": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "Forester": {
+        "Id": "Forrester",
+        "Name": "Forrester",
+        "TranslatId": "lumberMill",
+        "Category": "Wood",
+        "Versions": [
+          {
+            "TemplateId": "ForeserFolktails",
+            "Faction": "Folktails",
+            "MaxWorkers": 1
+          },
+          {
+            "TemplateId": "Forester.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxWorkers": 1
+          }
+        ]
+      },
+      "GearWorkshop": {
+        "Id": "GearWorkshop",
+        "Name": "Gear workshop",
+        "TranslatId": "gearWorksop",
+        "Category": "Wood",
+        "Versions": [
+          {
+            "TemplateId": "GearWorkshop.Folktails",
+            "Faction": "Folktails",
+            "MaxWorkers": 1,
+            "Recipes": {
+              ".default": {
+                ".duration": 3,
+                "Storage": {
+                  "Plank": 10,
+                  "Gear": 20
+                },
+                "Input": {
+                  "Plank": 1
+                },
+                "Output": {
+                  "Gear": 2
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "GearWorkshop.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxWorkers": 1,
+            "Recipes": {
+              ".default": {
+                ".duration": 3,
+                "Storage": {
+                  "Plank": 10,
+                  "Gear": 20
+                },
+                "Input": {
+                  "Plank": 1
+                },
+                "Output": {
+                  "Gear": 2
+                }
+              }
+            }
+          }
+        ]
+      },
+      "PaperMill": {
+        "Id": "PaperMill",
+        "Name": "Paper mill",
+        "TranslatId": "paperMill",
+        "Category": "Wood",
+        "Versions": [
+          {
+            "TemplateId": "PaperMill.Folktails",
+            "Faction": "Folktails",
+            "MaxWorkers": 1,
+            "Recipes": {
+              ".default": {
+                ".duration": 1.6,
+                "Storage": {
+                  "Log": 10,
+                  "Paper": 20
+                },
+                "Input": {
+                  "Log": 1
+                },
+                "Output": {
+                  "Paper": 2
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "PaperMill.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxWorkers": 1,
+            "Recipes": {
+              ".default": {
+                ".duration": 1.6,
+                "Storage": {
+                  "Log": 10,
+                  "Paper": 20
+                },
+                "Input": {
+                  "Log": 1
+                },
+                "Output": {
+                  "Paper": 2
+                }
+              }
+            }
+          }
+        ]
+      },
+      "PrintingPress": {
+        "Id": "PrintingPress",
+        "Name": "Printing press",
+        "TranslatId": "printingPress",
+        "Category": "Wood",
+        "Versions": [
+          {
+            "TemplateId": "PrintingPress.Folktails",
+            "Faction": "Folktails",
+            "MaxWorkers": 1,
+            "Recipes": {
+              "Book": {
+                ".duration": 1.5,
+                "Storage": {
+                  "Log": 12,
+                  "Paper": 12
+                },
+                "Input": {
+                  "Log": 1
+                },
+                "Output": {
+                  "Book": 1
+                }
+              },
+              "PunchCard": {
+                ".duration": 1.75,
+                "Storage": {
+                  "Paper": 40,
+                  "Plank": 20,
+                  "PunchCard": 40
+                },
+                "Input": {
+                  "Paper": 2,
+                  "Plank": 1,
+                  "PunchCard": 2
+                },
+                "Output": {
+                  "Paper": 2
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "PrintingPress.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxWorkers": 1,
+            "Recipes": {
+              "Books": {
+                ".duration": 1.5,
+                "Storage": {
+                  "Log": 12,
+                  "Paper": 12
+                },
+                "Input": {
+                  "Log": 1
+                },
+                "Output": {
+                  "Book": 1
+                }
+              },
+              "PunchCard": {
+                ".duration": 1.75,
+                "Storage": {
+                  "Paper": 40,
+                  "Plank": 20,
+                  "PunchCard": 40
+                },
+                "Input": {
+                  "Paper": 2,
+                  "Plank": 1,
+                  "PunchCard": 2
+                },
+                "Output": {
+                  "Paper": 2
+                }
+              }
+            }
+          }
+        ]
+      },
+      "TappersShack": {
+        "Id": "TappersShack",
+        "Name": "Tappers shack",
+        "TranslatId": "tappersShack",
+        "Category": "Wood",
+        "Versions": [
+          {
+            "TemplateId": "TappersShack.Folktails",
+            "Faction": "Folktails",
+            "MaxWorkers": 1,
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "PineResin": 1
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "TappersShack.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxWorkers": 1,
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "PineResin": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "WoodWorkshop": {
+        "Id": "WoodWorkshop",
+        "Name": "Wood workshop",
+        "TranslatId": "woodWorkshop",
+        "Category": "Wood",
+        "Versions": [
+          {
+            "TemplateId": "WoodWorkshop.Folktails",
+            "Faction": "Folktails",
+            "MaxWorkers": 1,
+            "Recipes": {
+              ".default": {
+                ".duration": 3,
+                "Storage": {
+                  "Plank": 10,
+                  "PineResin": 10,
+                  "TreatedPlank": 10
+                },
+                "Input": {
+                  "Plank": 1,
+                  "PineResin": 1
+                },
+                "Output": {
+                  "TreatedPlank": 1
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "WoodWorkshop.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxWorkers": 1,
+            "Recipes": {
+              ".default": {
+                ".duration": 3,
+                "Storage": {
+                  "Plank": 10,
+                  "PineResin": 10,
+                  "TreatedPlank": 10
+                },
+                "Input": {
+                  "Plank": 1,
+                  "PineResin": 1
+                },
+                "Output": {
+                  "TreatedPlank": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "ScavengerFlag": {
+        "Id": "ScavengerFlag",
+        "Name": "Scavenger flag",
+        "TranslatId": "scavengerFlag",
+        "Category": "Metal",
+        "Versions": [
+          {
+            "TemplateId": "ScavengerFlag.Folktails",
+            "Faction": "Folktails",
+            "MaxWorkers": 1,
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "ScrapMetal": 1
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "ScavengerFlag.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxWorkers": 1,
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "ScrapMetal": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "Smelter": {
+        "Id": "Smelter",
+        "Name": "Smelter",
+        "TranslatId": "smelter",
+        "Category": "Metal",
+        "Versions": [
+          {
+            "TemplateId": "Smelter.Folktails",
+            "Faction": "Folktails",
+            "MaxWorkers": 1,
+            "Energy": 200,
+            "Recipes": {
+              ".default": {
+                ".duration": 4,
+                "Storage": {
+                  "Log": 13,
+                  "ScrapMetal": 26,
+                  "MetalBlock": 13
+                },
+                "Input": {
+                  "ScrapMetal": 2,
+                  "Log": 0.2
+                },
+                "Output": {
+                  "MetalBlock": 1
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "Smelter.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxWorkers": 1,
+            "Energy": 200,
+            "Recipes": {
+              ".default": {
+                ".duration": 4,
+                "Storage": {
+                  "Log": 13,
+                  "ScrapMetal": 26,
+                  "MetalBlock": 13
+                },
+                "Input": {
+                  "ScrapMetal": 2,
+                  "Log": 0.2
+                },
+                "Output": {
+                  "MetalBlock": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "Mine": {
+        "Id": "Mine",
+        "Name": "Mine",
+        "TranslatId": "mine",
+        "Category": "Metal",
+        "Versions": [
+          {
+            "TemplateId": "Mine.Folktails",
+            "Faction": "Folktails",
+            "MaxWorkers": 10,
+            "Recipes": {
+              "ScrapMetal": {
+                ".duration": 1.8,
+                "Storage": {
+                  "Gear": 1,
+                  "TreatedPlank": 1
+                },
+                "Input": {
+                  "Gear": 1,
+                  "TreatedPlank": 1
+                },
+                "Output": {
+                  "ScrapMetal": 2
+                }
+              },
+              "Science": {
+                ".duration": 1,
+                "Output": {
+                  "Science": 20
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "Mine.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxWorkers": 10,
+            "Recipes": {
+              "ScrapMetal": {
+                ".duration": 1.8,
+                "Storage": {
+                  "Gear": 1,
+                  "TreatedPlank": 1
+                },
+                "Input": {
+                  "Gear": 1,
+                  "TreatedPlank": 1
+                },
+                "Output": {
+                  "ScrapMetal": 2
+                }
+              },
+              "Science": {
+                ".duration": 1,
+                "Output": {
+                  "Science": 20
+                }
+              }
+            }
+          }
+        ]
+      },
+      "DevPowerGenerator": {
+        "Id": "DevPowerGenerator",
+        "Name": "Developer power generator",
+        "TranslatId": "devPowerGenerator",
+        "Category": "Power",
+        "Versions": [
+          {
+            "TemplateId": "DevPowerGenerator",
+            "Faction": "Folktails",
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Energy": 10000
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "DevPowerGenerator",
+            "Faction": "IronTeeth",
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Energy": 10000
+                }
+              }
+            }
+          }
+        ]
+      },
+      "WaterWheel": {
+        "Id": "WhaterWheel",
+        "Name": "Water wheel",
+        "TranslatId": "waterWheel",
+        "Category": "Power",
+        "Versions": [
+          {
+            "TemplateId": "WaterWheel.Folktails",
+            "Faction": "Folktails",
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Energy": 135
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "CompactWaterWheel.IronTeeth",
+            "Faction": "IronTeeth",
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Energy": 1
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "LargeWaterWheel.IronTeeth",
+            "Faction": "IronTeeth",
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Energy": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "PowerWheel": {
+        "Id": "PowerWheel",
+        "Name": "Power wheel",
+        "TranslatId": "powerWheel",
+        "Category": "Power",
+        "Versions": [
+          {
+            "TemplateId": "PowerWheel.Folktails",
+            "Faction": "Folktails",
+            "MaxWorkers": 1,
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Energy": 50
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "LargePowerWheel.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxWorkers": 4,
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Energy": 300
+                }
+              }
+            }
+          }
+        ]
+      },
+      "PowerShaftStraight": {
+        "Id": "PowerShaftStraightt",
+        "Name": "Power shaft straight",
+        "TranslatId": "powerShaftStraight",
+        "Category": "Power",
+        "Versions": [
+          {
+            "TemplateId": "PowerShaftStraight.Folktails",
+            "Faction": "Folktails",
+            "MaxWorkers": 0,
+            "BuildingMaterials": {
+              "Log": 1
+            }
+          },
+          {
+            "TemplateId": "PowerShaftStraight.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxWorkers": 0,
+            "BuildingMaterials": {
+              "Log": 1
+            }
+          }
+        ]
+      },
+      "PowerShaftTurn": {
+        "Id": "PowerShaftTurn",
+        "Name": "Power shaft turn",
+        "TranslatId": "powerShaftTurn",
+        "Category": "Power",
+        "Versions": [
+          {
+            "TemplateId": "PowerShaftTurn.Folktails",
+            "Faction": "Folktails",
+            "MaxWorkers": 0,
+            "BuildingMaterials": {
+              "Log": 1,
+              "Gear": 1
+            }
+          },
+          {
+            "TemplateId": "PowerShaftTurn.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxWorkers": 0,
+            "BuildingMaterials": {
+              "Log": 1,
+              "Gear": 1
+            }
+          }
+        ]
+      },
+      "PowerShaftIntersection": {
+        "Id": "PowerShaftIntersection",
+        "Name": "Power shaft intersection",
+        "TranslatId": "powerShaftIntersection",
+        "Category": "Power",
+        "Versions": [
+          {
+            "TemplateId": "PowerShaftIntersection.Folktails",
+            "Faction": "Folktails",
+            "MaxWorkers": 0,
+            "BuildingMaterials": {
+              "Log": 1,
+              "Gear": 1
+            }
+          },
+          {
+            "TemplateId": "PowerShaftIntersection.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxWorkers": 0,
+            "BuildingMaterials": {
+              "Log": 1,
+              "Gear": 1
+            }
+          }
+        ]
+      },
+      "PowerShaftTShapedIntersection": {
+        "Id": "PowerShaftTShapedIntersection",
+        "Name": "Power shaft T-intersection",
+        "TranslatId": "powerShaftTShapedIntersection",
+        "Category": "Power",
+        "Versions": [
+          {
+            "TemplateId": "PowerShaftTShapedIntersection.Folktails",
+            "Faction": "Folktails",
+            "MaxWorkers": 0,
+            "BuildingMaterials": {
+              "Log": 1,
+              "Gear": 1
+            }
+          },
+          {
+            "TemplateId": "PowerShaftTShapedIntersection.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxWorkers": 0,
+            "BuildingMaterials": {
+              "Log": 1,
+              "Gear": 1
+            }
+          }
+        ]
+      },
+      "PowerShaftHigh": {
+        "Id": "PowerShaftHigh",
+        "Name": "High power shaft",
+        "TranslatId": "powerShaftHigh",
+        "Category": "Power",
+        "Versions": [
+          {
+            "TemplateId": "PowerShaftHigh.Folktails",
+            "Faction": "Folktails",
+            "MaxWorkers": 0,
+            "BuildingMaterials": {
+              "Log": 1,
+              "Gear": 1
+            }
+          },
+          {
+            "TemplateId": "PowerShaftHigh.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxWorkers": 0,
+            "BuildingMaterials": {
+              "Log": 1,
+              "Gear": 1
+            }
+          }
+        ]
+      },
+      "PowerShaftUpward": {
+        "Id": "PowerShaftUpward",
+        "Name": "Power shaft upward",
+        "TranslatId": "powerShaftUpward",
+        "Category": "Power",
+        "Versions": [
+          {
+            "TemplateId": "PowerShaftUpward.Folktails",
+            "Faction": "Folktails",
+            "MaxWorkers": 0,
+            "BuildingMaterials": {
+              "Log": 1,
+              "Gear": 1
+            }
+          },
+          {
+            "TemplateId": "PowerShaftUpward.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxWorkers": 0,
+            "BuildingMaterials": {
+              "Log": 1,
+              "Gear": 1
+            }
+          }
+        ]
+      },
+      "PowerShaftVertical": {
+        "Id": "PowerShaftVertical",
+        "Name": "Power shaft vertical",
+        "TranslatId": "powerShaftVertical",
+        "Category": "Power",
+        "Versions": [
+          {
+            "TemplateId": "PowerShaftVertical.Folktails",
+            "Faction": "Folktails",
+            "MaxWorkers": 0,
+            "BuildingMaterials": {
+              "Log": 1,
+              "Gear": 1
+            }
+          },
+          {
+            "TemplateId": "PowerShaftVertical.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxWorkers": 0,
+            "BuildingMaterials": {
+              "Log": 1,
+              "Gear": 1
+            }
+          }
+        ]
+      },
+      "PowerShaftDownward": {
+        "Id": "PowerShaftDownward",
+        "Name": "Power shaft downward",
+        "TranslatId": "powerShaftDownward",
+        "Category": "Power",
+        "Versions": [
+          {
+            "TemplateId": "PowerShaftDownward.Folktails",
+            "Faction": "Folktails",
+            "MaxWorkers": 0,
+            "BuildingMaterials": {
+              "Log": 1,
+              "Gear": 1
+            }
+          },
+          {
+            "TemplateId": "PowerShaftDownward.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxWorkers": 0,
+            "BuildingMaterials": {
+              "Log": 1,
+              "Gear": 1
+            }
+          }
+        ]
+      },
+      "Engine": {
+        "Id": "Engine",
+        "Name": "Engine",
+        "TranslatId": "engine",
+        "Category": "Power",
+        "Versions": [
+          {
+            "TemplateId": "Engine.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxWorkers": 0,
+            "BuildingMaterials": {
+              "Log": 20,
+              "Gear": 25,
+              "MetalBlock": 20
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Storage": {
+                  "Log": 10
+                },
+                "Input": {
+                  "Log": 0.2
+                },
+                "Output": {
+                  "Energy": 400
+                }
+              }
+            }
+          }
+        ]
+      },
+      "Windmill": {
+        "Id": "Windmill",
+        "Name": "Windmill",
+        "TranslatId": "windmill",
+        "Category": "Power",
+        "Versions": [
+          {
+            "TemplateId": "Windmill.Folktails",
+            "Faction": "Folktails",
+            "MaxWorkers": 0,
+            "BuildingMaterials": {
+              "Log": 1,
+              "Gear": 1
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Energy": 1
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "LargeWindmill.Folktails",
+            "Faction": "Folktails",
+            "MaxWorkers": 0,
+            "BuildingMaterials": {
+              "Log": 1,
+              "Gear": 1
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Energy": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "GravityBattery": {
+        "Id": "GravityBattery",
+        "Name": "Gravity battery",
+        "TranslatId": "gravityBattery",
+        "Category": "Power",
+        "Versions": [
+          {
+            "TemplateId": "GravityBattery.Folktails",
+            "Faction": "Folktails",
+            "MaxWorkers": 0,
+            "BuildingMaterials": {
+              "Log": 1,
+              "Gear": 1
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Storage": {
+                  "Energy": 1200
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "GravityBattery.Folktails",
+            "Faction": "Folktails",
+            "MaxWorkers": 0,
+            "BuildingMaterials": {
+              "Log": 1,
+              "Gear": 1
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Storage": {
+                  "Energy": 1200
+                }
+              }
+            }
+          }
+        ]
+      },
+      "Inventor": {
+        "Id": "Inventor",
+        "Name": "Inventor",
+        "TranslatId": "inventor",
+        "Category": "Science",
+        "Versions": [
+          {
+            "TemplateId": "Inventor.Folktails",
+            "Faction": "Folktails",
+            "MaxWorkers": 1,
+            "BuildingMaterials": {
+              "Log": 12
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Science": 1
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "Inventor.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxWorkers": 1,
+            "BuildingMaterials": {
+              "Log": 12
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Science": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "Observatory": {
+        "Id": "Observatory",
+        "Name": "Observatory",
+        "TranslatId": "observatory",
+        "Category": "Science",
+        "Versions": [
+          {
+            "TemplateId": "Observatory.Folktails",
+            "Faction": "Folktails",
+            "MaxWorkers": 4,
+            "Energy": 200,
+            "Science": 1000,
+            "BuildingMaterials": {
+              "Plank": 80,
+              "Gear": 30,
+              "PineResin": 10
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 0.75,
+                "Input": {
+                  "Energy": 200
+                },
+                "Output": {
+                  "Science": 10
+                }
+              }
+            }
+          }
+        ]
+      },
+      "Refinery": {
+        "Id": "Refinery",
+        "Name": "Refinery",
+        "TranslatId": "refinery",
+        "Category": "Science",
+        "Versions": [
+          {
+            "TemplateId": "Refinery.Folktails",
+            "Faction": "Folktails",
+            "MaxWorkers": 1,
+            "BuildingMaterials": {
+              "Plank": 30,
+              "Gear": 10,
+              "MetalBlock": 10
+            },
+            "Recipes": {
+              "Biofuel(Carrot)": {
+                ".duration": 3,
+                "Storage": {
+                  "Carrot": 50,
+                  "Water": 50,
+                  "Biofuel": 125
+                },
+                "Input": {
+                  "Carrot": 2,
+                  "Water": 2
+                },
+                "Output": {
+                  "Biofuel": 5
+                }
+              },
+              "Biofuel(Potato)": {
+                ".duration": 3,
+                "Storage": {
+                  "Carrot": 8,
+                  "Water": 8,
+                  "Biofuel": 120
+                },
+                "Input": {
+                  "Potato": 2,
+                  "Water": 2
+                },
+                "Output": {
+                  "Biofuel": 30
+                }
+              },
+              "Biofuel(Spadderdock)": {
+                ".duration": 3,
+                "Storage": {
+                  "Spadderdock": 10,
+                  "Water": 10,
+                  "Biofuel": 125
+                },
+                "Input": {
+                  "Spadderdock": 2,
+                  "Water": 2
+                },
+                "Output": {
+                  "Biofuel": 25
+                }
+              },
+              "Catalyst": {
+                ".duration": 1.5,
+                "Storage": {
+                  "MaplePastry": 25,
+                  "Extract": 25,
+                  "Biofuel": 75
+                },
+                "Input": {
+                  "MapleSyrup": 1,
+                  "Exctract": 1
+                },
+                "Output": {
+                  "Biofuel": 3
+                }
+              }
+            }
+          }
+        ]
+      },
+      "BotPartFactory": {
+        "Id": "BotPartFactory",
+        "Name": "Bot part factory",
+        "TranslatId": "botPartFactory",
+        "Category": "Science",
+        "Versions": [
+          {
+            "TemplateId": "BotPartFactory.Folktails",
+            "Faction": "Folktails",
+            "MaxWorkers": 1,
+            "BuildingMaterials": {
+              "Plank": 30,
+              "Gear": 10,
+              "MetalBlock": 10
+            },
+            "Recipes": {
+              "BotChassis": {
+                ".duration": 18,
+                "Storage": {
+                  "Biofuel": 3,
+                  "MetalBlock": 3,
+                  "Plank": 15,
+                  "BotChassis": 3
+                },
+                "Input": {
+                  "Plank": 5,
+                  "MetalBlock": 1,
+                  "Biofuel": 1,
+                  "Energy": 150
+                },
+                "Output": {
+                  "BotChassis": 1
+                }
+              },
+              "BotLimb": {
+                ".duration": 4.5,
+                "Storage": {
+                  "Gear": 36,
+                  "Plank": 12,
+                  "BotLimb": 12
+                },
+                "Input": {
+                  "Plank": 1,
+                  "Gear": 3,
+                  "Energy": 150
+                },
+                "Output": {
+                  "BotLimb": 1
+                }
+              },
+              "BotHead": {
+                ".duration": 18,
+                "Storage": {
+                  "Gear": 9,
+                  "Plank": 3,
+                  "MetalBlock": 3,
+                  "BotHead": 3
+                },
+                "Input": {
+                  "Plank": 1,
+                  "Gear": 3,
+                  "MetalBlock": 1,
+                  "Energy": 150
+                },
+                "Output": {
+                  "BotHead": 1
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "BotPartFactory.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxWorkers": 1,
+            "BuildingMaterials": {
+              "Plank": 30,
+              "Gear": 10,
+              "MetalBlock": 10
+            },
+            "Recipes": {
+              "BotChassis": {
+                ".duration": 18,
+                "Storage": {
+                  "Biofuel": 3,
+                  "MetalBlock": 3,
+                  "Plank": 15,
+                  "BotChassis": 3
+                },
+                "Input": {
+                  "Plank": 5,
+                  "MetalBlock": 1,
+                  "Biofuel": 1,
+                  "Energy": 150
+                },
+                "Output": {
+                  "BotChassis": 1
+                }
+              },
+              "BotLimb": {
+                ".duration": 4.5,
+                "Storage": {
+                  "Gear": 36,
+                  "Plank": 12,
+                  "BotLimb": 12
+                },
+                "Input": {
+                  "Plank": 1,
+                  "Gear": 3,
+                  "Energy": 150
+                },
+                "Output": {
+                  "BotLimb": 1
+                }
+              },
+              "BotHead": {
+                ".duration": 18,
+                "Storage": {
+                  "Gear": 9,
+                  "Plank": 3,
+                  "MetalBlock": 3,
+                  "BotHead": 3
+                },
+                "Input": {
+                  "Plank": 1,
+                  "Gear": 3,
+                  "MetalBlock": 1,
+                  "Energy": 150
+                },
+                "Output": {
+                  "BotHead": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "BotAssembler": {
+        "Id": "BotAssembler",
+        "Name": "Bot assembler",
+        "TranslatId": "botAssembler",
+        "Category": "Science",
+        "Versions": [
+          {
+            "TemplateId": "BotAssembler.Folktails",
+            "Faction": "Folktails",
+            "MaxWorkers": 2,
+            "BuildingMaterials": {
+              "Plank": 30,
+              "Gear": 10,
+              "MetalBlock": 10
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 36,
+                "Storage": {
+                  "BotChassis": 2,
+                  "BotHead": 2,
+                  "BotLimb": 8
+                },
+                "Input": {
+                  "BotChassis": 1,
+                  "BotLimb": 4,
+                  "BotHead": 1,
+                  "Energy": 250
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "BotAssembler.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxWorkers": 2,
+            "BuildingMaterials": {
+              "Plank": 30,
+              "Gear": 10,
+              "MetalBlock": 10
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 36,
+                "Storage": {
+                  "BotChassis": 2,
+                  "BotHead": 2,
+                  "BotLimb": 8
+                },
+                "Input": {
+                  "BotChassis": 1,
+                  "BotLimb": 4,
+                  "BotHead": 1,
+                  "Energy": 250
+                }
+              }
+            }
+          }
+        ]
+      },
+      "Campfire": {
+        "Id": "Campfire",
+        "Name": "Campfire",
+        "TranslatId": "campfire",
+        "Category": "Wellbeing",
+        "Versions": [
+          {
+            "TemplateId": "Campfire.Folktails",
+            "Faction": "Folktails",
+            "MaxVisitors": 5,
+            "BuildingMaterials": {
+              "Log": 15
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "Campfire.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxVisitors": 5,
+            "BuildingMaterials": {
+              "Log": 15
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "RooftopTerrace": {
+        "Id": "RooftopTerrace",
+        "Name": "Rooftop terrace",
+        "TranslatId": "rooftopTerrace",
+        "Category": "Wellbeing",
+        "Versions": [
+          {
+            "TemplateId": "RooftopTerrace.Folktails",
+            "Faction": "Folktails",
+            "MaxVisitors": 8,
+            "BuildingMaterials": {
+              "Log": 15
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "RooftopTerrace.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxVisitors": 8,
+            "BuildingMaterials": {
+              "Log": 15
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "TeethGrindstone": {
+        "Id": "TeethGrindstone",
+        "Name": "Teeth grindstone",
+        "TranslatId": "teethGrindstone",
+        "Category": "Wellbeing",
+        "Versions": [
+          {
+            "TemplateId": "TeethGrindstone.Folktails",
+            "Faction": "Folktails",
+            "MaxVisitors": 1,
+            "BuildingMaterials": {
+              "Log": 5
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "TeethGrindstone.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxVisitors": 1,
+            "BuildingMaterials": {
+              "Log": 5
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "Shower": {
+        "Id": "Shower",
+        "Name": "Shower",
+        "TranslatId": "shower",
+        "Category": "Wellbeing",
+        "Versions": [
+          {
+            "TemplateId": "Shower.Folktails",
+            "Faction": "Folktails",
+            "MaxVisitors": 1,
+            "BuildingMaterials": {
+              "Log": 10,
+              "Plank": 1
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "Shower.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxVisitors": 1,
+            "BuildingMaterials": {
+              "Log": 10,
+              "Plank": 1
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "MedicalBed": {
+        "Id": "MedicalBed",
+        "Name": "Medical bed",
+        "TranslatId": "medicalBed",
+        "Category": "Wellbeing",
+        "Versions": [
+          {
+            "TemplateId": "MedicalBed.Folktails",
+            "Faction": "Folktails",
+            "MaxVisitors": 1,
+            "BuildingMaterials": {
+              "Log": 5,
+              "Plank": 1
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "MedicalBed.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxVisitors": 1,
+            "BuildingMaterials": {
+              "Log": 5,
+              "Plank": 1
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "ContemplationSpot": {
+        "Id": "ContemplationSpot",
+        "Name": "Contemplation spot",
+        "TranslatId": "contemplationSpot",
+        "Category": "Wellbeing",
+        "Versions": [
+          {
+            "TemplateId": "ContemplationSpot.Folktails",
+            "Faction": "Folktails",
+            "MaxVisitors": 1,
+            "BuildingMaterials": {
+              "Log": 10
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "ContemplationSpot.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxVisitors": 1,
+            "BuildingMaterials": {
+              "Log": 10
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "Lido": {
+        "Id": "Lido",
+        "Name": "Lido",
+        "TranslatId": "lido",
+        "Category": "Wellbeing",
+        "Versions": [
+          {
+            "TemplateId": "Lido.Folktails",
+            "Faction": "Folktails",
+            "MaxVisitors": 7,
+            "BuildingMaterials": {
+              "Log": 40,
+              "Plank": 30
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Wellbeing": 2
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "Lido.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxVisitors": 7,
+            "BuildingMaterials": {
+              "Log": 40,
+              "Plank": 30
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Wellbeing": 2
+                }
+              }
+            }
+          }
+        ]
+      },
+      "Herbalist": {
+        "Id": "Herbalist",
+        "Name": "Herbalist",
+        "TranslatId": "herbalist",
+        "Category": "Wellbeing",
+        "Versions": [
+          {
+            "TemplateId": "Herbalist.Folktails",
+            "Faction": "Folktails",
+            "MaxVisitors": 7,
+            "BuildingMaterials": {
+              "Log": 40,
+              "Plank": 30
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 2,
+                "Storage": {
+                  "Paper": 20,
+                  "Dandelion": 40,
+                  "Berries": 40,
+                  "Antidote": 40
+                },
+                "Input": {
+                  "Paper": 1,
+                  "Dandelion": 2,
+                  "Berries": 2
+                },
+                "Output": {
+                  "Antidote": 2
+                }
+              }
+            }
+          }
+        ]
+      },
+      "Agora": {
+        "Id": "Agora",
+        "Name": "Agora",
+        "TranslatId": "agora",
+        "Category": "Wellbeing",
+        "Versions": [
+          {
+            "TemplateId": "Agora.Folktails",
+            "Faction": "Folktails",
+            "MaxVisitors": 15,
+            "BuildingMaterials": {
+              "Log": 150,
+              "Plank": 60
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Storage": {
+                  "Extract": 10
+                },
+                "Input": {
+                  "Exctract": 0.2
+                },
+                "Output": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "Agora.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxVisitors": 15,
+            "BuildingMaterials": {
+              "Log": 150,
+              "Plank": 60
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Storage": {
+                  "Extract": 10
+                },
+                "Input": {
+                  "Exctract": 0.2
+                },
+                "Output": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "Carousel": {
+        "Id": "Carousel",
+        "Name": "Carousel",
+        "TranslatId": "carousel",
+        "Category": "Wellbeing",
+        "Versions": [
+          {
+            "TemplateId": "Carousel.Folktails",
+            "Faction": "Folktails",
+            "MaxVisitors": 12,
+            "BuildingMaterials": {
+              "Plank": 50,
+              "Gear": 50,
+              "MetalBlock": 40
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Input": {
+                  "Energy": 400
+                },
+                "Output": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "Carousel.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxVisitors": 12,
+            "BuildingMaterials": {
+              "Plank": 50,
+              "Gear": 50,
+              "MetalBlock": 40
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Input": {
+                  "Energy": 400
+                },
+                "Output": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "Detailer": {
+        "Id": "Detailer",
+        "Name": "Detailer",
+        "TranslatId": "detailer",
+        "Category": "Wellbeing",
+        "Versions": [
+          {
+            "TemplateId": "Detailer.Folktails",
+            "Faction": "Folktails",
+            "MaxVisitors": 1,
+            "BuildingMaterials": {
+              "Gear": 15,
+              "TreatedPlank": 5,
+              "MetalBlock": 10
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Storage": {
+                  "Extract": 10
+                },
+                "Input": {
+                  "Exctract": 0.3
+                },
+                "Output": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "Detailer.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxVisitors": 1,
+            "BuildingMaterials": {
+              "Gear": 15,
+              "TreatedPlank": 5,
+              "MetalBlock": 10
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Storage": {
+                  "Extract": 10
+                },
+                "Input": {
+                  "Exctract": 0.3
+                },
+                "Output": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "DanceHall": {
+        "Id": "DanceHall",
+        "Name": "Dance hall",
+        "TranslatId": "danceHall",
+        "Category": "Wellbeing",
+        "Versions": [
+          {
+            "TemplateId": "DanceHall.Folktails",
+            "Faction": "Folktails",
+            "MaxVisitors": 20,
+            "BuildingMaterials": {
+              "Log": 100,
+              "TreatedPlank": 50,
+              "MetalBlock": 20
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "MudPit": {
+        "Id": "MudPit",
+        "Name": "Mud pit",
+        "TranslatId": "mudPit",
+        "Category": "Wellbeing",
+        "Versions": [
+          {
+            "TemplateId": "MudPit.Folktails",
+            "Faction": "Folktails",
+            "MaxVisitors": 8,
+            "BuildingMaterials": {
+              "Log": 100,
+              "TreatedPlank": 50,
+              "MetalBlock": 20
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Storage": {
+                  "Dirt": 10
+                },
+                "Input": {
+                  "Dirt": 0.5
+                },
+                "Output": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "MudBath.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxVisitors": 8,
+            "BuildingMaterials": {
+              "Log": 100,
+              "TreatedPlank": 50,
+              "MetalBlock": 20
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Storage": {
+                  "Dirt": 10
+                },
+                "Input": {
+                  "Dirt": 0.5,
+                  "Energy": 50
+                },
+                "Output": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "Bench": {
+        "Id": "Bench",
+        "Name": "Bench",
+        "TranslatId": "bench",
+        "Category": "Decoration",
+        "Versions": [
+          {
+            "TemplateId": "Bench.Folktails",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "Log": 6,
+              "Plank": 2
+            }
+          },
+          {
+            "TemplateId": "Bench.IronTeeth",
+            "Faction": "IronTeeth",
+            "BuildingMaterials": {
+              "Log": 6,
+              "Plank": 2
+            }
+          }
+        ]
+      },
+      "Hammock": {
+        "Id": "Hammock",
+        "Name": "Hammock",
+        "TranslatId": "hammock",
+        "Category": "Decoration",
+        "Versions": [
+          {
+            "TemplateId": "Hammock.Folktails",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "Log": 2,
+              "Plank": 2
+            }
+          },
+          {
+            "TemplateId": "Hammock.IronTeeth",
+            "Faction": "IronTeeth",
+            "BuildingMaterials": {
+              "Log": 2,
+              "Plank": 2
+            }
+          }
+        ]
+      },
+      "Shrub": {
+        "Id": "Shrub",
+        "Name": "Shrub",
+        "TranslatId": "shrub",
+        "Category": "Decoration",
+        "Versions": [
+          {
+            "TemplateId": "Shrub.Folktails",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "Log": 12
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "Shrub.IronTeeth",
+            "Faction": "IronTeeth",
+            "BuildingMaterials": {
+              "Log": 12
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "Lantern": {
+        "Id": "Lantern",
+        "Name": "Lantern",
+        "TranslatId": "lantern",
+        "Category": "Decoration",
+        "Versions": [
+          {
+            "TemplateId": "Lantern.Folktails",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "Log": 2,
+              "Plank": 4
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "Lantern.IronTeeth",
+            "Faction": "IronTeeth",
+            "BuildingMaterials": {
+              "Log": 2,
+              "Plank": 4
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "Roof1x1": {
+        "Id": "Roof1x1",
+        "Name": "Roof1x1",
+        "TranslatId": "roof1x1",
+        "Category": "Decoration",
+        "Versions": [
+          {
+            "TemplateId": "Roof1x1.Folktails",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "Log": 2,
+              "Plank": 1
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "Roof1x1.IronTeeth",
+            "Faction": "IronTeeth",
+            "BuildingMaterials": {
+              "Log": 2,
+              "Plank": 1
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "Roof1x2": {
+        "Id": "Roof1x2",
+        "Name": "Roof1x2",
+        "TranslatId": "roof1x2",
+        "Category": "Decoration",
+        "Versions": [
+          {
+            "TemplateId": "Roof1x2.Folktails",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "Log": 4,
+              "Plank": 2
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "Roof1x2.IronTeeth",
+            "Faction": "IronTeeth",
+            "BuildingMaterials": {
+              "Log": 4,
+              "Plank": 2
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "Roof2x2": {
+        "Id": "Roof2x2",
+        "Name": "Roof2x2",
+        "TranslatId": "roof2x2",
+        "Category": "Decoration",
+        "Versions": [
+          {
+            "TemplateId": "Roof2x2.Folktails",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "Log": 4,
+              "Plank": 2
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "Roof2x2.IronTeeth",
+            "Faction": "IronTeeth",
+            "BuildingMaterials": {
+              "Log": 4,
+              "Plank": 2
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "Roof2x3": {
+        "Id": "Roof2x3",
+        "Name": "Roof2x3",
+        "TranslatId": "roof2x3",
+        "Category": "Decoration",
+        "Versions": [
+          {
+            "TemplateId": "Roof2x3.Folktails",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "Log": 6,
+              "Plank": 3
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "Roof2x3.IronTeeth",
+            "Faction": "IronTeeth",
+            "BuildingMaterials": {
+              "Log": 6,
+              "Plank": 3
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "Roof3x2": {
+        "Id": "Roof3x2",
+        "Name": "Roof3x2",
+        "TranslatId": "roof3x2",
+        "Category": "Decoration",
+        "Versions": [
+          {
+            "TemplateId": "Roof3x2.Folktails",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "Log": 6,
+              "Plank": 3
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "Roof3x2.IronTeeth",
+            "Faction": "IronTeeth",
+            "BuildingMaterials": {
+              "Log": 6,
+              "Plank": 3
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "Scarecrow": {
+        "Id": "Scarecrow",
+        "Name": "Scarecrow",
+        "TranslatId": "scarecrow",
+        "Category": "Decoration",
+        "Versions": [
+          {
+            "TemplateId": "Scarecrow.Folktails",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "Log": 5,
+              "Paper": 10
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "Scarecrow.IronTeeth",
+            "Faction": "IronTeeth",
+            "BuildingMaterials": {
+              "Log": 5,
+              "Paper": 10
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "BeaverStatue": {
+        "Id": "BeaverStatue",
+        "Name": "Beaver statue",
+        "TranslatId": "beaverStatue",
+        "Category": "Decoration",
+        "Versions": [
+          {
+            "TemplateId": "BeaverStatue.Folktails",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "Log": 50,
+              "Plank": 10
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "BeaverStatue.IronTeeth",
+            "Faction": "IronTeeth",
+            "BuildingMaterials": {
+              "Log": 50,
+              "Plank": 10
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "Hedge": {
+        "Id": "Hedge",
+        "Name": "Hedge",
+        "TranslatId": "hedge",
+        "Category": "Decoration",
+        "Versions": [
+          {
+            "TemplateId": "Hedge.Folktails",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "Log": 3
+            }
+          },
+          {
+            "TemplateId": "Hedge.IronTeeth",
+            "Faction": "IronTeeth",
+            "BuildingMaterials": {
+              "Log": 3
+            }
+          }
+        ]
+      },
+      "WoodFence": {
+        "Id": "WoodFence",
+        "Name": "Wood fence",
+        "TranslatId": "woodFence",
+        "Category": "Decoration",
+        "Versions": [
+          {
+            "TemplateId": "WoodFence.Folktails",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "Plank": 3
+            }
+          },
+          {
+            "TemplateId": "WoodFence.IronTeeth",
+            "Faction": "IronTeeth",
+            "BuildingMaterials": {
+              "Plank": 3
+            }
+          }
+        ]
+      },
+      "MetalFence": {
+        "Id": "MetalFence",
+        "Name": "Metal fence",
+        "TranslatId": "metalFence",
+        "Category": "Decoration",
+        "Versions": [
+          {
+            "TemplateId": "MetalFence.IronTeeth",
+            "Faction": "IronTeeth",
+            "BuildingMaterials": {
+              "MetalBlock": 3
+            }
+          }
+        ]
+      },
+      "WindGauge": {
+        "Id": "WindGauge",
+        "Name": "Wind gauge",
+        "TranslatId": "windGauge",
+        "Category": "Decoration",
+        "Versions": [
+          {
+            "TemplateId": "WindGauge.Folktails",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "Log": 5,
+              "Plank": 1
+            }
+          },
+          {
+            "TemplateId": "WindGauge.IronTeeth",
+            "Faction": "IronTeeth",
+            "BuildingMaterials": {
+              "Log": 5,
+              "Plank": 1
+            }
+          }
+        ]
+      },
+      "BulletinPole": {
+        "Id": "BulletinPole",
+        "Name": "Bulletin pole",
+        "TranslatId": "bulletinPole",
+        "Category": "Decoration",
+        "Versions": [
+          {
+            "TemplateId": "BulletinPole.Folktails",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "Plank": 20,
+              "MetalBlock": 2
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "BulletinPole.IronTeeth",
+            "Faction": "IronTeeth",
+            "BuildingMaterials": {
+              "Plank": 20,
+              "MetalBlock": 2
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "FarmerMonument": {
+        "Id": "FarmerMonument",
+        "Name": "Farmer monument",
+        "TranslatId": "farmerMonument",
+        "Category": "Monuments",
+        "Versions": [
+          {
+            "TemplateId": "FarmerMonument.Folktails",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "Log": 200
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "BrazierOfBonding": {
+        "Id": "BrazierOfBonding",
+        "Name": "Brazier of bonding",
+        "TranslatId": "brazierOfBonding",
+        "Category": "Monuments",
+        "Versions": [
+          {
+            "TemplateId": "BrazierOfBonding.Folktails",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "Plank": 400
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "FountainOfJoy": {
+        "Id": "FountainOfJoy",
+        "Name": "Fountain of joy",
+        "TranslatId": "fountainOfJoy",
+        "Category": "Monuments",
+        "Versions": [
+          {
+            "TemplateId": "FountainOfJoy.Folktails",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "Plank": 400,
+              "TreatedPlank": 100,
+              "MetalBlock": 300
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "EarthRecultivator": {
+        "Id": "EarthRecultivator",
+        "Name": "Earch recultivator",
+        "TranslatId": "earthRecultivator",
+        "Category": "Monuments",
+        "Versions": [
+          {
+            "TemplateId": "EarthRecultivator.Folktails",
+            "Faction": "Folktails",
+            "MaxWorkers": 10,
+            "BuildingMaterials": {
+              "Gear": 2000,
+              "TreatedPlank": 2000,
+              "MetalBlock": 1500
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 100,
+                "Storage": {
+                  "Exctract": 500,
+                  "Paper": 500
+                },
+                "Input": {
+                  "Exctract": 500,
+                  "Paper": 500
+                },
+                "Output": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "MetalPlatform3x3": {
+        "Id": "MetalPlatform3x3",
+        "Name": "Metal platform 3x3",
+        "TranslatId": "metalPlatform3x3",
+        "Category": "Paths",
+        "Versions": [
+          {
+            "TemplateId": "MetalPlatform3x3.Folktails",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "MetalBlock": 30
+            }
+          },
+          {
+            "TemplateId": "MetalPlatform3x3.Folktails",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "MetalBlock": 30
+            }
+          }
+        ]
+      },
+      "MetalPlatform5x5": {
+        "Id": "MetalPlatform5x5",
+        "Name": "Metal platform 5x5",
+        "TranslatId": "metalPlatform5x5",
+        "Category": "Paths",
+        "Versions": [
+          {
+            "TemplateId": "MetalPlatform5x5.Folktails",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "MetalBlock": 90
+            }
+          },
+          {
+            "TemplateId": "MetalPlatform5x5.Folktails",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "MetalBlock": 90
+            }
+          }
+        ]
+      },
+      "MetalPlatform": {
+        "Id": "MetalPlatform",
+        "Name": "Metal platform",
+        "TranslatId": "metalPlatform",
+        "Category": "Paths",
+        "Versions": [
+          {
+            "TemplateId": "MetalPlatform.Folktails",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "MetalBlock": 200
+            }
+          },
+          {
+            "TemplateId": "MetalPlatform.Folktails",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "MetalBlock": 200
+            }
+          }
+        ]
+      },
+      "LargeMetalPlatform": {
+        "Id": "LargeMetalPlatform",
+        "Name": "Large metal platform",
+        "TranslatId": "largeMetalPlatform",
+        "Category": "Paths",
+        "Versions": [
+          {
+            "TemplateId": "LargeMetalPlatform.IronTeeth",
+            "Faction": "IronTeeth",
+            "BuildingMaterials": {
+              "MetalBlock": 500
+            }
+          }
+        ]
+      },
+      "BreedingPod": {
+        "Id": "BreedingPod",
+        "Name": "Breeding pod",
+        "TranslatId": "breedingPod",
+        "Category": "Housing",
+        "Versions": [
+          {
+            "TemplateId": "BreedingPod.IronTeeth",
+            "Faction": "IronTeeth",
+            "BuildingMaterials": {
+              "Log": 10
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 36,
+                "Storage": {
+                  "Berries": 2,
+                  "Water": 2
+                },
+                "Input": {
+                  "Berries": 2,
+                  "Water": 2
+                },
+                "Output": {
+                  "BeaverChild": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "AdvancedBreedingPod": {
+        "Id": "AdvancedBreedingPod",
+        "Name": "AdvancedBreeding pod",
+        "TranslatId": "advancedBreedingPod",
+        "Category": "Housing",
+        "Versions": [
+          {
+            "TemplateId": "AdvancedBreedingPod.IronTeeth",
+            "Faction": "IronTeeth",
+            "BuildingMaterials": {
+              "TreatedPlank": 5,
+              "MetalBlock": 2
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 36,
+                "Storage": {
+                  "Berries": 2,
+                  "Exctract": 2
+                },
+                "Input": {
+                  "Berries": 2,
+                  "Exctract": 2
+                },
+                "Output": {
+                  "BeaverAdult": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "Barrack": {
+        "Id": "Barrack",
+        "Name": "Barrack",
+        "TranslatId": "barrack",
+        "Category": "Housing",
+        "Versions": [
+          {
+            "TemplateId": "Barrack.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxInhabitants": 10,
+            "BuildingMaterials": {
+              "Log": 40
+            }
+          }
+        ]
+      },
+      "LargeBarrack": {
+        "Id": "LargeBarrack",
+        "Name": "Large barrack",
+        "TranslatId": "largeBarrack",
+        "Category": "Housing",
+        "Versions": [
+          {
+            "TemplateId": "LargeBarrack.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxInhabitants": 16,
+            "BuildingMaterials": {
+              "Log": 70
+            }
+          }
+        ]
+      },
+      "Rowhouse": {
+        "Id": "Rowhouse",
+        "Name": "Rowhouse",
+        "TranslatId": "rowhouse",
+        "Category": "Housing",
+        "Versions": [
+          {
+            "TemplateId": "Rowhouse.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxInhabitants": 5,
+            "BuildingMaterials": {
+              "Log": 20
+            }
+          }
+        ]
+      },
+      "LargeRowhouse": {
+        "Id": "LargeRowhouse",
+        "Name": "Large rowhouse",
+        "TranslatId": "largeRowhouse",
+        "Category": "Housing",
+        "Versions": [
+          {
+            "TemplateId": "LargeRowhouse.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxInhabitants": 8,
+            "BuildingMaterials": {
+              "Log": 35
+            }
+          }
+        ]
+      },
+      "BadwaterDischarge": {
+        "Id": "BadwaterDischarge",
+        "Name": "Badwater discharge",
+        "TranslatId": "badwaterDischarge",
+        "Category": "Water",
+        "Versions": [
+          {
+            "TemplateId": "BadwaterDischarge.IronTeeth",
+            "Faction": "IronTeeth",
+            "BuildingMaterials": {
+              "Gear": 300,
+              "MetalBlock": 200,
+              "Explosives": 50
+            }
+          }
+        ]
+      },
+      "Fermenter": {
+        "Id": "Fermenter",
+        "Name": "Fermenter",
+        "TranslatId": "fermenter",
+        "Category": "Food",
+        "Versions": [
+          {
+            "TemplateId": "Fermenter.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxWorkers": 1,
+            "BuildingMaterials": {
+              "Log": 25
+            },
+            "Recipes": {
+              "FermentedCassava": {
+                ".duration": 4,
+                "Storage": {
+                  "Cassava": 24,
+                  "FermentedCassava": 60
+                },
+                "Input": {
+                  "Cassava": 2,
+                  "Energy": 50
+                },
+                "Ouput": {
+                  "FermentedCassava": 10
+                }
+              },
+              "FermentedSoybean": {
+                ".duration": 3,
+                "Storage": {
+                  "CanolaOil": 3,
+                  "Soybean": 18,
+                  "FermentedSoybean": 60
+                },
+                "Input": {
+                  "Soybean": 6,
+                  "CanolaOil": 1,
+                  "Energy": 50
+                },
+                "Ouput": {
+                  "FermentedSoybean": 20
+                }
+              },
+              "FermentedMushroom": {
+                ".duration": 2,
+                "Storage": {
+                  "Mushroom": 16,
+                  "FermentedMushroom": 64
+                },
+                "Input": {
+                  "Mushroom": 4,
+                  "CanolaOil": 16,
+                  "Energy": 50
+                },
+                "Ouput": {
+                  "FermentedMushroom": 20
+                }
+              }
+            }
+          }
+        ]
+      },
+      "OilPress": {
+        "Id": "OilPress",
+        "Name": "Oil press",
+        "TranslatId": "oilPress",
+        "Category": "Food",
+        "Versions": [
+          {
+            "TemplateId": "OilPress.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxWorkers": 1,
+            "BuildingMaterials": {
+              "Log": 20,
+              "Plank": 20,
+              "Gear": 20
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1.3,
+                "Storage": {
+                  "CanolaSeeds": 30,
+                  "CanolaOil": 30
+                },
+                "Input": {
+                  "CanolaSeeds": 1,
+                  "Energy": 50
+                },
+                "Ouput": {
+                  "CanolaOil": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "HydroponicGarden": {
+        "Id": "HydroponicGarden",
+        "Name": "Hydroponic garden",
+        "TranslatId": "hydroponicGarden",
+        "Category": "Food",
+        "Versions": [
+          {
+            "TemplateId": "HydroponicGarden.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxWorkers": 1,
+            "BuildingMaterials": {
+              "Plank": 20,
+              "Gear": 10,
+              "MetalBlock": 5
+            },
+            "Recipes": {
+              "Mushroom": {
+                ".duration": 192,
+                "Storage": {
+                  "Dirt": 20,
+                  "Water": 40,
+                  "Mushroom": 45
+                },
+                "Input": {
+                  "Water": 40,
+                  "Dirt": 20
+                },
+                "Ouput": {
+                  "Mushroom": 45
+                }
+              },
+              "Algae": {
+                ".duration": 288,
+                "Storage": {
+                  "Dirt": 10,
+                  "Water": 120,
+                  "Algae": 140
+                },
+                "Input": {
+                  "Water": 60,
+                  "Dirt": 5
+                },
+                "Ouput": {
+                  "Algae": 70
+                }
+              }
+            }
+          }
+        ]
+      },
+      "FoodFactory": {
+        "Id": "FoodFactory",
+        "Name": "Food factory",
+        "TranslatId": "foodFactory",
+        "Category": "Food",
+        "Versions": [
+          {
+            "TemplateId": "FoodFactory.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxWorkers": 1,
+            "BuildingMaterials": {
+              "Plank": 40,
+              "Gear": 15,
+              "MetalBlock": 10
+            },
+            "Recipes": {
+              "CornRation": {
+                ".duration": 0.5,
+                "Storage": {
+                  "Corn": 12,
+                  "Log": 5,
+                  "CornRation": 60
+                },
+                "Input": {
+                  "Corn": 1,
+                  "Log": 0.1,
+                  "Energy": 120
+                },
+                "Ouput": {
+                  "CornRation": 5
+                }
+              },
+              "EggplantRation": {
+                ".duration": 0.5,
+                "Storage": {
+                  "Eggplant": 10,
+                  "CanolaOil": 10,
+                  "Log": 5,
+                  "CornRation": 60
+                },
+                "Input": {
+                  "Eggplant": 1,
+                  "CanolaOil": 1,
+                  "Log": 0.1,
+                  "Energy": 120
+                },
+                "Ouput": {
+                  "EggplantRation": 6
+                }
+              },
+              "AlgaeRation": {
+                ".duration": 0.25,
+                "Storage": {
+                  "Algae": 20,
+                  "CanolaOil": 20,
+                  "Log": 5,
+                  "AlgaeRation": 120
+                },
+                "Input": {
+                  "Algae": 1,
+                  "CanolaOil": 1,
+                  "Log": 0.1,
+                  "Energy": 120
+                },
+                "Ouput": {
+                  "EggplantRation": 6
+                }
+              }
+            }
+          }
+        ]
+      },
+      "CoffeeBrewery": {
+        "Id": "CoffeeBrewery",
+        "Name": "Coffee brewery",
+        "TranslatId": "coffeeBrewery",
+        "Category": "Food",
+        "Versions": [
+          {
+            "TemplateId": "CoffeeBrewery.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxWorkers": 1,
+            "BuildingMaterials": {
+              "Gear": 10,
+              "TreatedPlank": 25,
+              "MetalBlock": 15
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Storage": {
+                  "CoffeeBean": 15,
+                  "Log": 5,
+                  "Water": 15,
+                  "Coffee": 60
+                },
+                "Input": {
+                  "CoffeeBean": 1,
+                  "Water": 1,
+                  "Log": 0.1,
+                  "Energy": 50
+                },
+                "Ouput": {
+                  "Coffee": 4
+                }
+              }
+            }
+          }
+        ]
+      },
+      "Numbercruncher": {
+        "Id": "Numbercruncher",
+        "Name": "Numberchruncher",
+        "TranslatId": "numberchruncher",
+        "Versions": [
+          {
+            "TemplateId": "Numbercruncher.IronTeeth",
+            "Faction": "IronTeeth",
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Input": {
+                  "Energy": 500
+                },
+                "Ouput": {
+                  "Science": 10
+                }
+              }
+            }
+          }
+        ]
+      },
+      "EarthRepopulator": {
+        "Id": "EarthRepopulator",
+        "Name": "Earch repopulator",
+        "TranslatId": "earthRepopulator",
+        "Category": "Monuments",
+        "Versions": [
+          {
+            "TemplateId": "EarthRepopulator.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxWorkers": 8,
+            "BuildingMaterials": {
+              "Gear": 1500,
+              "TreatedPlank": 2000,
+              "MetalBlock": 2000
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 100,
+                "Storage": {
+                  "TreatedPlank": 500,
+                  "Berries": 500
+                },
+                "Input": {
+                  "TreatedPlank": 500,
+                  "Berries": 500
+                },
+                "Output": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "ChargingStation": {
+        "Id": "ChargingStation",
+        "Name": "Chraging station",
+        "TranslatId": "chargingStation",
+        "Category": "Science",
+        "Versions": [
+          {
+            "TemplateId": "ChargingStation.Folktails",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "Plank": 5,
+              "Gear": 15,
+              "MetalBlock": 5
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Input": {
+                  "Energy": 50
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "ChargingStation.IronTeeth",
+            "Faction": "IronTeeth",
+            "BuildingMaterials": {
+              "Plank": 5,
+              "Gear": 15,
+              "MetalBlock": 5
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Input": {
+                  "Energy": 50
+                }
+              }
+            }
+          }
+        ]
+      },
+      "ControlTower": {
+        "Id": "ControlTower",
+        "Name": "Control tower",
+        "TranslatId": "controlTower",
+        "Category": "Science",
+        "Versions": [
+          {
+            "TemplateId": "ControlTower.IronTeeth",
+            "Faction": "IronTeeth",
+            "BuildingMaterials": {
+              "Plank": 20,
+              "Gear": 15,
+              "MetalBlock": 20
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Input": {
+                  "Science": 3
+                }
+              }
+            }
+          }
+        ]
+      },
+      "DecontaminationPod": {
+        "Id": "DecontaminationPod",
+        "Name": "Decontamination pod",
+        "TranslatId": "decontaminationPod",
+        "Category": "Wellbeing",
+        "Versions": [
+          {
+            "TemplateId": "DecontaminationPod.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxVisitors": 1,
+            "BuildingMaterials": {
+              "Plank": 20,
+              "Gear": 5,
+              "MetalBlock": 5
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Storage": {
+                  "Exctract": 10
+                },
+                "Input": {
+                  "Exctract": 0.1,
+                  "Energy": 100
+                }
+              }
+            }
+          }
+        ]
+      },
+      "ExercisePlaza": {
+        "Id": "ExercisePlaza",
+        "Name": "Exercise plaza",
+        "TranslatId": "exercisePlaza",
+        "Category": "Wellbeing",
+        "Versions": [
+          {
+            "TemplateId": "ExercisePlaza.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxVisitors": 13,
+            "BuildingMaterials": {
+              "Log": 50,
+              "Plank": 50,
+              "MetalBlock": 10
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Ouput": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "WindTunnel": {
+        "Id": "WindTunnel",
+        "Name": "Wind tunnel",
+        "TranslatId": "windTunnel",
+        "Category": "Wellbeing",
+        "Versions": [
+          {
+            "TemplateId": "WindTunnel.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxVisitors": 12,
+            "BuildingMaterials": {
+              "Plank": 75,
+              "Gear": 30,
+              "MetalBlock": 50
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Input": {
+                  "Energy": 400
+                },
+                "Ouput": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "Motivarium": {
+        "Id": "Motivarium",
+        "Name": "Motivarium",
+        "TranslatId": "motivarium",
+        "Category": "Wellbeing",
+        "Versions": [
+          {
+            "TemplateId": "Motivarium.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxVisitors": 18,
+            "BuildingMaterials": {
+              "Log": 75,
+              "Gear": 100,
+              "TreatedPlank": 20
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Input": {
+                  "Energy": 200
+                },
+                "Ouput": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "Brazier": {
+        "Id": "Brazier",
+        "Name": "Brazier",
+        "TranslatId": "brazier",
+        "Category": "Decoration",
+        "Versions": [
+          {
+            "TemplateId": "Brazier.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxVisitors": 18,
+            "BuildingMaterials": {
+              "Plank": 12,
+              "MetalBlock": 2
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Ouput": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "BeaverBust": {
+        "Id": "BeaverBust",
+        "Name": "Beaver bust",
+        "TranslatId": "beaverBust",
+        "Category": "Decoration",
+        "Versions": [
+          {
+            "TemplateId": "BeaverBust.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxVisitors": 18,
+            "BuildingMaterials": {
+              "Plank": 12,
+              "MetalBlock": 2
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Ouput": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "Bell": {
+        "Id": "Bell",
+        "Name": "Bell",
+        "TranslatId": "bell",
+        "Category": "Decoration",
+        "Versions": [
+          {
+            "TemplateId": "Bell.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxVisitors": 18,
+            "BuildingMaterials": {
+              "Plank": 20,
+              "MetalBlock": 5
+            }
+          }
+        ]
+      },
+      "Clock": {
+        "Id": "Clock",
+        "Name": "Clock",
+        "TranslatId": "clock",
+        "Category": "Decoration",
+        "Versions": [
+          {
+            "TemplateId": "Clock.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxVisitors": 18,
+            "BuildingMaterials": {
+              "Plank": 10,
+              "Gear": 8,
+              "MetalBlock": 2
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Ouput": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "LaborerMonument": {
+        "Id": "LaborerMonument",
+        "Name": "Laborer monument",
+        "TranslatId": "laborerMonument",
+        "Category": "Decoration",
+        "Versions": [
+          {
+            "TemplateId": "LaborerMonument.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxVisitors": 18,
+            "BuildingMaterials": {
+              "Log": 200
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Ouput": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "FlameOfUnity": {
+        "Id": "FlameOfUnity",
+        "Name": "Flame of unity",
+        "TranslatId": "flameOfUnity",
+        "Category": "Decoration",
+        "Versions": [
+          {
+            "TemplateId": "FlameOfUnity.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxVisitors": 18,
+            "BuildingMaterials": {
+              "Plank": 300,
+              "MetalBlock": 50
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Ouput": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          }
+        ]
+      },
+      "TributeToIngenuity": {
+        "Id": "TributeToIngenuity",
+        "Name": "Tribute to ingenuity",
+        "TranslatId": "tributeToIngenuity",
+        "Category": "Decoration",
+        "Versions": [
+          {
+            "TemplateId": "TributeToIngenuity.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxVisitors": 18,
+            "BuildingMaterials": {
+              "Log": 200
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Input": {
+                  "Energy": 600
+                },
+                "Ouput": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

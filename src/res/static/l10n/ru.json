@@ -1,0 +1,521 @@
+{
+  "@@author": "Agroqirax",
+  "@@last_modified": "2024-07-13T19:43:45",
+  "@@locale": "ru",
+  "appTitle": "Просмотрщик статистики Timberborn",
+  "@appTitle": {
+    "description": "The title of the application",
+    "type": "text"
+  },
+  "selectFile": "Выберите файл .timber",
+  "@selectFile": {
+    "type": "text"
+  },
+  "details": "Подробности",
+  "@details": {
+    "type": "text"
+  },
+  "timestamp": "Временная метка",
+  "@timestamp": {
+    "type": "text"
+  },
+  "cycle": "Цикл",
+  "@cycle": {
+    "type": "text"
+  },
+  "cycleDay": "День",
+  "@cycleDay": {
+    "type": "text"
+  },
+  "gameVersion": "Версия игры",
+  "@gameVersion": {
+    "description": "The version of the game",
+    "type": "text"
+  },
+  "mapSize": "Размер карты",
+  "@mapSize": {
+    "description": "The width of the map",
+    "type": "text"
+  },
+  "faction": "Фракция",
+  "@faction": {
+    "type": "text"
+  },
+  "mapName": "Название карты",
+  "@mapName": {
+    "description": "The name of the map",
+    "type": "text"
+  },
+  "beaversBorn": "Бобры родились",
+  "@beaversBorn": {
+    "type": "text"
+  },
+  "waterConsumed": "Потребление воды",
+  "@waterConsumed": {
+    "type": "text"
+  },
+  "tailsPainted": "",
+  "@tailsPainted": {
+    "type": "text"
+  },
+  "treesCut": "Деревья срублены",
+  "@treesCut": {
+    "type": "text"
+  },
+  "brokenTeeth": "Сломанные зубы",
+  "@brokenTeeth": {
+    "type": "text"
+  },
+  "botsManufactured": "Боты изготовлены",
+  "@botsManufactured": {
+    "type": "text"
+  },
+  "dynamiteDetonated": "Динамит взорвался",
+  "@dynamiteDetonated": {
+    "type": "text"
+  },
+  "beaversExploded": "Бобры взорвались",
+  "@beaversExploded": {
+    "type": "text"
+  },
+  "wellbeingHighscore": "Рейтинг благополучия",
+  "@wellbeingHighscore": {
+    "type": "text"
+  },
+  "production": "Производство",
+  "@production": {
+    "type": "text"
+  },
+  "food": "Еда",
+  "@food": {
+    "type": "text"
+  },
+  "coffeeBush": "Кофейный куст",
+  "@coffeeBush": {
+    "type": "text"
+  },
+  "cassava": "Маниока",
+  "@cassava": {
+    "type": "text"
+  },
+  "canola": "Канола",
+  "@canola": {
+    "type": "text"
+  },
+  "corn": "Кукуруза",
+  "@corn": {
+    "type": "text"
+  },
+  "item": "Элемент",
+  "@item": {
+    "type": "text"
+  },
+  "required": "Необходимый",
+  "@required": {
+    "type": "text"
+  },
+  "storage": "Хранилище",
+  "@storage": {
+    "type": "text"
+  },
+  "net": "Сеть",
+  "@net": {
+    "type": "text"
+  },
+  "storageTime": "Время хранения",
+  "@storageTime": {
+    "type": "text"
+  },
+  "install": "Установить как веб-приложение",
+  "@install": {
+    "type": "text"
+  },
+  "exportPrompt": "Экспорт файла .timber",
+  "@exportPrompt": {
+    "type": "text"
+  },
+  "exportAlert": "Экспорт файла .timber",
+  "@exportAlert": {
+    "type": "text"
+  },
+  "area": "Область",
+  "@area": {
+    "type": "text"
+  },
+  "planted": "Посажено",
+  "@planted": {
+    "type": "text"
+  },
+  "resources": "Ресурсы",
+  "@resources": {
+    "type": "text"
+  },
+  "birch": "Береза",
+  "@birch": {
+    "type": "text"
+  },
+  "pine": "Сосна",
+  "@pine": {
+    "type": "text"
+  },
+  "mangrove": "Мангровые заросли",
+  "@mangrove": {
+    "type": "text"
+  },
+  "oak": "Дуб",
+  "@oak": {
+    "type": "text"
+  },
+  "crops": "Культуры",
+  "@crops": {
+    "type": "text"
+  },
+  "treesAndBushes": "Деревья и кусты",
+  "@treesAndBushes": {
+    "type": "text"
+  },
+  "plantingArea": "Площадь посадки",
+  "@plantingArea": {
+    "type": "text"
+  },
+  "grown": "Выросший",
+  "@grown": {
+    "type": "text"
+  },
+  "treeCuttingArea": "Зона вырубки деревьев",
+  "@treeCuttingArea": {
+    "type": "text"
+  },
+  "adultBeaver": "Взрослый бобр",
+  "@adultBeaver": {
+    "type": "text"
+  },
+  "childBeaver": "Ребенок бобра",
+  "@childBeaver": {
+    "type": "text"
+  },
+  "contact": "Контакт",
+  "@contact": {
+    "type": "text"
+  },
+  "project": "Проект",
+  "@project": {
+    "type": "text"
+  },
+  "social": "Социальное",
+  "@social": {
+    "type": "text"
+  },
+  "getTimberborn": "Стань лесорожденным",
+  "@getTimberborn": {
+    "type": "text"
+  },
+  "moreTimberborn": "Больше лесорожденных",
+  "@moreTimberborn": {
+    "type": "text"
+  },
+  "processing": "Обработка...",
+  "@processing": {
+    "type": "text"
+  },
+  "(perDay)": "(В день)",
+  "@(perDay)": {
+    "type": "text"
+  },
+  "bugReport": "<i class=\"fa-solid fa-bug\"></i> Отчет об ошибке",
+  "@bugReport": {
+    "type": "text"
+  },
+  "byCreator": "Автор: Агрокиракс",
+  "@byCreator": {
+    "type": "text"
+  },
+  "algae": "Водоросли",
+  "@algae": {
+    "type": "text"
+  },
+  "description": "Описание",
+  "@description": {
+    "type": "text"
+  },
+  "ingredients": "Ингредиенты",
+  "@ingredients": {
+    "type": "text"
+  },
+  "materials": "Материалы",
+  "@materials": {
+    "type": "text"
+  },
+  "algaeRation": "Рацион водорослей",
+  "@algaeRation": {
+    "type": "text"
+  },
+  "antidote": "Противоядие",
+  "@antidote": {
+    "type": "text"
+  },
+  "badwater": "Бэдуотер",
+  "@badwater": {
+    "type": "text"
+  },
+  "berries": "Ягоды",
+  "@berries": {
+    "type": "text"
+  },
+  "biofuel": "Биотопливо",
+  "@biofuel": {
+    "type": "text"
+  },
+  "book": "Книга",
+  "@book": {
+    "type": "text"
+  },
+  "botChassis": "Бот-шасси",
+  "@botChassis": {
+    "type": "text"
+  },
+  "botHead": "Голова бота",
+  "@botHead": {
+    "type": "text"
+  },
+  "botLimb": "Конечность бота",
+  "@botLimb": {
+    "type": "text"
+  },
+  "bread": "Хлеб",
+  "@bread": {
+    "type": "text"
+  },
+  "canolaOil": "Рапсовое масло",
+  "@canolaOil": {
+    "type": "text"
+  },
+  "canolaSeeds": "Семена канолы",
+  "@canolaSeeds": {
+    "type": "text"
+  },
+  "carrot": "Морковь",
+  "@carrot": {
+    "type": "text"
+  },
+  "catalyst": "Катализатор",
+  "@catalyst": {
+    "type": "text"
+  },
+  "cattailFlour": "Мука из рогоза",
+  "@cattailFlour": {
+    "type": "text"
+  },
+  "cattailRoot": "Корень рогоза",
+  "@cattailRoot": {
+    "type": "text"
+  },
+  "cattailCracker": "Каттал крекер",
+  "@cattailCracker": {
+    "type": "text"
+  },
+  "chestnut": "каштан",
+  "@chestnut": {
+    "type": "text"
+  },
+  "coffee": "Кофе",
+  "@coffee": {
+    "type": "text"
+  },
+  "coffeeBean": "Кофейное зерно",
+  "@coffeeBean": {
+    "type": "text"
+  },
+  "cornRation": "Кукурузный рацион",
+  "@cornRation": {
+    "type": "text"
+  },
+  "dandelion": "Одуванчик",
+  "@dandelion": {
+    "type": "text"
+  },
+  "dirt": "Грязь",
+  "@dirt": {
+    "type": "text"
+  },
+  "eggplant": "Баклажан",
+  "@eggplant": {
+    "type": "text"
+  },
+  "eggplantRation": "Баклажанный рацион",
+  "@eggplantRation": {
+    "type": "text"
+  },
+  "explosives": "взрывчатые вещества",
+  "@explosives": {
+    "type": "text"
+  },
+  "extract": "Извлекать",
+  "@extract": {
+    "type": "text"
+  },
+  "fermentedCassava": "Ферментированная маниока",
+  "@fermentedCassava": {
+    "type": "text"
+  },
+  "fermentedMushroom": "Ферментированные грибы",
+  "@fermentedMushroom": {
+    "type": "text"
+  },
+  "fermentedSoybean": "Ферментированные соевые бобы",
+  "@fermentedSoybean": {
+    "type": "text"
+  },
+  "gear": "Механизм",
+  "@gear": {
+    "type": "text"
+  },
+  "grease": "Смазка",
+  "@grease": {
+    "type": "text"
+  },
+  "grilledChestnut": "Жареные каштаны",
+  "@grilledChestnut": {
+    "type": "text"
+  },
+  "grilledPotato": "Жареный картофель",
+  "@grilledPotato": {
+    "type": "text"
+  },
+  "grilledSpadderdock": "Спэддердок на гриле",
+  "@grilledSpadderdock": {
+    "type": "text"
+  },
+  "kohlrabi": "Кольраби",
+  "@kohlrabi": {
+    "type": "text"
+  },
+  "log": "Бревно",
+  "@log": {
+    "type": "text"
+  },
+  "mangroveFruit": "Мангровые плоды",
+  "@mangroveFruit": {
+    "type": "text"
+  },
+  "maplePastry": "Кленовый пирог",
+  "@maplePastry": {
+    "type": "text"
+  },
+  "maplySyrup": "Кленовый сироп",
+  "@maplySyrup": {
+    "type": "text"
+  },
+  "metalBlock": "Металлический блок",
+  "@metalBlock": {
+    "type": "text"
+  },
+  "mushroom": "Гриб",
+  "@mushroom": {
+    "type": "text"
+  },
+  "paper": "Бумага",
+  "@paper": {
+    "type": "text"
+  },
+  "pineResin": "Сосновая смола",
+  "@pineResin": {
+    "type": "text"
+  },
+  "plank": "Планка",
+  "@plank": {
+    "type": "text"
+  },
+  "potato": "Картофель",
+  "@potato": {
+    "type": "text"
+  },
+  "punchCard": "Перфокарта",
+  "@punchCard": {
+    "type": "text"
+  },
+  "scrapMetal": "Металлолом",
+  "@scrapMetal": {
+    "type": "text"
+  },
+  "soybean": "Соевый",
+  "@soybean": {
+    "type": "text"
+  },
+  "spadderdock": "Спэддердок",
+  "@spadderdock": {
+    "type": "text"
+  },
+  "sunflowerSeeds": "Семена подсолнечника",
+  "@sunflowerSeeds": {
+    "type": "text"
+  },
+  "treatedPlank": "Обработанная доска",
+  "@treatedPlank": {
+    "type": "text"
+  },
+  "water": "Вода",
+  "@water": {
+    "type": "text"
+  },
+  "wheat": "Пшеница",
+  "@wheat": {
+    "type": "text"
+  },
+  "wheatFlour": "Пшеничная мука",
+  "@wheatFlour": {
+    "type": "text"
+  },
+  "blueberry": "Черника",
+  "@blueberry": {
+    "type": "text"
+  },
+  "notifications": "Уведомления",
+  "@notifications": {
+    "type": "text"
+  },
+  "mods": "Моды",
+  "@mods": {
+    "type": "text"
+  },
+  "id": "Идентификатор",
+  "@id": {
+    "type": "text"
+  },
+  "name": "Имя",
+  "@name": {
+    "type": "text"
+  },
+  "version": "Версия",
+  "@version": {
+    "type": "text"
+  },
+  "misc": "Разное",
+  "@misc": {
+    "type": "text"
+  },
+  "science": "Наука",
+  "@science": {
+    "type": "text"
+  },
+  "timberFileIcon": "<i class=\"fa-solid fa-file\"></i> Получить значок файла для .timber",
+  "@timberFileIcon": {
+    "type": "text"
+  },
+  "alertInstall": "Установка значка файла требует редактирования реестра, что может быть опасно. Пожалуйста, внимательно прочитайте README.md и следуйте его инструкциям.",
+  "@alertInstall": {
+    "type": "text"
+  },
+  "(orDragNDrop)": "(Или перетащите)",
+  "@(orDragNDrop)": {
+    "type": "text"
+  },
+  "pleaseSelectTimber": "Пожалуйста, выберите действительный файл .timber",
+  "@pleaseSelectTimber": {
+    "type": "text"
+  },
+  "energy": "Энергия",
+  "@energy": {
+    "type": "text"
+  }
+}

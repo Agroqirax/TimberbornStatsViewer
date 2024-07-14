@@ -1,0 +1,29 @@
+{
+  "game": {
+    "Entities": {
+      "Ladder": {
+        "Id": "Ladder",
+        "Name": "Ladder",
+        "TranslatId": "ladder",
+        "Versions": [
+          {
+            "TemplateId": "Ladder",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "Log": 6,
+              "Plank": 8
+            }
+          },
+          {
+            "TemplateId": "Ladder",
+            "Faction": "IronTeeth",
+            "BuildingMaterials": {
+              "Log": 6,
+              "PLank": 8
+            }
+          }
+        ]
+      }
+    }
+  }
+}

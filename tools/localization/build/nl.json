@@ -1,0 +1,521 @@
+{
+  "@@author": "Agroqirax",
+  "@@last_modified": "2024-07-13T19:43:45",
+  "@@locale": "nl",
+  "appTitle": "Timberborn-statistiekenviewer",
+  "@appTitle": {
+    "description": "The title of the application",
+    "type": "text"
+  },
+  "selectFile": "Selecteer een .timber-bestand",
+  "@selectFile": {
+    "type": "text"
+  },
+  "details": "Details",
+  "@details": {
+    "type": "text"
+  },
+  "timestamp": "Tijdstempel",
+  "@timestamp": {
+    "type": "text"
+  },
+  "cycle": "Cyclus",
+  "@cycle": {
+    "type": "text"
+  },
+  "cycleDay": "Dag",
+  "@cycleDay": {
+    "type": "text"
+  },
+  "gameVersion": "Spelversie",
+  "@gameVersion": {
+    "description": "The version of the game",
+    "type": "text"
+  },
+  "mapSize": "Kaart grootte",
+  "@mapSize": {
+    "description": "The width of the map",
+    "type": "text"
+  },
+  "faction": "Factie",
+  "@faction": {
+    "type": "text"
+  },
+  "mapName": "Naam van de kaart",
+  "@mapName": {
+    "description": "The name of the map",
+    "type": "text"
+  },
+  "beaversBorn": "Bevers geboren",
+  "@beaversBorn": {
+    "type": "text"
+  },
+  "waterConsumed": "Water verbruikt",
+  "@waterConsumed": {
+    "type": "text"
+  },
+  "tailsPainted": "",
+  "@tailsPainted": {
+    "type": "text"
+  },
+  "treesCut": "Bomen gekapt",
+  "@treesCut": {
+    "type": "text"
+  },
+  "brokenTeeth": "Gebroken tanden",
+  "@brokenTeeth": {
+    "type": "text"
+  },
+  "botsManufactured": "Bots vervaardigd",
+  "@botsManufactured": {
+    "type": "text"
+  },
+  "dynamiteDetonated": "Dynamiet ontploft",
+  "@dynamiteDetonated": {
+    "type": "text"
+  },
+  "beaversExploded": "Bevers ontploften",
+  "@beaversExploded": {
+    "type": "text"
+  },
+  "wellbeingHighscore": "Welzijn hoogscore",
+  "@wellbeingHighscore": {
+    "type": "text"
+  },
+  "production": "Productie",
+  "@production": {
+    "type": "text"
+  },
+  "food": "Voedsel",
+  "@food": {
+    "type": "text"
+  },
+  "coffeeBush": "Koffie struik",
+  "@coffeeBush": {
+    "type": "text"
+  },
+  "cassava": "Cassave",
+  "@cassava": {
+    "type": "text"
+  },
+  "canola": "Koolzaad",
+  "@canola": {
+    "type": "text"
+  },
+  "corn": "Maïs",
+  "@corn": {
+    "type": "text"
+  },
+  "item": "Item",
+  "@item": {
+    "type": "text"
+  },
+  "required": "Vereist",
+  "@required": {
+    "type": "text"
+  },
+  "storage": "Opslag",
+  "@storage": {
+    "type": "text"
+  },
+  "net": "Netto",
+  "@net": {
+    "type": "text"
+  },
+  "storageTime": "Tijd voor opslag",
+  "@storageTime": {
+    "type": "text"
+  },
+  "install": "Installeer als webapp",
+  "@install": {
+    "type": "text"
+  },
+  "exportPrompt": "Exporteer een .timber-bestand",
+  "@exportPrompt": {
+    "type": "text"
+  },
+  "exportAlert": "Exporteren van .timber-bestand",
+  "@exportAlert": {
+    "type": "text"
+  },
+  "area": "Gebied",
+  "@area": {
+    "type": "text"
+  },
+  "planted": "Geplant",
+  "@planted": {
+    "type": "text"
+  },
+  "resources": "Bronnen",
+  "@resources": {
+    "type": "text"
+  },
+  "birch": "Berk",
+  "@birch": {
+    "type": "text"
+  },
+  "pine": "Pijnboom",
+  "@pine": {
+    "type": "text"
+  },
+  "mangrove": "Mangrove",
+  "@mangrove": {
+    "type": "text"
+  },
+  "oak": "Eik",
+  "@oak": {
+    "type": "text"
+  },
+  "crops": "Gewassen",
+  "@crops": {
+    "type": "text"
+  },
+  "treesAndBushes": "Bomen en struiken",
+  "@treesAndBushes": {
+    "type": "text"
+  },
+  "plantingArea": "Beplantingsgebied",
+  "@plantingArea": {
+    "type": "text"
+  },
+  "grown": "Gegroeid",
+  "@grown": {
+    "type": "text"
+  },
+  "treeCuttingArea": "Gebied voor het snoeien van bomen",
+  "@treeCuttingArea": {
+    "type": "text"
+  },
+  "adultBeaver": "Volwassen bever",
+  "@adultBeaver": {
+    "type": "text"
+  },
+  "childBeaver": "Kind bever",
+  "@childBeaver": {
+    "type": "text"
+  },
+  "contact": "Contact",
+  "@contact": {
+    "type": "text"
+  },
+  "project": "Project",
+  "@project": {
+    "type": "text"
+  },
+  "social": "Sociaal",
+  "@social": {
+    "type": "text"
+  },
+  "getTimberborn": "Koop timberborn",
+  "@getTimberborn": {
+    "type": "text"
+  },
+  "moreTimberborn": "Meer timberborn",
+  "@moreTimberborn": {
+    "type": "text"
+  },
+  "processing": "Verwerken...",
+  "@processing": {
+    "type": "text"
+  },
+  "(perDay)": "(Per dag)",
+  "@(perDay)": {
+    "type": "text"
+  },
+  "bugReport": "<i class=\"fa-solid fa-bug\"></i> Bugrapport",
+  "@bugReport": {
+    "type": "text"
+  },
+  "byCreator": "Door Agroqirax",
+  "@byCreator": {
+    "type": "text"
+  },
+  "algae": "Algen",
+  "@algae": {
+    "type": "text"
+  },
+  "description": "Beschrijving",
+  "@description": {
+    "type": "text"
+  },
+  "ingredients": "Ingrediënten",
+  "@ingredients": {
+    "type": "text"
+  },
+  "materials": "Materialen",
+  "@materials": {
+    "type": "text"
+  },
+  "algaeRation": "Algenrantsoen",
+  "@algaeRation": {
+    "type": "text"
+  },
+  "antidote": "Tegengif",
+  "@antidote": {
+    "type": "text"
+  },
+  "badwater": "Slecht water",
+  "@badwater": {
+    "type": "text"
+  },
+  "berries": "Bessen",
+  "@berries": {
+    "type": "text"
+  },
+  "biofuel": "Biobrandstof",
+  "@biofuel": {
+    "type": "text"
+  },
+  "book": "Boek",
+  "@book": {
+    "type": "text"
+  },
+  "botChassis": "Bot-chassis",
+  "@botChassis": {
+    "type": "text"
+  },
+  "botHead": "Bot hoofd",
+  "@botHead": {
+    "type": "text"
+  },
+  "botLimb": "Bot-ledemaat",
+  "@botLimb": {
+    "type": "text"
+  },
+  "bread": "Brood",
+  "@bread": {
+    "type": "text"
+  },
+  "canolaOil": "Koolzaadolie",
+  "@canolaOil": {
+    "type": "text"
+  },
+  "canolaSeeds": "Canola-zaden",
+  "@canolaSeeds": {
+    "type": "text"
+  },
+  "carrot": "Wortel",
+  "@carrot": {
+    "type": "text"
+  },
+  "catalyst": "Katalysator",
+  "@catalyst": {
+    "type": "text"
+  },
+  "cattailFlour": "Meel van kattenstaart",
+  "@cattailFlour": {
+    "type": "text"
+  },
+  "cattailRoot": "Lisdodde wortel",
+  "@cattailRoot": {
+    "type": "text"
+  },
+  "cattailCracker": "Cattale kraker",
+  "@cattailCracker": {
+    "type": "text"
+  },
+  "chestnut": "Kastanje",
+  "@chestnut": {
+    "type": "text"
+  },
+  "coffee": "Koffie",
+  "@coffee": {
+    "type": "text"
+  },
+  "coffeeBean": "Koffieboon",
+  "@coffeeBean": {
+    "type": "text"
+  },
+  "cornRation": "Maïsrantsoen",
+  "@cornRation": {
+    "type": "text"
+  },
+  "dandelion": "Paardebloem",
+  "@dandelion": {
+    "type": "text"
+  },
+  "dirt": "Aarde",
+  "@dirt": {
+    "type": "text"
+  },
+  "eggplant": "Aubergine",
+  "@eggplant": {
+    "type": "text"
+  },
+  "eggplantRation": "Aubergine rantsoen",
+  "@eggplantRation": {
+    "type": "text"
+  },
+  "explosives": "Explosieven",
+  "@explosives": {
+    "type": "text"
+  },
+  "extract": "Extract",
+  "@extract": {
+    "type": "text"
+  },
+  "fermentedCassava": "Gefermenteerde cassave",
+  "@fermentedCassava": {
+    "type": "text"
+  },
+  "fermentedMushroom": "Gefermenteerde paddenstoel",
+  "@fermentedMushroom": {
+    "type": "text"
+  },
+  "fermentedSoybean": "Gefermenteerde sojabonen",
+  "@fermentedSoybean": {
+    "type": "text"
+  },
+  "gear": "Versnelling",
+  "@gear": {
+    "type": "text"
+  },
+  "grease": "Vet",
+  "@grease": {
+    "type": "text"
+  },
+  "grilledChestnut": "Gegrilde kastanje",
+  "@grilledChestnut": {
+    "type": "text"
+  },
+  "grilledPotato": "Gegrilde aardappel",
+  "@grilledPotato": {
+    "type": "text"
+  },
+  "grilledSpadderdock": "Gegrilde spadderdock",
+  "@grilledSpadderdock": {
+    "type": "text"
+  },
+  "kohlrabi": "Koolraap",
+  "@kohlrabi": {
+    "type": "text"
+  },
+  "log": "Logboek",
+  "@log": {
+    "type": "text"
+  },
+  "mangroveFruit": "Mangrovevruchten",
+  "@mangroveFruit": {
+    "type": "text"
+  },
+  "maplePastry": "Esdoorn gebak",
+  "@maplePastry": {
+    "type": "text"
+  },
+  "maplySyrup": "Maple siroop",
+  "@maplySyrup": {
+    "type": "text"
+  },
+  "metalBlock": "Metalen blok",
+  "@metalBlock": {
+    "type": "text"
+  },
+  "mushroom": "Paddestoel",
+  "@mushroom": {
+    "type": "text"
+  },
+  "paper": "Papier",
+  "@paper": {
+    "type": "text"
+  },
+  "pineResin": "Dennenhars",
+  "@pineResin": {
+    "type": "text"
+  },
+  "plank": "Plank",
+  "@plank": {
+    "type": "text"
+  },
+  "potato": "Aardappel",
+  "@potato": {
+    "type": "text"
+  },
+  "punchCard": "Ponskaart",
+  "@punchCard": {
+    "type": "text"
+  },
+  "scrapMetal": "Schroot",
+  "@scrapMetal": {
+    "type": "text"
+  },
+  "soybean": "Soja",
+  "@soybean": {
+    "type": "text"
+  },
+  "spadderdock": "Spadderdok",
+  "@spadderdock": {
+    "type": "text"
+  },
+  "sunflowerSeeds": "Zonnebloemzaden",
+  "@sunflowerSeeds": {
+    "type": "text"
+  },
+  "treatedPlank": "Behandelde plank",
+  "@treatedPlank": {
+    "type": "text"
+  },
+  "water": "Water",
+  "@water": {
+    "type": "text"
+  },
+  "wheat": "Tarwe",
+  "@wheat": {
+    "type": "text"
+  },
+  "wheatFlour": "Tarwemeel",
+  "@wheatFlour": {
+    "type": "text"
+  },
+  "blueberry": "Bosbes",
+  "@blueberry": {
+    "type": "text"
+  },
+  "notifications": "Meldingen",
+  "@notifications": {
+    "type": "text"
+  },
+  "mods": "Mods",
+  "@mods": {
+    "type": "text"
+  },
+  "id": "ID kaart",
+  "@id": {
+    "type": "text"
+  },
+  "name": "Naam",
+  "@name": {
+    "type": "text"
+  },
+  "version": "Versie",
+  "@version": {
+    "type": "text"
+  },
+  "misc": "Diversen",
+  "@misc": {
+    "type": "text"
+  },
+  "science": "Wetenschap",
+  "@science": {
+    "type": "text"
+  },
+  "timberFileIcon": "<i class=\"fa-solid fa-file\"></i> Bestandspictogram ophalen voor .timber",
+  "@timberFileIcon": {
+    "type": "text"
+  },
+  "alertInstall": "Voor het installeren van een bestandspictogram zijn registerbewerkingen vereist, wat gevaarlijk kan zijn. Lees README.md aandachtig en volg de instructies.",
+  "@alertInstall": {
+    "type": "text"
+  },
+  "(orDragNDrop)": "(Of slepen en neerzetten)",
+  "@(orDragNDrop)": {
+    "type": "text"
+  },
+  "pleaseSelectTimber": "Selecteer een geldig .timber-bestand",
+  "@pleaseSelectTimber": {
+    "type": "text"
+  },
+  "energy": "Energie",
+  "@energy": {
+    "type": "text"
+  }
+}

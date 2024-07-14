@@ -1,0 +1,521 @@
+{
+  "@@author": "Agroqirax",
+  "@@last_modified": "2024-07-13T19:43:45",
+  "@@locale": "tr",
+  "appTitle": "Timberborn istatistik görüntüleyici",
+  "@appTitle": {
+    "description": "The title of the application",
+    "type": "text"
+  },
+  "selectFile": "Bir .timber dosyası seçin",
+  "@selectFile": {
+    "type": "text"
+  },
+  "details": "Detaylar",
+  "@details": {
+    "type": "text"
+  },
+  "timestamp": "Zaman damgası",
+  "@timestamp": {
+    "type": "text"
+  },
+  "cycle": "Döngü",
+  "@cycle": {
+    "type": "text"
+  },
+  "cycleDay": "Gün",
+  "@cycleDay": {
+    "type": "text"
+  },
+  "gameVersion": "Oyun sürümü",
+  "@gameVersion": {
+    "description": "The version of the game",
+    "type": "text"
+  },
+  "mapSize": "Harita boyutu",
+  "@mapSize": {
+    "description": "The width of the map",
+    "type": "text"
+  },
+  "faction": "Hizip",
+  "@faction": {
+    "type": "text"
+  },
+  "mapName": "Harita adı",
+  "@mapName": {
+    "description": "The name of the map",
+    "type": "text"
+  },
+  "beaversBorn": "Kunduzlar doğdu",
+  "@beaversBorn": {
+    "type": "text"
+  },
+  "waterConsumed": "Tüketilen su",
+  "@waterConsumed": {
+    "type": "text"
+  },
+  "tailsPainted": "",
+  "@tailsPainted": {
+    "type": "text"
+  },
+  "treesCut": "Ağaçlar kesildi",
+  "@treesCut": {
+    "type": "text"
+  },
+  "brokenTeeth": "Kırık dişler",
+  "@brokenTeeth": {
+    "type": "text"
+  },
+  "botsManufactured": "Robotlar üretildi",
+  "@botsManufactured": {
+    "type": "text"
+  },
+  "dynamiteDetonated": "Dinamit patlatıldı",
+  "@dynamiteDetonated": {
+    "type": "text"
+  },
+  "beaversExploded": "Kunduzlar patladı",
+  "@beaversExploded": {
+    "type": "text"
+  },
+  "wellbeingHighscore": "Sağlık yüksek puanı",
+  "@wellbeingHighscore": {
+    "type": "text"
+  },
+  "production": "Üretme",
+  "@production": {
+    "type": "text"
+  },
+  "food": "Yiyecek",
+  "@food": {
+    "type": "text"
+  },
+  "coffeeBush": "Kahve çalısı",
+  "@coffeeBush": {
+    "type": "text"
+  },
+  "cassava": "Manyok",
+  "@cassava": {
+    "type": "text"
+  },
+  "canola": "Kanola",
+  "@canola": {
+    "type": "text"
+  },
+  "corn": "Mısır",
+  "@corn": {
+    "type": "text"
+  },
+  "item": "Öğe",
+  "@item": {
+    "type": "text"
+  },
+  "required": "Gerekli",
+  "@required": {
+    "type": "text"
+  },
+  "storage": "Depolamak",
+  "@storage": {
+    "type": "text"
+  },
+  "net": "Açık",
+  "@net": {
+    "type": "text"
+  },
+  "storageTime": "Depolama süresi",
+  "@storageTime": {
+    "type": "text"
+  },
+  "install": "Web uygulaması olarak yükle",
+  "@install": {
+    "type": "text"
+  },
+  "exportPrompt": ".timber dosyasını dışa aktar",
+  "@exportPrompt": {
+    "type": "text"
+  },
+  "exportAlert": ".timber dosyasını dışa aktarma",
+  "@exportAlert": {
+    "type": "text"
+  },
+  "area": "Alan",
+  "@area": {
+    "type": "text"
+  },
+  "planted": "Ekili",
+  "@planted": {
+    "type": "text"
+  },
+  "resources": "Kaynaklar",
+  "@resources": {
+    "type": "text"
+  },
+  "birch": "Huş ağacı",
+  "@birch": {
+    "type": "text"
+  },
+  "pine": "Çam",
+  "@pine": {
+    "type": "text"
+  },
+  "mangrove": "Mangrov",
+  "@mangrove": {
+    "type": "text"
+  },
+  "oak": "Meşe",
+  "@oak": {
+    "type": "text"
+  },
+  "crops": "Mahsuller",
+  "@crops": {
+    "type": "text"
+  },
+  "treesAndBushes": "Ağaçlar ve çalılar",
+  "@treesAndBushes": {
+    "type": "text"
+  },
+  "plantingArea": "Ekim alanı",
+  "@plantingArea": {
+    "type": "text"
+  },
+  "grown": "Yetişkin",
+  "@grown": {
+    "type": "text"
+  },
+  "treeCuttingArea": "Ağaç kesme alanı",
+  "@treeCuttingArea": {
+    "type": "text"
+  },
+  "adultBeaver": "Yetişkin kunduz",
+  "@adultBeaver": {
+    "type": "text"
+  },
+  "childBeaver": "Çocuk kunduz",
+  "@childBeaver": {
+    "type": "text"
+  },
+  "contact": "Temas etmek",
+  "@contact": {
+    "type": "text"
+  },
+  "project": "Proje",
+  "@project": {
+    "type": "text"
+  },
+  "social": "Sosyal",
+  "@social": {
+    "type": "text"
+  },
+  "getTimberborn": "Kereste doğumlu ol",
+  "@getTimberborn": {
+    "type": "text"
+  },
+  "moreTimberborn": "Daha fazla kereste doğumlu",
+  "@moreTimberborn": {
+    "type": "text"
+  },
+  "processing": "İşleme...",
+  "@processing": {
+    "type": "text"
+  },
+  "(perDay)": "(Günlük)",
+  "@(perDay)": {
+    "type": "text"
+  },
+  "bugReport": "<i class=\"fa-solid fa-bug\"></i> Hata raporu",
+  "@bugReport": {
+    "type": "text"
+  },
+  "byCreator": "kaydeden Agroqirax",
+  "@byCreator": {
+    "type": "text"
+  },
+  "algae": "Yosun",
+  "@algae": {
+    "type": "text"
+  },
+  "description": "Tanım",
+  "@description": {
+    "type": "text"
+  },
+  "ingredients": "İçindekiler",
+  "@ingredients": {
+    "type": "text"
+  },
+  "materials": "Malzemeler",
+  "@materials": {
+    "type": "text"
+  },
+  "algaeRation": "Yosun oranı",
+  "@algaeRation": {
+    "type": "text"
+  },
+  "antidote": "Panzehir",
+  "@antidote": {
+    "type": "text"
+  },
+  "badwater": "Kötü su",
+  "@badwater": {
+    "type": "text"
+  },
+  "berries": "Meyveler",
+  "@berries": {
+    "type": "text"
+  },
+  "biofuel": "Biyoyakıt",
+  "@biofuel": {
+    "type": "text"
+  },
+  "book": "Kitap",
+  "@book": {
+    "type": "text"
+  },
+  "botChassis": "Bot şasisi",
+  "@botChassis": {
+    "type": "text"
+  },
+  "botHead": "Bot kafası",
+  "@botHead": {
+    "type": "text"
+  },
+  "botLimb": "Bot uzuv",
+  "@botLimb": {
+    "type": "text"
+  },
+  "bread": "Ekmek",
+  "@bread": {
+    "type": "text"
+  },
+  "canolaOil": "Kanola yağı",
+  "@canolaOil": {
+    "type": "text"
+  },
+  "canolaSeeds": "Kanola tohumları",
+  "@canolaSeeds": {
+    "type": "text"
+  },
+  "carrot": "Havuç",
+  "@carrot": {
+    "type": "text"
+  },
+  "catalyst": "Katalizör",
+  "@catalyst": {
+    "type": "text"
+  },
+  "cattailFlour": "Kedi kuyruğu unu",
+  "@cattailFlour": {
+    "type": "text"
+  },
+  "cattailRoot": "Uzun kuyruk kökü",
+  "@cattailRoot": {
+    "type": "text"
+  },
+  "cattailCracker": "Cattal kraker",
+  "@cattailCracker": {
+    "type": "text"
+  },
+  "chestnut": "kestane",
+  "@chestnut": {
+    "type": "text"
+  },
+  "coffee": "Kahve",
+  "@coffee": {
+    "type": "text"
+  },
+  "coffeeBean": "Kahve çekirdeği",
+  "@coffeeBean": {
+    "type": "text"
+  },
+  "cornRation": "Mısır rasyonu",
+  "@cornRation": {
+    "type": "text"
+  },
+  "dandelion": "Karahindiba",
+  "@dandelion": {
+    "type": "text"
+  },
+  "dirt": "Kir",
+  "@dirt": {
+    "type": "text"
+  },
+  "eggplant": "Patlıcan",
+  "@eggplant": {
+    "type": "text"
+  },
+  "eggplantRation": "Patlıcan rasyonu",
+  "@eggplantRation": {
+    "type": "text"
+  },
+  "explosives": "Patlayıcılar",
+  "@explosives": {
+    "type": "text"
+  },
+  "extract": "Çıkarmak",
+  "@extract": {
+    "type": "text"
+  },
+  "fermentedCassava": "Fermente manyok",
+  "@fermentedCassava": {
+    "type": "text"
+  },
+  "fermentedMushroom": "Fermente mantar",
+  "@fermentedMushroom": {
+    "type": "text"
+  },
+  "fermentedSoybean": "Fermente soya fasulyesi",
+  "@fermentedSoybean": {
+    "type": "text"
+  },
+  "gear": "Vites",
+  "@gear": {
+    "type": "text"
+  },
+  "grease": "Gres",
+  "@grease": {
+    "type": "text"
+  },
+  "grilledChestnut": "Kızarmış kestane",
+  "@grilledChestnut": {
+    "type": "text"
+  },
+  "grilledPotato": "Izgara patates",
+  "@grilledPotato": {
+    "type": "text"
+  },
+  "grilledSpadderdock": "Izgara kürek",
+  "@grilledSpadderdock": {
+    "type": "text"
+  },
+  "kohlrabi": "alabaş",
+  "@kohlrabi": {
+    "type": "text"
+  },
+  "log": "Kayıt",
+  "@log": {
+    "type": "text"
+  },
+  "mangroveFruit": "Mangrov meyvesi",
+  "@mangroveFruit": {
+    "type": "text"
+  },
+  "maplePastry": "Akçaağaç böreği",
+  "@maplePastry": {
+    "type": "text"
+  },
+  "maplySyrup": "Akçaağaç şurubu",
+  "@maplySyrup": {
+    "type": "text"
+  },
+  "metalBlock": "Metal blok",
+  "@metalBlock": {
+    "type": "text"
+  },
+  "mushroom": "Mantar",
+  "@mushroom": {
+    "type": "text"
+  },
+  "paper": "Kağıt",
+  "@paper": {
+    "type": "text"
+  },
+  "pineResin": "Çam reçinesi",
+  "@pineResin": {
+    "type": "text"
+  },
+  "plank": "Tahta",
+  "@plank": {
+    "type": "text"
+  },
+  "potato": "Patates",
+  "@potato": {
+    "type": "text"
+  },
+  "punchCard": "Delikli kart",
+  "@punchCard": {
+    "type": "text"
+  },
+  "scrapMetal": "Hurda metal",
+  "@scrapMetal": {
+    "type": "text"
+  },
+  "soybean": "Soya fasulyesi",
+  "@soybean": {
+    "type": "text"
+  },
+  "spadderdock": "Spadderdock",
+  "@spadderdock": {
+    "type": "text"
+  },
+  "sunflowerSeeds": "Ay çekirdeği",
+  "@sunflowerSeeds": {
+    "type": "text"
+  },
+  "treatedPlank": "İşlenmiş tahta",
+  "@treatedPlank": {
+    "type": "text"
+  },
+  "water": "su",
+  "@water": {
+    "type": "text"
+  },
+  "wheat": "Buğday",
+  "@wheat": {
+    "type": "text"
+  },
+  "wheatFlour": "Buğday unu",
+  "@wheatFlour": {
+    "type": "text"
+  },
+  "blueberry": "Yaban mersini",
+  "@blueberry": {
+    "type": "text"
+  },
+  "notifications": "Bildirimler",
+  "@notifications": {
+    "type": "text"
+  },
+  "mods": "Modlar",
+  "@mods": {
+    "type": "text"
+  },
+  "id": "İD",
+  "@id": {
+    "type": "text"
+  },
+  "name": "İsim",
+  "@name": {
+    "type": "text"
+  },
+  "version": "Sürüm",
+  "@version": {
+    "type": "text"
+  },
+  "misc": "Çeşitli",
+  "@misc": {
+    "type": "text"
+  },
+  "science": "Bilim",
+  "@science": {
+    "type": "text"
+  },
+  "timberFileIcon": "<i class=\"fa-solid fa-file\"></i> .timber için dosya simgesini alın",
+  "@timberFileIcon": {
+    "type": "text"
+  },
+  "alertInstall": "Bir dosya simgesi yüklemek, tehlikeli olabilecek kayıt defteri düzenlemesini gerektirir. Lütfen README.md dosyasını dikkatlice okuyun ve talimatlarını izleyin.",
+  "@alertInstall": {
+    "type": "text"
+  },
+  "(orDragNDrop)": "(Ya da sürükleyip bırakın)",
+  "@(orDragNDrop)": {
+    "type": "text"
+  },
+  "pleaseSelectTimber": "Lütfen geçerli bir .timber dosyası seçin",
+  "@pleaseSelectTimber": {
+    "type": "text"
+  },
+  "energy": "Enerji",
+  "@energy": {
+    "type": "text"
+  }
+}

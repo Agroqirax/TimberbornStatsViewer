@@ -1,0 +1,521 @@
+{
+  "@@author": "Agroqirax",
+  "@@last_modified": "2024-07-13T19:43:45",
+  "@@locale": "zh",
+  "appTitle": "廷伯伯恩统计查看器",
+  "@appTitle": {
+    "description": "The title of the application",
+    "type": "text"
+  },
+  "selectFile": "选择 .timber 文件",
+  "@selectFile": {
+    "type": "text"
+  },
+  "details": "细节",
+  "@details": {
+    "type": "text"
+  },
+  "timestamp": "时间戳",
+  "@timestamp": {
+    "type": "text"
+  },
+  "cycle": "循环",
+  "@cycle": {
+    "type": "text"
+  },
+  "cycleDay": "天",
+  "@cycleDay": {
+    "type": "text"
+  },
+  "gameVersion": "游戏版本",
+  "@gameVersion": {
+    "description": "The version of the game",
+    "type": "text"
+  },
+  "mapSize": "地图尺寸",
+  "@mapSize": {
+    "description": "The width of the map",
+    "type": "text"
+  },
+  "faction": "派",
+  "@faction": {
+    "type": "text"
+  },
+  "mapName": "地图名称",
+  "@mapName": {
+    "description": "The name of the map",
+    "type": "text"
+  },
+  "beaversBorn": "海狸出生",
+  "@beaversBorn": {
+    "type": "text"
+  },
+  "waterConsumed": "消耗水量",
+  "@waterConsumed": {
+    "type": "text"
+  },
+  "tailsPainted": "",
+  "@tailsPainted": {
+    "type": "text"
+  },
+  "treesCut": "树木被砍伐",
+  "@treesCut": {
+    "type": "text"
+  },
+  "brokenTeeth": "牙齿断了",
+  "@brokenTeeth": {
+    "type": "text"
+  },
+  "botsManufactured": "机器人制造完成",
+  "@botsManufactured": {
+    "type": "text"
+  },
+  "dynamiteDetonated": "炸药被引爆",
+  "@dynamiteDetonated": {
+    "type": "text"
+  },
+  "beaversExploded": "海狸爆炸了",
+  "@beaversExploded": {
+    "type": "text"
+  },
+  "wellbeingHighscore": "幸福高分",
+  "@wellbeingHighscore": {
+    "type": "text"
+  },
+  "production": "生产",
+  "@production": {
+    "type": "text"
+  },
+  "food": "食物",
+  "@food": {
+    "type": "text"
+  },
+  "coffeeBush": "咖啡树丛",
+  "@coffeeBush": {
+    "type": "text"
+  },
+  "cassava": "木薯",
+  "@cassava": {
+    "type": "text"
+  },
+  "canola": "油菜籽",
+  "@canola": {
+    "type": "text"
+  },
+  "corn": "玉米",
+  "@corn": {
+    "type": "text"
+  },
+  "item": "物品",
+  "@item": {
+    "type": "text"
+  },
+  "required": "必需的",
+  "@required": {
+    "type": "text"
+  },
+  "storage": "贮存",
+  "@storage": {
+    "type": "text"
+  },
+  "net": "网",
+  "@net": {
+    "type": "text"
+  },
+  "storageTime": "储存时间",
+  "@storageTime": {
+    "type": "text"
+  },
+  "install": "安装为网络应用程序",
+  "@install": {
+    "type": "text"
+  },
+  "exportPrompt": "导出 .timber 文件",
+  "@exportPrompt": {
+    "type": "text"
+  },
+  "exportAlert": "导出 .timber 文件",
+  "@exportAlert": {
+    "type": "text"
+  },
+  "area": "区域",
+  "@area": {
+    "type": "text"
+  },
+  "planted": "种植",
+  "@planted": {
+    "type": "text"
+  },
+  "resources": "资源",
+  "@resources": {
+    "type": "text"
+  },
+  "birch": "桦木",
+  "@birch": {
+    "type": "text"
+  },
+  "pine": "松树",
+  "@pine": {
+    "type": "text"
+  },
+  "mangrove": "红树",
+  "@mangrove": {
+    "type": "text"
+  },
+  "oak": "橡木",
+  "@oak": {
+    "type": "text"
+  },
+  "crops": "农作物",
+  "@crops": {
+    "type": "text"
+  },
+  "treesAndBushes": "树木和灌木丛",
+  "@treesAndBushes": {
+    "type": "text"
+  },
+  "plantingArea": "种植面积",
+  "@plantingArea": {
+    "type": "text"
+  },
+  "grown": "长大的",
+  "@grown": {
+    "type": "text"
+  },
+  "treeCuttingArea": "树木砍伐区",
+  "@treeCuttingArea": {
+    "type": "text"
+  },
+  "adultBeaver": "成年海狸",
+  "@adultBeaver": {
+    "type": "text"
+  },
+  "childBeaver": "儿童海狸",
+  "@childBeaver": {
+    "type": "text"
+  },
+  "contact": "接触",
+  "@contact": {
+    "type": "text"
+  },
+  "project": "项目",
+  "@project": {
+    "type": "text"
+  },
+  "social": "社会的",
+  "@social": {
+    "type": "text"
+  },
+  "getTimberborn": "获取木材伯恩",
+  "@getTimberborn": {
+    "type": "text"
+  },
+  "moreTimberborn": "更多在售的 林伯恩 商品",
+  "@moreTimberborn": {
+    "type": "text"
+  },
+  "processing": "加工...",
+  "@processing": {
+    "type": "text"
+  },
+  "(perDay)": "（每天）",
+  "@(perDay)": {
+    "type": "text"
+  },
+  "bugReport": "<i class=\"fa-solid fa-bug\"></i> 错误报告",
+  "@bugReport": {
+    "type": "text"
+  },
+  "byCreator": "由 Agroqirax 提供",
+  "@byCreator": {
+    "type": "text"
+  },
+  "algae": "藻类",
+  "@algae": {
+    "type": "text"
+  },
+  "description": "描述",
+  "@description": {
+    "type": "text"
+  },
+  "ingredients": "原料",
+  "@ingredients": {
+    "type": "text"
+  },
+  "materials": "材料",
+  "@materials": {
+    "type": "text"
+  },
+  "algaeRation": "藻类定量",
+  "@algaeRation": {
+    "type": "text"
+  },
+  "antidote": "解毒剂",
+  "@antidote": {
+    "type": "text"
+  },
+  "badwater": "恶水",
+  "@badwater": {
+    "type": "text"
+  },
+  "berries": "浆果",
+  "@berries": {
+    "type": "text"
+  },
+  "biofuel": "生物燃料",
+  "@biofuel": {
+    "type": "text"
+  },
+  "book": "书",
+  "@book": {
+    "type": "text"
+  },
+  "botChassis": "机器人底盘",
+  "@botChassis": {
+    "type": "text"
+  },
+  "botHead": "机器人头",
+  "@botHead": {
+    "type": "text"
+  },
+  "botLimb": "机器人肢体",
+  "@botLimb": {
+    "type": "text"
+  },
+  "bread": "面包",
+  "@bread": {
+    "type": "text"
+  },
+  "canolaOil": "菜籽油",
+  "@canolaOil": {
+    "type": "text"
+  },
+  "canolaSeeds": "油菜籽",
+  "@canolaSeeds": {
+    "type": "text"
+  },
+  "carrot": "胡萝卜",
+  "@carrot": {
+    "type": "text"
+  },
+  "catalyst": "催化剂",
+  "@catalyst": {
+    "type": "text"
+  },
+  "cattailFlour": "香蒲粉",
+  "@cattailFlour": {
+    "type": "text"
+  },
+  "cattailRoot": "香蒲根",
+  "@cattailRoot": {
+    "type": "text"
+  },
+  "cattailCracker": "香蒲饼干",
+  "@cattailCracker": {
+    "type": "text"
+  },
+  "chestnut": "板栗",
+  "@chestnut": {
+    "type": "text"
+  },
+  "coffee": "咖啡",
+  "@coffee": {
+    "type": "text"
+  },
+  "coffeeBean": "咖啡豆",
+  "@coffeeBean": {
+    "type": "text"
+  },
+  "cornRation": "玉米配给",
+  "@cornRation": {
+    "type": "text"
+  },
+  "dandelion": "蒲公英",
+  "@dandelion": {
+    "type": "text"
+  },
+  "dirt": "污垢",
+  "@dirt": {
+    "type": "text"
+  },
+  "eggplant": "茄子",
+  "@eggplant": {
+    "type": "text"
+  },
+  "eggplantRation": "茄子口粮",
+  "@eggplantRation": {
+    "type": "text"
+  },
+  "explosives": "炸药",
+  "@explosives": {
+    "type": "text"
+  },
+  "extract": "提炼",
+  "@extract": {
+    "type": "text"
+  },
+  "fermentedCassava": "发酵木薯",
+  "@fermentedCassava": {
+    "type": "text"
+  },
+  "fermentedMushroom": "发酵蘑菇",
+  "@fermentedMushroom": {
+    "type": "text"
+  },
+  "fermentedSoybean": "发酵大豆",
+  "@fermentedSoybean": {
+    "type": "text"
+  },
+  "gear": "齿轮",
+  "@gear": {
+    "type": "text"
+  },
+  "grease": "润滑脂",
+  "@grease": {
+    "type": "text"
+  },
+  "grilledChestnut": "烤板栗",
+  "@grilledChestnut": {
+    "type": "text"
+  },
+  "grilledPotato": "烤土豆",
+  "@grilledPotato": {
+    "type": "text"
+  },
+  "grilledSpadderdock": "烤麻雀",
+  "@grilledSpadderdock": {
+    "type": "text"
+  },
+  "kohlrabi": "苤",
+  "@kohlrabi": {
+    "type": "text"
+  },
+  "log": "日志",
+  "@log": {
+    "type": "text"
+  },
+  "mangroveFruit": "红树果",
+  "@mangroveFruit": {
+    "type": "text"
+  },
+  "maplePastry": "枫糖糕点",
+  "@maplePastry": {
+    "type": "text"
+  },
+  "maplySyrup": "枫糖浆",
+  "@maplySyrup": {
+    "type": "text"
+  },
+  "metalBlock": "金属块",
+  "@metalBlock": {
+    "type": "text"
+  },
+  "mushroom": "蘑菇",
+  "@mushroom": {
+    "type": "text"
+  },
+  "paper": "纸",
+  "@paper": {
+    "type": "text"
+  },
+  "pineResin": "松脂",
+  "@pineResin": {
+    "type": "text"
+  },
+  "plank": "板",
+  "@plank": {
+    "type": "text"
+  },
+  "potato": "土豆",
+  "@potato": {
+    "type": "text"
+  },
+  "punchCard": "打卡",
+  "@punchCard": {
+    "type": "text"
+  },
+  "scrapMetal": "废金属",
+  "@scrapMetal": {
+    "type": "text"
+  },
+  "soybean": "大豆",
+  "@soybean": {
+    "type": "text"
+  },
+  "spadderdock": "斯帕德多克",
+  "@spadderdock": {
+    "type": "text"
+  },
+  "sunflowerSeeds": "葵花籽",
+  "@sunflowerSeeds": {
+    "type": "text"
+  },
+  "treatedPlank": "处理过的木板",
+  "@treatedPlank": {
+    "type": "text"
+  },
+  "water": "水",
+  "@water": {
+    "type": "text"
+  },
+  "wheat": "小麦",
+  "@wheat": {
+    "type": "text"
+  },
+  "wheatFlour": "面粉",
+  "@wheatFlour": {
+    "type": "text"
+  },
+  "blueberry": "蓝莓",
+  "@blueberry": {
+    "type": "text"
+  },
+  "notifications": "通知",
+  "@notifications": {
+    "type": "text"
+  },
+  "mods": "模组",
+  "@mods": {
+    "type": "text"
+  },
+  "id": "ID",
+  "@id": {
+    "type": "text"
+  },
+  "name": "姓名",
+  "@name": {
+    "type": "text"
+  },
+  "version": "版本",
+  "@version": {
+    "type": "text"
+  },
+  "misc": "杂项",
+  "@misc": {
+    "type": "text"
+  },
+  "science": "科学",
+  "@science": {
+    "type": "text"
+  },
+  "timberFileIcon": "<i class=\"fa-solid fa-file\"></i> 获取 .timber 的文件图标",
+  "@timberFileIcon": {
+    "type": "text"
+  },
+  "alertInstall": "安装文件图标需要编辑注册表，这可能很危险。请仔细阅读 README.md 并按照其说明进行操作。",
+  "@alertInstall": {
+    "type": "text"
+  },
+  "(orDragNDrop)": "（或拖放）",
+  "@(orDragNDrop)": {
+    "type": "text"
+  },
+  "pleaseSelectTimber": "请选择有效的 .timber 文件",
+  "@pleaseSelectTimber": {
+    "type": "text"
+  },
+  "energy": "活力",
+  "@energy": {
+    "type": "text"
+  }
+}

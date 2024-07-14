@@ -1,0 +1,44 @@
+{
+  "game": {
+    "Entities": {
+      "LumberMill": {
+        "Versions": [
+          {
+            "Recipes": {
+              "Plank": {
+                ".duration": 1.3,
+                "Input": {
+                  "Log": 1
+                },
+                "Output": {
+                  "Plank": 1
+                }
+              },
+              "PlankSawdust": {
+                ".duration": 10,
+                "Input": {
+                  "Log": 5,
+                  "Water": 2
+                },
+                "Output": {
+                  "Plank": 10,
+                  "Dirt": 1
+                }
+              },
+              "Dirt": {
+                ".duration": 2,
+                "Input": {
+                  "Log": 1,
+                  "Water": 1
+                },
+                "Output": {
+                  "Dirt": 1
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

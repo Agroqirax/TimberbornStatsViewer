@@ -1,0 +1,521 @@
+{
+  "@@author": "Agroqirax",
+  "@@last_modified": "2024-07-13T19:43:45",
+  "@@locale": "uk",
+  "appTitle": "Переглядач статистики Timberborn",
+  "@appTitle": {
+    "description": "The title of the application",
+    "type": "text"
+  },
+  "selectFile": "Виберіть файл .timber",
+  "@selectFile": {
+    "type": "text"
+  },
+  "details": "Подробиці",
+  "@details": {
+    "type": "text"
+  },
+  "timestamp": "Мітка часу",
+  "@timestamp": {
+    "type": "text"
+  },
+  "cycle": "Цикл",
+  "@cycle": {
+    "type": "text"
+  },
+  "cycleDay": "День",
+  "@cycleDay": {
+    "type": "text"
+  },
+  "gameVersion": "Ігрова версія",
+  "@gameVersion": {
+    "description": "The version of the game",
+    "type": "text"
+  },
+  "mapSize": "Розмір карти",
+  "@mapSize": {
+    "description": "The width of the map",
+    "type": "text"
+  },
+  "faction": "Фракція",
+  "@faction": {
+    "type": "text"
+  },
+  "mapName": "Назва карти",
+  "@mapName": {
+    "description": "The name of the map",
+    "type": "text"
+  },
+  "beaversBorn": "Бобри нар",
+  "@beaversBorn": {
+    "type": "text"
+  },
+  "waterConsumed": "Витрачена вода",
+  "@waterConsumed": {
+    "type": "text"
+  },
+  "tailsPainted": "",
+  "@tailsPainted": {
+    "type": "text"
+  },
+  "treesCut": "Дерева зрізані",
+  "@treesCut": {
+    "type": "text"
+  },
+  "brokenTeeth": "Зламані зуби",
+  "@brokenTeeth": {
+    "type": "text"
+  },
+  "botsManufactured": "Боти виготовлені",
+  "@botsManufactured": {
+    "type": "text"
+  },
+  "dynamiteDetonated": "Здетонував динаміт",
+  "@dynamiteDetonated": {
+    "type": "text"
+  },
+  "beaversExploded": "Вибухнули бобри",
+  "@beaversExploded": {
+    "type": "text"
+  },
+  "wellbeingHighscore": "Рекорд добробуту",
+  "@wellbeingHighscore": {
+    "type": "text"
+  },
+  "production": "виробництво",
+  "@production": {
+    "type": "text"
+  },
+  "food": "харчування",
+  "@food": {
+    "type": "text"
+  },
+  "coffeeBush": "Кавовий кущ",
+  "@coffeeBush": {
+    "type": "text"
+  },
+  "cassava": "маніока",
+  "@cassava": {
+    "type": "text"
+  },
+  "canola": "канола",
+  "@canola": {
+    "type": "text"
+  },
+  "corn": "Кукурудза",
+  "@corn": {
+    "type": "text"
+  },
+  "item": "Пункт",
+  "@item": {
+    "type": "text"
+  },
+  "required": "вимагається",
+  "@required": {
+    "type": "text"
+  },
+  "storage": "Зберігання",
+  "@storage": {
+    "type": "text"
+  },
+  "net": "Чистий",
+  "@net": {
+    "type": "text"
+  },
+  "storageTime": "Термін зберігання",
+  "@storageTime": {
+    "type": "text"
+  },
+  "install": "Встановити як веб-додаток",
+  "@install": {
+    "type": "text"
+  },
+  "exportPrompt": "Експорт файлу .timber",
+  "@exportPrompt": {
+    "type": "text"
+  },
+  "exportAlert": "Експорт файлу .timber",
+  "@exportAlert": {
+    "type": "text"
+  },
+  "area": "Площа",
+  "@area": {
+    "type": "text"
+  },
+  "planted": "Посадили",
+  "@planted": {
+    "type": "text"
+  },
+  "resources": "Ресурси",
+  "@resources": {
+    "type": "text"
+  },
+  "birch": "Береза",
+  "@birch": {
+    "type": "text"
+  },
+  "pine": "Сосна",
+  "@pine": {
+    "type": "text"
+  },
+  "mangrove": "Мангровий ліс",
+  "@mangrove": {
+    "type": "text"
+  },
+  "oak": "Дуб",
+  "@oak": {
+    "type": "text"
+  },
+  "crops": "Культури",
+  "@crops": {
+    "type": "text"
+  },
+  "treesAndBushes": "Дерева та кущі",
+  "@treesAndBushes": {
+    "type": "text"
+  },
+  "plantingArea": "Площа посадки",
+  "@plantingArea": {
+    "type": "text"
+  },
+  "grown": "Виросли",
+  "@grown": {
+    "type": "text"
+  },
+  "treeCuttingArea": "Ділянка вирубки дерев",
+  "@treeCuttingArea": {
+    "type": "text"
+  },
+  "adultBeaver": "Дорослий бобер",
+  "@adultBeaver": {
+    "type": "text"
+  },
+  "childBeaver": "Дитина бобер",
+  "@childBeaver": {
+    "type": "text"
+  },
+  "contact": "контакт",
+  "@contact": {
+    "type": "text"
+  },
+  "project": "Демонструвати",
+  "@project": {
+    "type": "text"
+  },
+  "social": "Соціальний",
+  "@social": {
+    "type": "text"
+  },
+  "getTimberborn": "Отримати тимберборн",
+  "@getTimberborn": {
+    "type": "text"
+  },
+  "moreTimberborn": "Більше деревини",
+  "@moreTimberborn": {
+    "type": "text"
+  },
+  "processing": "Обробка...",
+  "@processing": {
+    "type": "text"
+  },
+  "(perDay)": "(На день)",
+  "@(perDay)": {
+    "type": "text"
+  },
+  "bugReport": "<i class=\"fa-solid fa-bug\"></i> Звіт про помилку",
+  "@bugReport": {
+    "type": "text"
+  },
+  "byCreator": "Від Agroqirax",
+  "@byCreator": {
+    "type": "text"
+  },
+  "algae": "Водорості",
+  "@algae": {
+    "type": "text"
+  },
+  "description": "опис",
+  "@description": {
+    "type": "text"
+  },
+  "ingredients": "Інгредієнти",
+  "@ingredients": {
+    "type": "text"
+  },
+  "materials": "Матеріали",
+  "@materials": {
+    "type": "text"
+  },
+  "algaeRation": "Раціон водоростей",
+  "@algaeRation": {
+    "type": "text"
+  },
+  "antidote": "Протиотрута",
+  "@antidote": {
+    "type": "text"
+  },
+  "badwater": "Badwater",
+  "@badwater": {
+    "type": "text"
+  },
+  "berries": "Ягоди",
+  "@berries": {
+    "type": "text"
+  },
+  "biofuel": "Біопаливо",
+  "@biofuel": {
+    "type": "text"
+  },
+  "book": "книга",
+  "@book": {
+    "type": "text"
+  },
+  "botChassis": "Шасі бота",
+  "@botChassis": {
+    "type": "text"
+  },
+  "botHead": "Голова бота",
+  "@botHead": {
+    "type": "text"
+  },
+  "botLimb": "Ботова кінцівка",
+  "@botLimb": {
+    "type": "text"
+  },
+  "bread": "Хліб",
+  "@bread": {
+    "type": "text"
+  },
+  "canolaOil": "Олія каноли",
+  "@canolaOil": {
+    "type": "text"
+  },
+  "canolaSeeds": "Насіння каноли",
+  "@canolaSeeds": {
+    "type": "text"
+  },
+  "carrot": "Морква",
+  "@carrot": {
+    "type": "text"
+  },
+  "catalyst": "Каталізатор",
+  "@catalyst": {
+    "type": "text"
+  },
+  "cattailFlour": "Борошно з рогозу",
+  "@cattailFlour": {
+    "type": "text"
+  },
+  "cattailRoot": "Корінь рогозу",
+  "@cattailRoot": {
+    "type": "text"
+  },
+  "cattailCracker": "Крекер Cattal",
+  "@cattailCracker": {
+    "type": "text"
+  },
+  "chestnut": "Каштан",
+  "@chestnut": {
+    "type": "text"
+  },
+  "coffee": "кава",
+  "@coffee": {
+    "type": "text"
+  },
+  "coffeeBean": "Кавовий біб",
+  "@coffeeBean": {
+    "type": "text"
+  },
+  "cornRation": "Раціон кукурудзи",
+  "@cornRation": {
+    "type": "text"
+  },
+  "dandelion": "Кульбаба",
+  "@dandelion": {
+    "type": "text"
+  },
+  "dirt": "Бруд",
+  "@dirt": {
+    "type": "text"
+  },
+  "eggplant": "Баклажани",
+  "@eggplant": {
+    "type": "text"
+  },
+  "eggplantRation": "Раціон баклажанів",
+  "@eggplantRation": {
+    "type": "text"
+  },
+  "explosives": "Вибухові речовини",
+  "@explosives": {
+    "type": "text"
+  },
+  "extract": "Екстракт",
+  "@extract": {
+    "type": "text"
+  },
+  "fermentedCassava": "Ферментована маніока",
+  "@fermentedCassava": {
+    "type": "text"
+  },
+  "fermentedMushroom": "Ферментований гриб",
+  "@fermentedMushroom": {
+    "type": "text"
+  },
+  "fermentedSoybean": "Ферментована соя",
+  "@fermentedSoybean": {
+    "type": "text"
+  },
+  "gear": "спорядження",
+  "@gear": {
+    "type": "text"
+  },
+  "grease": "Мастило",
+  "@grease": {
+    "type": "text"
+  },
+  "grilledChestnut": "Каштан на грилі",
+  "@grilledChestnut": {
+    "type": "text"
+  },
+  "grilledPotato": "Картопля на грилі",
+  "@grilledPotato": {
+    "type": "text"
+  },
+  "grilledSpadderdock": "Сковорода на грилі",
+  "@grilledSpadderdock": {
+    "type": "text"
+  },
+  "kohlrabi": "кольрабі",
+  "@kohlrabi": {
+    "type": "text"
+  },
+  "log": "Журнал",
+  "@log": {
+    "type": "text"
+  },
+  "mangroveFruit": "Мангрові фрукти",
+  "@mangroveFruit": {
+    "type": "text"
+  },
+  "maplePastry": "Кленове тісто",
+  "@maplePastry": {
+    "type": "text"
+  },
+  "maplySyrup": "Сироп Маплі",
+  "@maplySyrup": {
+    "type": "text"
+  },
+  "metalBlock": "Металевий блок",
+  "@metalBlock": {
+    "type": "text"
+  },
+  "mushroom": "Гриб",
+  "@mushroom": {
+    "type": "text"
+  },
+  "paper": "Папір",
+  "@paper": {
+    "type": "text"
+  },
+  "pineResin": "Соснова смола",
+  "@pineResin": {
+    "type": "text"
+  },
+  "plank": "Планка",
+  "@plank": {
+    "type": "text"
+  },
+  "potato": "Картопля",
+  "@potato": {
+    "type": "text"
+  },
+  "punchCard": "Перфокарта",
+  "@punchCard": {
+    "type": "text"
+  },
+  "scrapMetal": "Металобрухт",
+  "@scrapMetal": {
+    "type": "text"
+  },
+  "soybean": "соєві боби",
+  "@soybean": {
+    "type": "text"
+  },
+  "spadderdock": "Спаддердок",
+  "@spadderdock": {
+    "type": "text"
+  },
+  "sunflowerSeeds": "Насіння",
+  "@sunflowerSeeds": {
+    "type": "text"
+  },
+  "treatedPlank": "Оброблена дошка",
+  "@treatedPlank": {
+    "type": "text"
+  },
+  "water": "вода",
+  "@water": {
+    "type": "text"
+  },
+  "wheat": "пшениця",
+  "@wheat": {
+    "type": "text"
+  },
+  "wheatFlour": "Пшеничне борошно",
+  "@wheatFlour": {
+    "type": "text"
+  },
+  "blueberry": "Чорниця",
+  "@blueberry": {
+    "type": "text"
+  },
+  "notifications": "Сповіщення",
+  "@notifications": {
+    "type": "text"
+  },
+  "mods": "Моди",
+  "@mods": {
+    "type": "text"
+  },
+  "id": "ID",
+  "@id": {
+    "type": "text"
+  },
+  "name": "Ім''я",
+  "@name": {
+    "type": "text"
+  },
+  "version": "Версія",
+  "@version": {
+    "type": "text"
+  },
+  "misc": "Різне",
+  "@misc": {
+    "type": "text"
+  },
+  "science": "Наука",
+  "@science": {
+    "type": "text"
+  },
+  "timberFileIcon": "<i class=\"fa-solid fa-file\"></i> Отримати піктограму файлу для .timber",
+  "@timberFileIcon": {
+    "type": "text"
+  },
+  "alertInstall": "Встановлення піктограми файлу вимагає редагування реєстру, що може бути небезпечним. Будь ласка, уважно прочитайте README.md і дотримуйтесь інструкцій.",
+  "@alertInstall": {
+    "type": "text"
+  },
+  "(orDragNDrop)": "(Або перетягнути)",
+  "@(orDragNDrop)": {
+    "type": "text"
+  },
+  "pleaseSelectTimber": "Виберіть дійсний файл .timber",
+  "@pleaseSelectTimber": {
+    "type": "text"
+  },
+  "energy": "Енергія",
+  "@energy": {
+    "type": "text"
+  }
+}

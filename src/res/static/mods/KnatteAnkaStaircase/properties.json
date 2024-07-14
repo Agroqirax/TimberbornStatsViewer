@@ -1,0 +1,153 @@
+{
+  "game": {
+    "Entities": {
+      "StaircaseLog": {
+        "Id": "StaircaseLog",
+        "Name": "",
+        "TranslatId": "",
+        "Versions": [
+          {
+            "TemplateId": "",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "": ""
+            }
+          },
+          {
+            "TemplateId": "",
+            "Faction": "IronTeeth",
+            "BuildingMaterials": {
+              "": ""
+            }
+          }
+        ]
+      },
+      "SpiralStaircase": {
+        "Id": "SpiralStaircase",
+        "Name": "",
+        "TranslatId": "",
+        "Versions": [
+          {
+            "TemplateId": "",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "": ""
+            }
+          },
+          {
+            "TemplateId": "",
+            "Faction": "IronTeeth",
+            "BuildingMaterials": {
+              "": ""
+            }
+          }
+        ]
+      },
+      "MetalStaircase": {
+        "Id": "MetalStaircase",
+        "Name": "",
+        "TranslatId": "",
+        "Versions": [
+          {
+            "TemplateId": "",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "": ""
+            }
+          },
+          {
+            "TemplateId": "",
+            "Faction": "IronTeeth",
+            "BuildingMaterials": {
+              "": ""
+            }
+          }
+        ]
+      },
+      "Pillar_1": {
+        "Id": "Pillar_1",
+        "Name": "",
+        "TranslatId": "",
+        "Versions": [
+          {
+            "TemplateId": "",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "": ""
+            }
+          },
+          {
+            "TemplateId": "",
+            "Faction": "IronTeeth",
+            "BuildingMaterials": {
+              "": ""
+            }
+          }
+        ]
+      },
+      "Pillar": {
+        "Id": "Pillar",
+        "Name": "",
+        "TranslatId": "",
+        "Versions": [
+          {
+            "TemplateId": "",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "": ""
+            }
+          },
+          {
+            "TemplateId": "",
+            "Faction": "IronTeeth",
+            "BuildingMaterials": {
+              "": ""
+            }
+          }
+        ]
+      },
+      "Pillars": {
+        "Id": "Pillars",
+        "Name": "Pillars",
+        "TranslatId": "pillars",
+        "Versions": [
+          {
+            "TemplateId": "",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "": ""
+            }
+          },
+          {
+            "TemplateId": "",
+            "Faction": "IronTeeth",
+            "BuildingMaterials": {
+              "": ""
+            }
+          }
+        ]
+      },
+      "PillarTop": {
+        "Id": "PillarTop",
+        "Name": "Pillar top",
+        "TranslatId": "pillarTop",
+        "Versions": [
+          {
+            "TemplateId": "PillarTop.Folktails",
+            "Faction": "Folktails",
+            "BuildingMaterials": {
+              "": ""
+            }
+          },
+          {
+            "TemplateId": "PillarTop.IronTeeth",
+            "Faction": "IronTeeth",
+            "BuildingMaterials": {
+              "": ""
+            }
+          }
+        ]
+      }
+    }
+  }
+}

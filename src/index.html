@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Timberborn stat viewer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="res/static/images/logo.png"
+    />
+
+    <link href="res/static/fontawesome/css/fontawesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="res/static/fontawesome/css/brands.css" />
+    <link rel="stylesheet" href="res/static/fontawesome/css/solid.css" />
+
+    <!--Google fonts-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="res/static/styles/main.css" />
+    <script src="res/static/scripts/dragover.js" defer></script>
+    <script src="res/static/scripts/unzip.js" defer></script>
+
+    <script src="res/static/scripts/jszip.min.js" defer></script>
+    <script src="res/static/scripts/localization.js" defer></script>
+    <script src="res/static/scripts/dataScript.js" defer></script>
+    <script src="res/static/scripts/export.js" defer></script>
+    <script src="res/static/scripts/scripts.js" defer></script>
+
+    <link rel="manifest" href="manifest.json" />
+    <script src="res/static/service/install.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <img src="res/static/images/logo.png" alt="logo" id="logo" />
+      <div class="contenty">
+        <h1 data-translate="appTitle">appTitle</h1>
+        <div class="contentx small" style="justify-content: space-between">
+          <p data-translate="byCreator">byCreator</p>
+          <p data-script="return properties['app']['version']" style="right: 0">
+            v0.6.1.2
+          </p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="input">
+        <h1 class="title" data-translate="selectFile">selectFile</h1>
+        <p class="small" data-translate="(orDragNDrop)">(orDragNDrop)</p>
+        <div class="contentx">
+          <input type="file" id="zipFileInput" accept=".timber" />
+          <div id="spinner" style="display: none">
+            <i class="fa-solid fa-spinner fa-spin-pulse"></i>
+            <p data-translate="processing" style="display: inline-block">
+              processing
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="details">
+        <h1 class="title" data-translate="details">details</h1>
+        <div class="contentx">
+          <img
+            id="thumbnail"
+            alt="Thumbnail image"
+            src="res/static/images/loading.png"
+          />
+          <table>
+            <tbody>
+              <tr>
+                <td data-translate="timestamp">timestamp</td>
+                <td data-script="return worldData['Timestamp']"></td>
+              </tr>
+              <tr>
+                <td data-translate="cycle">cycle</td>
+                <td
+                  data-script="return worldData['Singletons']['WeatherService']['Cycle']"
+                ></td>
+              </tr>
+              <tr>
+                <td data-translate="cycleDay">cycleDay</td>
+                <td
+                  data-script="return worldData['Singletons']['WeatherService']['CycleDay']"
+                ></td>
+              </tr>
+              <tr>
+                <td data-translate="gameVersion">game version</td>
+                <td data-script="return worldData['GameVersion']"></td>
+              </tr>
+              <tr>
+                <td data-translate="faction">faction</td>
+                <td
+                  data-script="return worldData['Singletons']['FactionService']['Id']"
+                ></td>
+              </tr>
+
+              <tr>
+                <td data-translate="adultBeaver">adultBeavers</td>
+                <td data-script="return getEntities('BeaverAdult')"></td>
+              </tr>
+              <tr>
+                <td data-translate="childBeaver">childBeavers</td>
+                <td data-script="return getEntities('BeaverChild')"></td>
+              </tr>
+              <tr>
+                <td data-translate="mapName">mapName</td>
+                <td
+                  data-script="return worldData['Singletons']['MapNameService']['Name']"
+                ></td>
+              </tr>
+              <tr>
+                <td data-translate="mapSize">mapSize</td>
+                <td
+                  data-script="return worldData['Singletons']['MapSize']['Size']['X'] + 'x' + worldData['Singletons']['MapSize']['Size']['Y']"
+                ></td>
+              </tr>
+            </tbody>
+          </table>
+          <table>
+            <tbody>
+              <tr>
+                <td data-translate="wellbeingHighscore">wellbeingHighscore</td>
+                <td
+                  data-script="return worldData['Singletons']['WellbeingHighscore']['AverageWellbeingHighscore']"
+                ></td>
+              </tr>
+              <tr>
+                <td data-translate="beaversBorn">beaversBorn</td>
+                <td data-script="return getSettlementStat('BeaversBorn');"></td>
+              </tr>
+              <tr>
+                <td data-translate="waterConsumed">waterConsumed</td>
+                <td
+                  data-script="return getSettlementStat('WaterConsumed');"
+                ></td>
+              </tr>
+              <tr>
+                <td data-translate="tailsPainted">tailsPainted</td>
+                <td
+                  data-script="return getSettlementStat('TailsPainted');"
+                ></td>
+              </tr>
+              <tr>
+                <td data-translate="treesCut">treesCut</td>
+                <td data-script="return getSettlementStat('TreesCut');"></td>
+              </tr>
+              <tr>
+                <td data-translate="brokenTeeth">brokenTeeth</td>
+                <td data-script="return getSettlementStat('BrokenTeeth');"></td>
+              </tr>
+              <tr>
+                <td data-translate="botsManufactured">botsManufactured</td>
+                <td
+                  data-script="return getSettlementStat('BotsManufactured');"
+                ></td>
+              </tr>
+              <tr>
+                <td data-translate="dynamiteDetonated">dynamiteDetonated</td>
+                <td
+                  data-script="return getSettlementStat('DynamiteDetonated');"
+                ></td>
+              </tr>
+              <tr>
+                <td data-translate="beaversExploded">beaversExploded</td>
+                <td
+                  data-script="return getSettlementStat('BeaversExploded');"
+                ></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section id="production">
+        <h1 class="title" data-translate="production">production</h1>
+        <div class="contentx">
+          <div class="contenty">
+            <p data-translate="materials">materials</p>
+            <p
+              data-translate="(perDay)"
+              style="font-size: 0.6em; display: inline-block"
+            >
+              (perDay)
+            </p>
+            <table>
+              <thead>
+                <tr>
+                  <th data-translate="item">item</th>
+                  <th data-translate="production">production</th>
+                  <th data-translate="required">required</th>
+                  <th data-translate="storage">storage</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-translate="antidote">antidote</td>
+                  <td data-script="return getProductionAmount('Antidote')"></td>
+                  <td data-script="return getRequiredAmount('Antidote')"></td>
+                  <td data-script="return getStorageAmount('Antidote');"></td>
+                </tr>
+                <tr>
+                  <td data-translate="badwater">badwater</td>
+                  <td data-script="return getProductionAmount('Badwater')"></td>
+                  <td data-script="return getRequiredAmount('Badwater')"></td>
+                  <td data-script="return getStorageAmount('Badwater');"></td>
+                </tr>
+                <tr>
+                  <td data-translate="biofuel">biofuel</td>
+                  <td data-script="return getProductionAmount('Biofuel')"></td>
+                  <td data-script="return getRequiredAmount('Biofuel')"></td>
+                  <td data-script="return getStorageAmount('Biofuel');"></td>
+                </tr>
+                <tr>
+                  <td data-translate="book">book</td>
+                  <td data-script="return getProductionAmount('Book')"></td>
+                  <td data-script="return getRequiredAmount('Book')"></td>
+                  <td data-script="return getStorageAmount('Book');"></td>
+                </tr>
+                <tr>
+                  <td data-translate="botChassis">botChassis</td>
+                  <td
+                    data-script="return getProductionAmount('BotChassis')"
+                  ></td>
+                  <td data-script="return getRequiredAmount('BotChassis')"></td>
+                  <td data-script="return getStorageAmount('BotChassis');"></td>
+                </tr>
+                <tr>
+                  <td data-translate="botHead">botHead</td>
+                  <td data-script="return getProductionAmount('BotHead')"></td>
+                  <td data-script="return getRequiredAmount('BotHead')"></td>
+                  <td data-script="return getStorageAmount('BotLimb');"></td>
+                </tr>
+                <tr>
+                  <td data-translate="botLimb">botLimb</td>
+                  <td data-script="return getProductionAmount('BotLimb')"></td>
+                  <td data-script="return getRequiredAmount('BotLimb')"></td>
+                  <td data-script="return getStorageAmount('BotChassis');"></td>
+                </tr>
+                <tr>
+                  <td data-translate="cattailRoot">cattailRoot</td>
+                  <td
+                    data-script="return getProductionAmount('CattailRoot')"
+                  ></td>
+                  <td
+                    data-script="return getRequiredAmount('CattailRoot')"
+                  ></td>
+                  <td
+                    data-script="return getStorageAmount('CattailRoot');"
+                  ></td>
+                </tr>
+                <tr>
+                  <td data-translate="catalyst">catalyst</td>
+                  <td data-script="return getProductionAmount('Catalyst')"></td>
+                  <td data-script="return getRequiredAmount('Catalyst')"></td>
+                  <td data-script="return getStorageAmount('Catalyst');"></td>
+                </tr>
+                <tr>
+                  <td data-translate="dirt">dirt</td>
+                  <td data-script="return getProductionAmount('Dirt')"></td>
+                  <td data-script="return getRequiredAmount('Dirt')"></td>
+                  <td data-script="return getStorageAmount('Dirt');"></td>
+                </tr>
+                <tr>
+                  <td data-translate="explosives">explosives</td>
+                  <td
+                    data-script="return getProductionAmount('Explosives')"
+                  ></td>
+                  <td data-script="return getRequiredAmount('Explosives')"></td>
+                  <td data-script="return getStorageAmount('Explosives');"></td>
+                </tr>
+                <tr>
+                  <td data-translate="extract">extract</td>
+                  <td data-script="return getProductionAmount('Extract')"></td>
+                  <td data-script="return getRequiredAmount('Extract')"></td>
+                  <td data-script="return getStorageAmount('Extract');"></td>
+                </tr>
+                <tr>
+                  <td data-translate="gear">gear</td>
+                  <td data-script="return getProductionAmount('Gear')"></td>
+                  <td data-script="return getRequiredAmount('Gear')"></td>
+                  <td data-script="return getStorageAmount('Gear');"></td>
+                </tr>
+                <tr>
+                  <td data-translate="log">log</td>
+                  <td data-script="return getProductionAmount('Log')"></td>
+                  <td data-script="return getRequiredAmount('Log')"></td>
+                  <td data-script="return getStorageAmount('Log');"></td>
+                </tr>
+                <tr>
+                  <td data-translate="metalBlock">metalBlock</td>
+                  <td
+                    data-script="return getProductionAmount('MetalBlock')"
+                  ></td>
+                  <td data-script="return getRequiredAmount('MetalBlock')"></td>
+                  <td data-script="return getStorageAmount('MetalBlock');"></td>
+                </tr>
+                <tr>
+                  <td data-translate="paper">paper</td>
+                  <td data-script="return getProductionAmount('Paper')"></td>
+                  <td data-script="return getRequiredAmount('Paper')"></td>
+                  <td data-script="return getStorageAmount('Paper');"></td>
+                </tr>
+                <tr>
+                  <td data-translate="pineResin">pineResin</td>
+                  <td
+                    data-script="return getProductionAmount('PineResin')"
+                  ></td>
+                  <td data-script="return getRequiredAmount('PineResin')"></td>
+                  <td data-script="return getStorageAmount('PineResin');"></td>
+                </tr>
+                <tr>
+                  <td data-translate="plank">plank</td>
+                  <td data-script="return getProductionAmount('Plank')"></td>
+                  <td data-script="return getRequiredAmount('Plank')"></td>
+                  <td data-script="return getStorageAmount('Plank');"></td>
+                </tr>
+                <tr>
+                  <td data-translate="scrapMetal">scrapMetal</td>
+                  <td
+                    data-script="return getProductionAmount('ScrapMetal')"
+                  ></td>
+                  <td data-script="return getRequiredAmount('ScrapMetal')"></td>
+                  <td data-script="return getStorageAmount('ScrapMetal');"></td>
+                </tr>
+                <tr>
+                  <td data-translate="treatedPlank">treatedPlank</td>
+                  <td
+                    data-script="return getProductionAmount('TreatedPlank')"
+                  ></td>
+                  <td
+                    data-script="return getRequiredAmount('TreatedPlank')"
+                  ></td>
+                  <td
+                    data-script="return getStorageAmount('TreatedPlank');"
+                  ></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="contenty">
+            <p data-translate="ingredients">ingredients</p>
+            <p
+              data-translate="(perDay)"
+              style="font-size: 0.6em; display: inline-block"
+            >
+              (perDay)
+            </p>
+            <table>
+              <thead>
+                <tr>
+                  <th data-translate="item">item</th>
+                  <th data-translate="production">production</th>
+                  <th data-translate="required">required</th>
+                  <th data-translate="storage">storage</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-translate="algae">algae</td>
+                  <td data-script="return getProductionAmount('Algae')"></td>
+                  <td data-script="return getRequiredAmount('Algae')"></td>
+                  <td data-script="return getStorageAmount('Algae');"></td>
+                </tr>
+                <tr>
+                  <td data-translate="canolaOil">canolaOil</td>
+                  <td
+                    data-script="return getProductionAmount('CanolaOil')"
+                  ></td>
+                  <td data-script="return getRequiredAmount('CanolaOil')"></td>
+                  <td data-script="return getStorageAmount('CanolaOil');"></td>
+                </tr>
+                <tr>
+                  <td data-translate="canolaSeeds">canolaSeed</td>
+                  <td
+                    data-script="return getProductionAmount('CanolaSeeds')"
+                  ></td>
+                  <td
+                    data-script="return getRequiredAmount('CanolaSeeds')"
+                  ></td>
+                  <td
+                    data-script="return getStorageAmount('CanolaSeeds');"
+                  ></td>
+                </tr>
+                <tr>
+                  <td data-translate="cassava">cassava</td>
+                  <td data-script="return getProductionAmount('Cassava')"></td>
+                  <td data-script="return getRequiredAmount('Cassava')"></td>
+                  <td data-script="return getStorageAmount('Cassava');"></td>
+                </tr>
+                <tr>
+                  <td data-translate="cattailFlour">cattailFlour</td>
+                  <td
+                    data-script="return getProductionAmount('CattailFlour')"
+                  ></td>
+                  <td
+                    data-script="return getRequiredAmount('CattailFlour')"
+                  ></td>
+                  <td
+                    data-script="return getStorageAmount('CattailFlour');"
+                  ></td>
+                </tr>
+                <tr>
+                  <td data-translate="chestnut">chestnut</td>
+                  <td data-script="return getProductionAmount('Chestnut')"></td>
+                  <td data-script="return getRequiredAmount('Chestnut')"></td>
+                  <td data-script="return getStorageAmount('Chestnut');"></td>
+                </tr>
+                <tr>
+                  <td data-translate="coffeeBean">coffeeBean</td>
+                  <td
+                    data-script="return getProductionAmount('CoffeeBean')"
+                  ></td>
+                  <td data-script="return getRequiredAmount('CoffeeBean')"></td>
+                  <td data-script="return getStorageAmount('CoffeeBean');"></td>
+                </tr>
+                <tr>
+                  <td data-translate="corn">corn</td>
+                  <td data-script="return getProductionAmount('Corn')"></td>
+                  <td data-script="return getRequiredAmount('Corn')"></td>
+                  <td data-script="return getStorageAmount('Corn');"></td>
+                </tr>
+                <tr>
+                  <td data-translate="dandelion">dandelion</td>
+                  <td
+                    data-script="return getProductionAmount('Dandelion')"
+                  ></td>
+                  <td data-script="return getRequiredAmount('Dandelion')"></td>
+                  <td data-script="return getStorageAmount('Dandelion');"></td>
+                </tr>
+                <tr>
+                  <td data-translate="eggplant">eggplant</td>
+                  <td data-script="return getProductionAmount('Eggplant')"></td>
+                  <td data-script="return getRequiredAmount('Eggplant')"></td>
+                  <td data-script="return getStorageAmount('Eggplant');"></td>
+                </tr>
+                <tr>
+                  <td data-translate="mushroom">mushroom</td>
+                  <td data-script="return getProductionAmount('Mushroom')"></td>
+                  <td data-script="return getRequiredAmount('Mushroom')"></td>
+                  <td data-script="return getStorageAmount('Mushroom');"></td>
+                </tr>
+                <tr>
+                  <td data-translate="potato">potato</td>
+                  <td data-script="return getProductionAmount('Potato')"></td>
+                  <td data-script="return getRequiredAmount('Potato')"></td>
+                  <td data-script="return getStorageAmount('Potato');"></td>
+                </tr>
+                <tr>
+                  <td data-translate="soybean">soybean</td>
+                  <td data-script="return getProductionAmount('Soybean')"></td>
+                  <td data-script="return getRequiredAmount('Soybean')"></td>
+                  <td data-script="return getStorageAmount('Soybean');"></td>
+                </tr>
+                <tr>
+                  <td data-translate="spadderdock">spadderdock</td>
+                  <td
+                    data-script="return getProductionAmount('Spadderdock')"
+                  ></td>
+                  <td
+                    data-script="return getRequiredAmount('Spadderdock')"
+                  ></td>
+                  <td
+                    data-script="return getStorageAmount('Spadderdock');"
+                  ></td>
+                </tr>
+                <tr>
+                  <td data-translate="wheat">wheat</td>
+                  <td data-script="return getProductionAmount('Wheat')"></td>
+                  <td data-script="return getRequiredAmount('Wheat')"></td>
+                  <td data-script="return getStorageAmount('Wheat');"></td>
+                </tr>
+                <tr>
+                  <td data-translate="wheatFlour">wheatFlour</td>
+                  <td
+                    data-script="return getProductionAmount('WheatFlour')"
+                  ></td>
+                  <td data-script="return getRequiredAmount('WheatFlour')"></td>
+                  <td data-script="return getStorageAmount('WheatFlour');"></td>
+                </tr>
+                <tr>
+                  <td data-translate="science">science</td>
+                  <td data-script="return getProductionAmount('Science')"></td>
+                  <td></td>
+                  <td
+                    data-script="return worldData.Singletons.ScienceService.SciencePoints"
+                  ></td>
+                </tr>
+                <tr>
+                  <td data-translate="energy">science</td>
+                  <td data-script="return getProductionAmount('Energy')"></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td data-translate="wellbeing">wellbeing</td>
+                  <td
+                    data-script="return getProductionAmount('Wellbeing')"
+                  ></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="contenty">
+            <p data-translate="food">food</p>
+            <p
+              data-translate="(perDay)"
+              style="font-size: 0.6em; display: inline-block"
+            >
+              (perDay)
+            </p>
+            <table>
+              <thead>
+                <tr>
+                  <th data-translate="item">item</th>
+                  <th data-translate="production">production</th>
+                  <th data-translate="required">required</th>
+                  <th data-translate="storage">storage</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-translate="algaeRation">algaeRation</td>
+                  <td
+                    data-script="return getProductionAmount('AlgaeRation')"
+                  ></td>
+                  <td
+                    data-script="return getRequiredAmount('AlgaeRation')"
+                  ></td>
+                  <td
+                    data-script="return getStorageAmount('AlgaeRation');"
+                  ></td>
+                </tr>
+                <tr>
+                  <td data-translate="berries">berries</td>
+                  <td data-script="return getProductionAmount('Berries')"></td>
+                  <td data-script="return getRequiredAmount('Berries')"></td>
+                  <td data-script="return getStorageAmount('Berries');"></td>
+                </tr>
+                <tr>
+                  <td data-translate="bread">bread</td>
+                  <td data-script="return getProductionAmount('Bread')"></td>
+                  <td data-script="return getRequiredAmount('Bread')"></td>
+                  <td data-script="return getStorageAmount('Bread');"></td>
+                </tr>
+                <tr>
+                  <td data-translate="carrot">carrot</td>
+                  <td data-script="return getProductionAmount('Carrot')"></td>
+                  <td data-script="return getRequiredAmount('Carrot')"></td>
+                  <td data-script="return getStorageAmount('Carrot');"></td>
+                </tr>
+                <tr>
+                  <td data-translate="coffee">coffee</td>
+                  <td data-script="return getProductionAmount('Coffee')"></td>
+                  <td data-script="return getRequiredAmount('Coffee')"></td>
+                  <td data-script="return getStorageAmount('Coffee');"></td>
+                </tr>
+                <tr>
+                  <td data-translate="cattailCracker">cattailCracker</td>
+                  <td
+                    data-script="return getProductionAmount('CattailCracker')"
+                  ></td>
+                  <td
+                    data-script="return getRequiredAmount('CattailCracker')"
+                  ></td>
+                  <td
+                    data-script="return getStorageAmount('CattailCracker');"
+                  ></td>
+                </tr>
+                <tr>
+                  <td data-translate="cornRation">cornRation</td>
+                  <td
+                    data-script="return getProductionAmount('CornRation')"
+                  ></td>
+                  <td data-script="return getRequiredAmount('CornRation')"></td>
+                  <td data-script="return getStorageAmount('CornRation');"></td>
+                </tr>
+                <tr>
+                  <td data-translate="eggplantRation">eggplantRation</td>
+                  <td
+                    data-script="return getProductionAmount('EggplantRation')"
+                  ></td>
+                  <td
+                    data-script="return getRequiredAmount('EggplantRation')"
+                  ></td>
+                  <td
+                    data-script="return getStorageAmount('EggplantRation');"
+                  ></td>
+                </tr>
+                <tr>
+                  <td data-translate="fermentedCassava">fermentedCassava</td>
+                  <td
+                    data-script="return getProductionAmount('FermentedCassava')"
+                  ></td>
+                  <td
+                    data-script="return getRequiredAmount('FermentedCassava')"
+                  ></td>
+                  <td
+                    data-script="return getStorageAmount('FermentedCassava');"
+                  ></td>
+                </tr>
+                <tr>
+                  <td data-translate="fermentedMushroom">fermentedMushroom</td>
+                  <td
+                    data-script="return getProductionAmount('FermentedMushroom')"
+                  ></td>
+                  <td
+                    data-script="return getRequiredAmount('FermentedMushroom')"
+                  ></td>
+                  <td
+                    data-script="return getStorageAmount('FermentedMushroom');"
+                  ></td>
+                </tr>
+                <tr>
+                  <td data-translate="fermentedSoybean">fermentedSoybean</td>
+                  <td
+                    data-script="return getProductionAmount('FermentedSoybean')"
+                  ></td>
+                  <td
+                    data-script="return getRequiredAmount('FermentedSoybean')"
+                  ></td>
+                  <td
+                    data-script="return getStorageAmount('FermentedSoybean');"
+                  ></td>
+                </tr>
+                <tr>
+                  <td data-translate="grilledChestnut">grilledChestnut</td>
+                  <td
+                    data-script="return getProductionAmount('GrilledChestnut')"
+                  ></td>
+                  <td
+                    data-script="return getRequiredAmount('GrilledChestnut')"
+                  ></td>
+                  <td
+                    data-script="return getStorageAmount('GrilledChestnut');"
+                  ></td>
+                </tr>
+                <tr>
+                  <td data-translate="grilledPotato">grilledPotato</td>
+                  <td
+                    data-script="return getProductionAmount('GrilledPotato')"
+                  ></td>
+                  <td
+                    data-script="return getRequiredAmount('GrilledPotato')"
+                  ></td>
+                  <td
+                    data-script="return getStorageAmount('GrilledPotato');"
+                  ></td>
+                </tr>
+                <tr>
+                  <td data-translate="grilledSpadderdock">
+                    grilledSpadderdock
+                  </td>
+                  <td
+                    data-script="return getProductionAmount('GrilledSpadderdock')"
+                  ></td>
+                  <td
+                    data-script="return getRequiredAmount('GrilledSpadderdock')"
+                  ></td>
+                  <td
+                    data-script="return getStorageAmount('GrilledSpadderdock');"
+                  ></td>
+                </tr>
+                <tr>
+                  <td data-translate="kohlrabi">kohlrabi</td>
+                  <td data-script="return getProductionAmount('Kohlrabi')"></td>
+                  <td data-script="return getRequiredAmount('Kohlrabi')"></td>
+                  <td data-script="return getStorageAmount('Kohlrabi');"></td>
+                </tr>
+                <tr>
+                  <td data-translate="sunflowerSeeds">sunflowerSeeds</td>
+                  <td
+                    data-script="return getProductionAmount('SunflowerSeeds')"
+                  ></td>
+                  <td
+                    data-script="return getRequiredAmount('SunflowerSeeds')"
+                  ></td>
+                  <td
+                    data-script="return getStorageAmount('SunflowerSeeds');"
+                  ></td>
+                </tr>
+                <tr>
+                  <td data-translate="mangroveFruit">mangroveFruit</td>
+                  <td
+                    data-script="return getProductionAmount('MangroveFruit')"
+                  ></td>
+                  <td
+                    data-script="return getRequiredAmount('MangroveFruit')"
+                  ></td>
+                  <td
+                    data-script="return getStorageAmount('MangroveFruit');"
+                  ></td>
+                </tr>
+                <tr>
+                  <td data-translate="maplePastry">maplePastry</td>
+                  <td
+                    data-script="return getProductionAmount('MaplePastry')"
+                  ></td>
+                  <td
+                    data-script="return getRequiredAmount('MaplePastry')"
+                  ></td>
+                  <td
+                    data-script="return getStorageAmount('MaplePastry');"
+                  ></td>
+                </tr>
+                <tr>
+                  <td data-translate="water">water</td>
+                  <td data-script="return getProductionAmount('Water')"></td>
+                  <td data-script="return getRequiredAmount('Water')"></td>
+                  <td data-script="return getStorageAmount('Water');"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <section id="planting">
+        <h1 class="title" data-translate="plantingArea">plantingArea</h1>
+        <div class="contentx">
+          <div class="contenty">
+            <p data-translate="crops">crops</p>
+            <table>
+              <thead>
+                <tr>
+                  <th data-translate="item">item</th>
+                  <th data-translate="area">area</th>
+                  <th data-translate="planted">planted</th>
+                  <th data-translate="grown">grown</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-translate="kohlrabi">kohlrabi</td>
+                  <td data-script="return getPlantingArea('Kohlrabi')"></td>
+                  <td data-script="return getEntities('Kohlrabi')"></td>
+                  <td data-script="return getEntitiesGrown('Kohlrabi')"></td>
+                </tr>
+                <tr>
+                  <td data-translate="cassava">cassava</td>
+                  <td data-script="return getPlantingArea('Cassava')"></td>
+                  <td data-script="return getEntities('Cassava')"></td>
+                  <td data-script="return getEntitiesGrown('Cassava')"></td>
+                </tr>
+                <tr>
+                  <td data-translate="soybean">soybean</td>
+                  <td data-script="return getPlantingArea('Soybean')"></td>
+                  <td data-script="return getEntities('Soybean')"></td>
+                  <td data-script="return getEntitiesGrown('Soybean')"></td>
+                </tr>
+                <tr>
+                  <td data-translate="canola">canola</td>
+                  <td data-script="return getPlantingArea('Canola')"></td>
+                  <td data-script="return getEntities('Canola')"></td>
+                  <td data-script="return getEntitiesGrown('Canola')"></td>
+                </tr>
+                <tr>
+                  <td data-translate="corn">corn</td>
+                  <td data-script="return getPlantingArea('Corn')"></td>
+                  <td data-script="return getEntities('Corn')"></td>
+                  <td data-script="return getEntitiesGrown('Corn')"></td>
+                </tr>
+                <tr>
+                  <td data-translate="eggplant">eggplant</td>
+                  <td data-script="return getPlantingArea('Eggplant')"></td>
+                  <td data-script="return getEntities('Eggplant')"></td>
+                  <td data-script="return getEntitiesGrown('Eggplant')"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="contenty">
+            <p data-translate="treesAndBushes">treesAndBushes</p>
+            <table>
+              <thead>
+                <tr>
+                  <th data-translate="item">item</th>
+                  <th data-translate="area">area</th>
+                  <th data-translate="planted">planted</th>
+                  <th data-translate="grown">grown</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-translate="blueberry">blueberry</td>
+                  <td
+                    data-script="return getPlantingArea('BlueberryBush')"
+                  ></td>
+                  <td data-script="return getEntities('BlueberryBush')"></td>
+                  <td
+                    data-script="return getEntitiesGrown('BlueberryBush')"
+                  ></td>
+                </tr>
+                <tr>
+                  <td data-translate="coffeeBush">coffeeBush</td>
+                  <td data-script="return getPlantingArea('CoffeeBush')"></td>
+                  <td data-script="return getEntities('CoffeeBush')"></td>
+                  <td data-script="return getEntitiesGrown('CoffeeBush')"></td>
+                </tr>
+                <tr>
+                  <td data-translate="birch">birch</td>
+                  <td data-script="return getPlantingArea('Birch')"></td>
+                  <td data-script="return getEntities('Birch')"></td>
+                  <td data-script="return getEntitiesGrown('Birch')"></td>
+                </tr>
+                <tr>
+                  <td data-translate="pine">pine</td>
+                  <td data-script="return getPlantingArea('Pine')"></td>
+                  <td data-script="return getEntities('Pine')"></td>
+                  <td data-script="return getEntitiesGrown('Pine')"></td>
+                </tr>
+                <tr>
+                  <td data-translate="mangrove">mangrove</td>
+                  <td data-script="return getPlantingArea('Mangrove')"></td>
+                  <td data-script="return getEntities('Mangrove')"></td>
+                  <td data-script="return getEntitiesGrown('Mangrove')"></td>
+                </tr>
+                <tr>
+                  <td data-translate="oak">oak</td>
+                  <td data-script="return getPlantingArea('Oak')"></td>
+                  <td data-script="return getEntities('Oak')"></td>
+                  <td data-script="return getEntitiesGrown('Oak')"></td>
+                </tr>
+                <tr>
+                  <td data-translate="treeCuttingArea">treeCuttingArea</td>
+                  <td
+                    data-script="countArray=worldData['Singletons']['TreeCuttingArea']['CuttingArea'];if(countArray){count=countArray.length;return count;}else{return 0}"
+                  ></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <section id="notifications">
+        <h1 class="title" data-translate="notifications">notifications</h1>
+        <div class="contentx">
+          <div class="contenty">
+            <table>
+              <thead>
+                <tr>
+                  <th data-translate="description">description</th>
+                  <th data-translate="cycle">cycle</th>
+                  <th data-translate="cycleDay">cycleDay</th>
+                </tr>
+              </thead>
+              <tbody
+                id="notificationsBody"
+                class="scroll"
+                data-script="appendToTable(window.worldData['Singletons']['NotificationSaver']['Notifications'], 'tbody#notificationsBody', ['Description', 'Cycle', 'CycleDay'])"
+              ></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <section id="mods">
+        <h1 class="title" data-translate="mods">mods</h1>
+        <div class="contentx">
+          <div class="contenty">
+            <table>
+              <thead>
+                <tr>
+                  <th data-translate="id">id</th>
+                  <th data-translate="name">name</th>
+                  <th data-translate="version">version</th>
+                </tr>
+              </thead>
+              <tbody
+                id="modsBody"
+                class="scroll"
+                data-script="appendToTable(window.saveMetaData['SavedMods'], 'tbody#modsBody', ['Id', 'Name', 'Version'])"
+              ></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="contentx">
+        <div class="contenty">
+          <h3 data-translate="contact">contact</h3>
+          <a href="mailto:rickiedev60@gmail.com"
+            ><i class="fa-solid fa-envelope"></i> rickiedev60@gmail.com</a
+          >
+          <a href="https://github.com/agroqirax" target="_blank"
+            ><i class="fa-solid fa-globe"></i> Github profile</a
+          >
+        </div>
+        <div class="contenty">
+          <h3 data-translate="project">project</h3>
+          <a
+            href="https://github.com/agroqirax/timberbornstatviewer"
+            target="_blank"
+            ><i class="fa-brands fa-github"></i> Github</a
+          >
+          <a
+            href="https://forms.gle/NyCKFR2kQGNfsajN9"
+            target="_blank"
+            data-translate="bugReport"
+            ><i class="fa-solid fa-bug"></i> Bug report</a
+          >
+        </div>
+        <div class="contenty">
+          <h3 data-translate="social">social</h3>
+          <a href="https://reddit.com/r/timberborn" target="_blank"
+            ><i class="fa-brands fa-reddit"></i> Reddit</a
+          >
+          <a href="https://discord.gg/timberborn" target="_blank"
+            ><i class="fa-brands fa-discord"></i> Discord</a
+          >
+        </div>
+        <div class="contenty">
+          <h3 data-translate="getTimberborn">getTimberborn</h3>
+          <a
+            href="https://store.steampowered.com/app/1062090/Timberborn/"
+            target="_blank"
+            ><i class="fa-brands fa-steam"></i> Steam</a
+          >
+          <a href="https://mechanistry.com/" target="_blank"
+            ><i class="fa-solid fa-globe"></i> Mechanistry</a
+          >
+        </div>
+        <div class="contenty">
+          <h3 data-translate="moreTimberborn">moreTimberborn</h3>
+          <a href="https://mod.io/g/timberborn/" target="_blank"
+            ><i class="fa-solid fa-gear"></i> Mod.io</a
+          >
+          <a href="https://timberborn.featureupvote.com/" target="_blank"
+            ><i class="fa-solid fa-circle-arrow-up"></i> Featureupvote</a
+          >
+        </div>
+        <div class="contenty">
+          <h3 data-translate="misc">misc</h3>
+          <button id="install" style="display: none">
+            <i class="fa-solid fa-cloud-arrow-down"></i>
+            <p
+              data-translate="install"
+              style="display: inline-block; text-align: center"
+            >
+              install
+            </p>
+          </button>
+          <a
+            href="res/download/fileIcon/install.zip"
+            download
+            target="_blank"
+            data-translate="timberFileIcon"
+            onclick="alertInstall();"
+            ><i class="fa-solid fa-file"></i> Get file icon for .timber</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

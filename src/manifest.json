@@ -1,0 +1,15 @@
+{
+  "name": "Timberborn stats viewer",
+  "short_name": "Tsv",
+  "start_url": "/src",
+  "display": "standalone",
+  "background_color": "#ddeee9",
+  "theme_color": "#08120f",
+  "icons": [
+    {
+      "src": "res/static/images/logo.png",
+      "type": "image/png",
+      "sizes": "200x200"
+    }
+  ]
+}

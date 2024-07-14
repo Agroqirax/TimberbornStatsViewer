@@ -1,0 +1,162 @@
+@import url("colors.css");
+@import url("borders.css");
+@import url("padding.css");
+
+* {
+  font-family: "Roboto Mono";
+  padding: var(--padding-sml);
+  margin: var(--margin-sml);
+  border-radius: var(--border-radius);
+  font-size: 1.01em;
+  color: var(--text-900);
+  text-decoration: none;
+  height: fit-content;
+}
+
+body {
+  background: var(--background-50);
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  padding: auto;
+  gap: var(--margin-sml);
+  align-items: center;
+}
+header img#logo {
+  width: 2.5em;
+  height: 2.5em;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+.contentx {
+  display: flex;
+  flex-direction: row;
+}
+.contenty {
+  display: flex;
+  flex-direction: column;
+}
+
+section,
+table {
+  border: var(--border-width) var(--border-style) var(--accent-700);
+}
+
+#input {
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--background-50),
+    var(--background-50) 10px,
+    var(--background-100) 10px,
+    var(--background-100) 20px
+  );
+  /*position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;*/
+}
+#input input {
+  width: 100%;
+}
+
+table {
+  width: fit-content;
+  text-align: left;
+}
+td {
+  padding-left: var(--padding-l);
+  padding-right: var(--padding-l);
+  border-radius: 0;
+}
+td:not(:last-child) {
+  border-right: var(--border-width) var(--border-style) var(--accent-700);
+}
+
+.scroll {
+  max-height: 10em;
+  overflow-y: scroll;
+  display: block;
+}
+
+p.small,
+div.small {
+  font-size: 0.8em;
+  width: 100%;
+}
+
+button,
+.button,
+#button,
+[role="button"],
+::file-selector-button {
+  background: var(--primary-500);
+  color: var(--text-50);
+  outline: none;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+
+button *,
+.button *,
+#button *,
+[role="button"] * {
+  color: var(--text-50);
+}
+
+button:hover,
+.button:hover,
+#button:hover,
+[role="button"]:hover,
+::file-selector-button:hover {
+  background: var(--primary-400);
+}
+a:hover,
+a:hover * {
+  color: var(--text-600);
+}
+
+h1.title {
+  margin-top: 0;
+}
+
+img#thumbnail {
+  width: 25%;
+}
+
+section#input.dragover {
+  border-style: dashed;
+  border-color: var(--accent-500);
+}
+
+::-webkit-scrollbar {
+  background: transparent;
+  width: 1em;
+}
+::-webkit-scrollbar-corner,
+::-webkit-scrollbar-track {
+  background: var(--background-200);
+  border-radius: var(--border-radius);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary-500);
+  border-radius: var(--border-radius);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-400);
+}
+
+@media (max-width: 600px) {
+  .contentx {
+    flex-direction: column;
+  }
+  section,
+  table {
+    width: 100%;
+  }
+}

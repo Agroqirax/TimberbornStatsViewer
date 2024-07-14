@@ -1,0 +1,521 @@
+{
+  "@@author": "Agroqirax",
+  "@@last_modified": "2024-07-13T19:43:45",
+  "@@locale": "it",
+  "appTitle": "Visualizzatore delle statistiche di Timberborn",
+  "@appTitle": {
+    "description": "The title of the application",
+    "type": "text"
+  },
+  "selectFile": "Seleziona un file .timber",
+  "@selectFile": {
+    "type": "text"
+  },
+  "details": "Dettagli",
+  "@details": {
+    "type": "text"
+  },
+  "timestamp": "Timestamp",
+  "@timestamp": {
+    "type": "text"
+  },
+  "cycle": "Ciclo",
+  "@cycle": {
+    "type": "text"
+  },
+  "cycleDay": "Giorno",
+  "@cycleDay": {
+    "type": "text"
+  },
+  "gameVersion": "Versione del gioco",
+  "@gameVersion": {
+    "description": "The version of the game",
+    "type": "text"
+  },
+  "mapSize": "Dimensioni della mappa",
+  "@mapSize": {
+    "description": "The width of the map",
+    "type": "text"
+  },
+  "faction": "Fazione",
+  "@faction": {
+    "type": "text"
+  },
+  "mapName": "Nome della mappa",
+  "@mapName": {
+    "description": "The name of the map",
+    "type": "text"
+  },
+  "beaversBorn": "Nascono i castori",
+  "@beaversBorn": {
+    "type": "text"
+  },
+  "waterConsumed": "Acqua consumata",
+  "@waterConsumed": {
+    "type": "text"
+  },
+  "tailsPainted": "",
+  "@tailsPainted": {
+    "type": "text"
+  },
+  "treesCut": "Alberi tagliati",
+  "@treesCut": {
+    "type": "text"
+  },
+  "brokenTeeth": "Denti rotti",
+  "@brokenTeeth": {
+    "type": "text"
+  },
+  "botsManufactured": "Bot fabbricati",
+  "@botsManufactured": {
+    "type": "text"
+  },
+  "dynamiteDetonated": "La dinamite è esplosa",
+  "@dynamiteDetonated": {
+    "type": "text"
+  },
+  "beaversExploded": "I castori esplosero",
+  "@beaversExploded": {
+    "type": "text"
+  },
+  "wellbeingHighscore": "Punteggio più alto in termini di benessere",
+  "@wellbeingHighscore": {
+    "type": "text"
+  },
+  "production": "Produzione",
+  "@production": {
+    "type": "text"
+  },
+  "food": "Cibo",
+  "@food": {
+    "type": "text"
+  },
+  "coffeeBush": "Cespuglio di caffè",
+  "@coffeeBush": {
+    "type": "text"
+  },
+  "cassava": "Manioca",
+  "@cassava": {
+    "type": "text"
+  },
+  "canola": "Colza",
+  "@canola": {
+    "type": "text"
+  },
+  "corn": "Mais",
+  "@corn": {
+    "type": "text"
+  },
+  "item": "Articolo",
+  "@item": {
+    "type": "text"
+  },
+  "required": "Necessario",
+  "@required": {
+    "type": "text"
+  },
+  "storage": "Magazzinaggio",
+  "@storage": {
+    "type": "text"
+  },
+  "net": "Netto",
+  "@net": {
+    "type": "text"
+  },
+  "storageTime": "Tempo di conservazione",
+  "@storageTime": {
+    "type": "text"
+  },
+  "install": "Installa come app Web",
+  "@install": {
+    "type": "text"
+  },
+  "exportPrompt": "Esporta il file .timber",
+  "@exportPrompt": {
+    "type": "text"
+  },
+  "exportAlert": "Esportazione del file .timber",
+  "@exportAlert": {
+    "type": "text"
+  },
+  "area": "La zona",
+  "@area": {
+    "type": "text"
+  },
+  "planted": "Piantato",
+  "@planted": {
+    "type": "text"
+  },
+  "resources": "Risorse",
+  "@resources": {
+    "type": "text"
+  },
+  "birch": "Betulla",
+  "@birch": {
+    "type": "text"
+  },
+  "pine": "Pino",
+  "@pine": {
+    "type": "text"
+  },
+  "mangrove": "Mangrovia",
+  "@mangrove": {
+    "type": "text"
+  },
+  "oak": "Quercia",
+  "@oak": {
+    "type": "text"
+  },
+  "crops": "Raccolti",
+  "@crops": {
+    "type": "text"
+  },
+  "treesAndBushes": "Alberi e cespugli",
+  "@treesAndBushes": {
+    "type": "text"
+  },
+  "plantingArea": "Zona di semina",
+  "@plantingArea": {
+    "type": "text"
+  },
+  "grown": "Cresciuto",
+  "@grown": {
+    "type": "text"
+  },
+  "treeCuttingArea": "Zona taglio alberi",
+  "@treeCuttingArea": {
+    "type": "text"
+  },
+  "adultBeaver": "Castoro adulto",
+  "@adultBeaver": {
+    "type": "text"
+  },
+  "childBeaver": "Castoro bambino",
+  "@childBeaver": {
+    "type": "text"
+  },
+  "contact": "Contatto",
+  "@contact": {
+    "type": "text"
+  },
+  "project": "Progetto",
+  "@project": {
+    "type": "text"
+  },
+  "social": "Sociale",
+  "@social": {
+    "type": "text"
+  },
+  "getTimberborn": "Diventa legname",
+  "@getTimberborn": {
+    "type": "text"
+  },
+  "moreTimberborn": "Più legname",
+  "@moreTimberborn": {
+    "type": "text"
+  },
+  "processing": "In lavorazione...",
+  "@processing": {
+    "type": "text"
+  },
+  "(perDay)": "(Al giorno)",
+  "@(perDay)": {
+    "type": "text"
+  },
+  "bugReport": "<i class=\"fa-solid fa-bug\"></i> Segnalazione di bug",
+  "@bugReport": {
+    "type": "text"
+  },
+  "byCreator": "Di Agroqirax",
+  "@byCreator": {
+    "type": "text"
+  },
+  "algae": "Alghe",
+  "@algae": {
+    "type": "text"
+  },
+  "description": "Descrizione",
+  "@description": {
+    "type": "text"
+  },
+  "ingredients": "ingredienti",
+  "@ingredients": {
+    "type": "text"
+  },
+  "materials": "Materiali",
+  "@materials": {
+    "type": "text"
+  },
+  "algaeRation": "Razione di alghe",
+  "@algaeRation": {
+    "type": "text"
+  },
+  "antidote": "Antidoto",
+  "@antidote": {
+    "type": "text"
+  },
+  "badwater": "Cattive acque",
+  "@badwater": {
+    "type": "text"
+  },
+  "berries": "Frutti di bosco",
+  "@berries": {
+    "type": "text"
+  },
+  "biofuel": "Biocarburante",
+  "@biofuel": {
+    "type": "text"
+  },
+  "book": "Libro",
+  "@book": {
+    "type": "text"
+  },
+  "botChassis": "Telaio del robot",
+  "@botChassis": {
+    "type": "text"
+  },
+  "botHead": "Testa di bot",
+  "@botHead": {
+    "type": "text"
+  },
+  "botLimb": "Arto bot",
+  "@botLimb": {
+    "type": "text"
+  },
+  "bread": "Pane",
+  "@bread": {
+    "type": "text"
+  },
+  "canolaOil": "Olio di canola",
+  "@canolaOil": {
+    "type": "text"
+  },
+  "canolaSeeds": "Semi di colza",
+  "@canolaSeeds": {
+    "type": "text"
+  },
+  "carrot": "Carota",
+  "@carrot": {
+    "type": "text"
+  },
+  "catalyst": "Catalizzatore",
+  "@catalyst": {
+    "type": "text"
+  },
+  "cattailFlour": "Farina di tifa",
+  "@cattailFlour": {
+    "type": "text"
+  },
+  "cattailRoot": "Radice di tifa",
+  "@cattailRoot": {
+    "type": "text"
+  },
+  "cattailCracker": "Cracker cattale",
+  "@cattailCracker": {
+    "type": "text"
+  },
+  "chestnut": "Castagna",
+  "@chestnut": {
+    "type": "text"
+  },
+  "coffee": "Caffè",
+  "@coffee": {
+    "type": "text"
+  },
+  "coffeeBean": "Chicco di caffe",
+  "@coffeeBean": {
+    "type": "text"
+  },
+  "cornRation": "Razione di mais",
+  "@cornRation": {
+    "type": "text"
+  },
+  "dandelion": "Dente di leone",
+  "@dandelion": {
+    "type": "text"
+  },
+  "dirt": "Sporco",
+  "@dirt": {
+    "type": "text"
+  },
+  "eggplant": "Melanzana",
+  "@eggplant": {
+    "type": "text"
+  },
+  "eggplantRation": "Razione di melanzane",
+  "@eggplantRation": {
+    "type": "text"
+  },
+  "explosives": "Esplosivi",
+  "@explosives": {
+    "type": "text"
+  },
+  "extract": "Estratto",
+  "@extract": {
+    "type": "text"
+  },
+  "fermentedCassava": "Manioca fermentata",
+  "@fermentedCassava": {
+    "type": "text"
+  },
+  "fermentedMushroom": "Fungo fermentato",
+  "@fermentedMushroom": {
+    "type": "text"
+  },
+  "fermentedSoybean": "Soia fermentata",
+  "@fermentedSoybean": {
+    "type": "text"
+  },
+  "gear": "Ingranaggio",
+  "@gear": {
+    "type": "text"
+  },
+  "grease": "Grasso",
+  "@grease": {
+    "type": "text"
+  },
+  "grilledChestnut": "Castagne alla griglia",
+  "@grilledChestnut": {
+    "type": "text"
+  },
+  "grilledPotato": "Patate alla griglia",
+  "@grilledPotato": {
+    "type": "text"
+  },
+  "grilledSpadderdock": "Spadderdock alla griglia",
+  "@grilledSpadderdock": {
+    "type": "text"
+  },
+  "kohlrabi": "Cavolo rapa",
+  "@kohlrabi": {
+    "type": "text"
+  },
+  "log": "Tronco d''albero",
+  "@log": {
+    "type": "text"
+  },
+  "mangroveFruit": "Frutto della mangrovia",
+  "@mangroveFruit": {
+    "type": "text"
+  },
+  "maplePastry": "Pasta frolla all''acero",
+  "@maplePastry": {
+    "type": "text"
+  },
+  "maplySyrup": "Sciroppo di mappa",
+  "@maplySyrup": {
+    "type": "text"
+  },
+  "metalBlock": "Blocco di metallo",
+  "@metalBlock": {
+    "type": "text"
+  },
+  "mushroom": "Fungo",
+  "@mushroom": {
+    "type": "text"
+  },
+  "paper": "Carta",
+  "@paper": {
+    "type": "text"
+  },
+  "pineResin": "Resina di pino",
+  "@pineResin": {
+    "type": "text"
+  },
+  "plank": "Plancia",
+  "@plank": {
+    "type": "text"
+  },
+  "potato": "Patata",
+  "@potato": {
+    "type": "text"
+  },
+  "punchCard": "Carta perforata",
+  "@punchCard": {
+    "type": "text"
+  },
+  "scrapMetal": "Rottami metallici",
+  "@scrapMetal": {
+    "type": "text"
+  },
+  "soybean": "Soia",
+  "@soybean": {
+    "type": "text"
+  },
+  "spadderdock": "Spadderdock",
+  "@spadderdock": {
+    "type": "text"
+  },
+  "sunflowerSeeds": "Semi di girasole",
+  "@sunflowerSeeds": {
+    "type": "text"
+  },
+  "treatedPlank": "Plancia trattata",
+  "@treatedPlank": {
+    "type": "text"
+  },
+  "water": "Acqua",
+  "@water": {
+    "type": "text"
+  },
+  "wheat": "Grano",
+  "@wheat": {
+    "type": "text"
+  },
+  "wheatFlour": "Farina di frumento",
+  "@wheatFlour": {
+    "type": "text"
+  },
+  "blueberry": "Mirtillo",
+  "@blueberry": {
+    "type": "text"
+  },
+  "notifications": "Notifiche",
+  "@notifications": {
+    "type": "text"
+  },
+  "mods": "Mod",
+  "@mods": {
+    "type": "text"
+  },
+  "id": "Id",
+  "@id": {
+    "type": "text"
+  },
+  "name": "Nome",
+  "@name": {
+    "type": "text"
+  },
+  "version": "Versione",
+  "@version": {
+    "type": "text"
+  },
+  "misc": "Varie",
+  "@misc": {
+    "type": "text"
+  },
+  "science": "Scienza",
+  "@science": {
+    "type": "text"
+  },
+  "timberFileIcon": "<i class=\"fa-solid fa-file\"></i> Ottieni l''icona del file per .timber",
+  "@timberFileIcon": {
+    "type": "text"
+  },
+  "alertInstall": "L''installazione di un''icona di file richiede la modifica del registro che può essere pericolosa. Si prega di leggere attentamente README.md e seguire le sue istruzioni.",
+  "@alertInstall": {
+    "type": "text"
+  },
+  "(orDragNDrop)": "(Oppure trascina e rilascia)",
+  "@(orDragNDrop)": {
+    "type": "text"
+  },
+  "pleaseSelectTimber": "Seleziona un file .timber valido",
+  "@pleaseSelectTimber": {
+    "type": "text"
+  },
+  "energy": "Energia",
+  "@energy": {
+    "type": "text"
+  }
+}

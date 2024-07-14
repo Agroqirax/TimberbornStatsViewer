@@ -1,0 +1,521 @@
+{
+  "@@author": "Agroqirax",
+  "@@last_modified": "2024-07-13T19:43:45",
+  "@@locale": "de",
+  "appTitle": "Timberborn-Statistik-Viewer",
+  "@appTitle": {
+    "description": "The title of the application",
+    "type": "text"
+  },
+  "selectFile": "Wählen Sie eine .timber-Datei aus",
+  "@selectFile": {
+    "type": "text"
+  },
+  "details": "Einzelheiten",
+  "@details": {
+    "type": "text"
+  },
+  "timestamp": "Zeitstempel",
+  "@timestamp": {
+    "type": "text"
+  },
+  "cycle": "Zyklus",
+  "@cycle": {
+    "type": "text"
+  },
+  "cycleDay": "Tag",
+  "@cycleDay": {
+    "type": "text"
+  },
+  "gameVersion": "Spielversion",
+  "@gameVersion": {
+    "description": "The version of the game",
+    "type": "text"
+  },
+  "mapSize": "Kartengröße",
+  "@mapSize": {
+    "description": "The width of the map",
+    "type": "text"
+  },
+  "faction": "Fraktion",
+  "@faction": {
+    "type": "text"
+  },
+  "mapName": "Kartenname",
+  "@mapName": {
+    "description": "The name of the map",
+    "type": "text"
+  },
+  "beaversBorn": "Biber geboren",
+  "@beaversBorn": {
+    "type": "text"
+  },
+  "waterConsumed": "Wasser verbraucht",
+  "@waterConsumed": {
+    "type": "text"
+  },
+  "tailsPainted": "",
+  "@tailsPainted": {
+    "type": "text"
+  },
+  "treesCut": "Bäume gefällt",
+  "@treesCut": {
+    "type": "text"
+  },
+  "brokenTeeth": "Gebrochene Zähne",
+  "@brokenTeeth": {
+    "type": "text"
+  },
+  "botsManufactured": "Bots hergestellt",
+  "@botsManufactured": {
+    "type": "text"
+  },
+  "dynamiteDetonated": "Dynamit explodierte",
+  "@dynamiteDetonated": {
+    "type": "text"
+  },
+  "beaversExploded": "Biber explodierten",
+  "@beaversExploded": {
+    "type": "text"
+  },
+  "wellbeingHighscore": "Wohlfühl-Highscore",
+  "@wellbeingHighscore": {
+    "type": "text"
+  },
+  "production": "Produktion",
+  "@production": {
+    "type": "text"
+  },
+  "food": "Essen",
+  "@food": {
+    "type": "text"
+  },
+  "coffeeBush": "Kaffeestrauch",
+  "@coffeeBush": {
+    "type": "text"
+  },
+  "cassava": "Maniok",
+  "@cassava": {
+    "type": "text"
+  },
+  "canola": "Raps",
+  "@canola": {
+    "type": "text"
+  },
+  "corn": "Mais",
+  "@corn": {
+    "type": "text"
+  },
+  "item": "Artikel",
+  "@item": {
+    "type": "text"
+  },
+  "required": "Erforderlich",
+  "@required": {
+    "type": "text"
+  },
+  "storage": "Lagerung",
+  "@storage": {
+    "type": "text"
+  },
+  "net": "Netz",
+  "@net": {
+    "type": "text"
+  },
+  "storageTime": "Aufbewahrungszeit",
+  "@storageTime": {
+    "type": "text"
+  },
+  "install": "Als Web-App installieren",
+  "@install": {
+    "type": "text"
+  },
+  "exportPrompt": ".timber-Datei exportieren",
+  "@exportPrompt": {
+    "type": "text"
+  },
+  "exportAlert": ".timber-Datei wird exportiert",
+  "@exportAlert": {
+    "type": "text"
+  },
+  "area": "Bereich",
+  "@area": {
+    "type": "text"
+  },
+  "planted": "Gepflanzt",
+  "@planted": {
+    "type": "text"
+  },
+  "resources": "Ressourcen",
+  "@resources": {
+    "type": "text"
+  },
+  "birch": "Birke",
+  "@birch": {
+    "type": "text"
+  },
+  "pine": "Kiefer",
+  "@pine": {
+    "type": "text"
+  },
+  "mangrove": "Mangrove",
+  "@mangrove": {
+    "type": "text"
+  },
+  "oak": "Eiche",
+  "@oak": {
+    "type": "text"
+  },
+  "crops": "Ernten",
+  "@crops": {
+    "type": "text"
+  },
+  "treesAndBushes": "Bäume und Büsche",
+  "@treesAndBushes": {
+    "type": "text"
+  },
+  "plantingArea": "Pflanzfläche",
+  "@plantingArea": {
+    "type": "text"
+  },
+  "grown": "Gewachsen",
+  "@grown": {
+    "type": "text"
+  },
+  "treeCuttingArea": "Bereich zum Fällen von Bäumen",
+  "@treeCuttingArea": {
+    "type": "text"
+  },
+  "adultBeaver": "Erwachsener Biber",
+  "@adultBeaver": {
+    "type": "text"
+  },
+  "childBeaver": "Kinderbiber",
+  "@childBeaver": {
+    "type": "text"
+  },
+  "contact": "Kontakt",
+  "@contact": {
+    "type": "text"
+  },
+  "project": "Projekt",
+  "@project": {
+    "type": "text"
+  },
+  "social": "Sozial",
+  "@social": {
+    "type": "text"
+  },
+  "getTimberborn": "Holen Sie sich Timberborn",
+  "@getTimberborn": {
+    "type": "text"
+  },
+  "moreTimberborn": "Mehr Timberborn",
+  "@moreTimberborn": {
+    "type": "text"
+  },
+  "processing": "Wird bearbeitet...",
+  "@processing": {
+    "type": "text"
+  },
+  "(perDay)": "(Pro Tag)",
+  "@(perDay)": {
+    "type": "text"
+  },
+  "bugReport": "<i class=\"fa-solid fa-bug\"></i> Fehlerbericht",
+  "@bugReport": {
+    "type": "text"
+  },
+  "byCreator": "Von Agroqirax",
+  "@byCreator": {
+    "type": "text"
+  },
+  "algae": "Algen",
+  "@algae": {
+    "type": "text"
+  },
+  "description": "Beschreibung",
+  "@description": {
+    "type": "text"
+  },
+  "ingredients": "Zutaten",
+  "@ingredients": {
+    "type": "text"
+  },
+  "materials": "Materialien",
+  "@materials": {
+    "type": "text"
+  },
+  "algaeRation": "Algenration",
+  "@algaeRation": {
+    "type": "text"
+  },
+  "antidote": "Gegenmittel",
+  "@antidote": {
+    "type": "text"
+  },
+  "badwater": "Schlechtes Wasser",
+  "@badwater": {
+    "type": "text"
+  },
+  "berries": "Beeren",
+  "@berries": {
+    "type": "text"
+  },
+  "biofuel": "Biotreibstoff",
+  "@biofuel": {
+    "type": "text"
+  },
+  "book": "Buch",
+  "@book": {
+    "type": "text"
+  },
+  "botChassis": "Bot-Chassis",
+  "@botChassis": {
+    "type": "text"
+  },
+  "botHead": "Bot-Kopf",
+  "@botHead": {
+    "type": "text"
+  },
+  "botLimb": "Unteres Glied",
+  "@botLimb": {
+    "type": "text"
+  },
+  "bread": "Brot",
+  "@bread": {
+    "type": "text"
+  },
+  "canolaOil": "Rapsöl",
+  "@canolaOil": {
+    "type": "text"
+  },
+  "canolaSeeds": "Rapssamen",
+  "@canolaSeeds": {
+    "type": "text"
+  },
+  "carrot": "Karotte",
+  "@carrot": {
+    "type": "text"
+  },
+  "catalyst": "Katalysator",
+  "@catalyst": {
+    "type": "text"
+  },
+  "cattailFlour": "Rohrkolbenmehl",
+  "@cattailFlour": {
+    "type": "text"
+  },
+  "cattailRoot": "Rohrkolbenwurzel",
+  "@cattailRoot": {
+    "type": "text"
+  },
+  "cattailCracker": "Cattal-Cracker",
+  "@cattailCracker": {
+    "type": "text"
+  },
+  "chestnut": "Kastanie",
+  "@chestnut": {
+    "type": "text"
+  },
+  "coffee": "Kaffee",
+  "@coffee": {
+    "type": "text"
+  },
+  "coffeeBean": "Kaffeebohne",
+  "@coffeeBean": {
+    "type": "text"
+  },
+  "cornRation": "Maisration",
+  "@cornRation": {
+    "type": "text"
+  },
+  "dandelion": "Löwenzahn",
+  "@dandelion": {
+    "type": "text"
+  },
+  "dirt": "Schmutz",
+  "@dirt": {
+    "type": "text"
+  },
+  "eggplant": "Aubergine",
+  "@eggplant": {
+    "type": "text"
+  },
+  "eggplantRation": "Auberginenration",
+  "@eggplantRation": {
+    "type": "text"
+  },
+  "explosives": "Sprengstoffe",
+  "@explosives": {
+    "type": "text"
+  },
+  "extract": "Extrakt",
+  "@extract": {
+    "type": "text"
+  },
+  "fermentedCassava": "Fermentierter Maniok",
+  "@fermentedCassava": {
+    "type": "text"
+  },
+  "fermentedMushroom": "Fermentierter Pilz",
+  "@fermentedMushroom": {
+    "type": "text"
+  },
+  "fermentedSoybean": "Fermentierte Sojabohne",
+  "@fermentedSoybean": {
+    "type": "text"
+  },
+  "gear": "Gang",
+  "@gear": {
+    "type": "text"
+  },
+  "grease": "Fett",
+  "@grease": {
+    "type": "text"
+  },
+  "grilledChestnut": "Gegrillte Kastanien",
+  "@grilledChestnut": {
+    "type": "text"
+  },
+  "grilledPotato": "Gegrillte Kartoffel",
+  "@grilledPotato": {
+    "type": "text"
+  },
+  "grilledSpadderdock": "Gegrilltes Spadderdock",
+  "@grilledSpadderdock": {
+    "type": "text"
+  },
+  "kohlrabi": "Kohlrabi",
+  "@kohlrabi": {
+    "type": "text"
+  },
+  "log": "Protokoll",
+  "@log": {
+    "type": "text"
+  },
+  "mangroveFruit": "Mangrovenfrucht",
+  "@mangroveFruit": {
+    "type": "text"
+  },
+  "maplePastry": "Ahorngebäck",
+  "@maplePastry": {
+    "type": "text"
+  },
+  "maplySyrup": "Ahornsirup",
+  "@maplySyrup": {
+    "type": "text"
+  },
+  "metalBlock": "Metallblock",
+  "@metalBlock": {
+    "type": "text"
+  },
+  "mushroom": "Pilz",
+  "@mushroom": {
+    "type": "text"
+  },
+  "paper": "Papier",
+  "@paper": {
+    "type": "text"
+  },
+  "pineResin": "Kiefernharz",
+  "@pineResin": {
+    "type": "text"
+  },
+  "plank": "Planke",
+  "@plank": {
+    "type": "text"
+  },
+  "potato": "Kartoffel",
+  "@potato": {
+    "type": "text"
+  },
+  "punchCard": "Lochkarte",
+  "@punchCard": {
+    "type": "text"
+  },
+  "scrapMetal": "Altmetall",
+  "@scrapMetal": {
+    "type": "text"
+  },
+  "soybean": "Sojabohne",
+  "@soybean": {
+    "type": "text"
+  },
+  "spadderdock": "Spadderdock",
+  "@spadderdock": {
+    "type": "text"
+  },
+  "sunflowerSeeds": "Sonnenblumenkerne",
+  "@sunflowerSeeds": {
+    "type": "text"
+  },
+  "treatedPlank": "Behandeltes Brett",
+  "@treatedPlank": {
+    "type": "text"
+  },
+  "water": "Wasser",
+  "@water": {
+    "type": "text"
+  },
+  "wheat": "Weizen",
+  "@wheat": {
+    "type": "text"
+  },
+  "wheatFlour": "Weizenmehl",
+  "@wheatFlour": {
+    "type": "text"
+  },
+  "blueberry": "Blaubeere",
+  "@blueberry": {
+    "type": "text"
+  },
+  "notifications": "Benachrichtigungen",
+  "@notifications": {
+    "type": "text"
+  },
+  "mods": "Modifikationen",
+  "@mods": {
+    "type": "text"
+  },
+  "id": "Ausweis",
+  "@id": {
+    "type": "text"
+  },
+  "name": "Name",
+  "@name": {
+    "type": "text"
+  },
+  "version": "Ausführung",
+  "@version": {
+    "type": "text"
+  },
+  "misc": "Sonstiges",
+  "@misc": {
+    "type": "text"
+  },
+  "science": "Wissenschaft",
+  "@science": {
+    "type": "text"
+  },
+  "timberFileIcon": "<i class=\"fa-solid fa-file\"></i> Dateisymbol für .timber abrufen",
+  "@timberFileIcon": {
+    "type": "text"
+  },
+  "alertInstall": "Die Installation eines Dateisymbols erfordert eine Bearbeitung der Registrierung, was gefährlich sein kann. Bitte lesen Sie README.md sorgfältig durch und befolgen Sie die Anweisungen.",
+  "@alertInstall": {
+    "type": "text"
+  },
+  "(orDragNDrop)": "(Oder per Drag & Drop)",
+  "@(orDragNDrop)": {
+    "type": "text"
+  },
+  "pleaseSelectTimber": "Bitte wählen Sie eine gültige .timber-Datei aus",
+  "@pleaseSelectTimber": {
+    "type": "text"
+  },
+  "energy": "Energie",
+  "@energy": {
+    "type": "text"
+  }
+}

@@ -1,0 +1,521 @@
+{
+  "@@author": "Agroqirax",
+  "@@last_modified": "2024-07-13T19:43:45",
+  "@@locale": "th",
+  "appTitle": "โปรแกรมดูสถิติของ Timberborn",
+  "@appTitle": {
+    "description": "The title of the application",
+    "type": "text"
+  },
+  "selectFile": "เลือกไฟล์ .timber",
+  "@selectFile": {
+    "type": "text"
+  },
+  "details": "รายละเอียด",
+  "@details": {
+    "type": "text"
+  },
+  "timestamp": "การประทับเวลา",
+  "@timestamp": {
+    "type": "text"
+  },
+  "cycle": "วงจร",
+  "@cycle": {
+    "type": "text"
+  },
+  "cycleDay": "วัน",
+  "@cycleDay": {
+    "type": "text"
+  },
+  "gameVersion": "เวอร์ชันเกม",
+  "@gameVersion": {
+    "description": "The version of the game",
+    "type": "text"
+  },
+  "mapSize": "ขนาดแผนที่",
+  "@mapSize": {
+    "description": "The width of the map",
+    "type": "text"
+  },
+  "faction": "ฝ่าย",
+  "@faction": {
+    "type": "text"
+  },
+  "mapName": "ชื่อแผนที่",
+  "@mapName": {
+    "description": "The name of the map",
+    "type": "text"
+  },
+  "beaversBorn": "บีเวอร์เกิด",
+  "@beaversBorn": {
+    "type": "text"
+  },
+  "waterConsumed": "น้ำที่ใช้ไป",
+  "@waterConsumed": {
+    "type": "text"
+  },
+  "tailsPainted": "",
+  "@tailsPainted": {
+    "type": "text"
+  },
+  "treesCut": "ต้นไม้ถูกตัด",
+  "@treesCut": {
+    "type": "text"
+  },
+  "brokenTeeth": "ฟันหัก",
+  "@brokenTeeth": {
+    "type": "text"
+  },
+  "botsManufactured": "บอทที่ผลิต",
+  "@botsManufactured": {
+    "type": "text"
+  },
+  "dynamiteDetonated": "ไดนาไมต์ถูกจุดชนวน",
+  "@dynamiteDetonated": {
+    "type": "text"
+  },
+  "beaversExploded": "บีเว่อร์ระเบิด",
+  "@beaversExploded": {
+    "type": "text"
+  },
+  "wellbeingHighscore": "คะแนนสูงสุดด้านสุขภาพ",
+  "@wellbeingHighscore": {
+    "type": "text"
+  },
+  "production": "การผลิต",
+  "@production": {
+    "type": "text"
+  },
+  "food": "อาหาร",
+  "@food": {
+    "type": "text"
+  },
+  "coffeeBush": "พุ่มกาแฟ",
+  "@coffeeBush": {
+    "type": "text"
+  },
+  "cassava": "มันสำปะหลัง",
+  "@cassava": {
+    "type": "text"
+  },
+  "canola": "คาโนลา",
+  "@canola": {
+    "type": "text"
+  },
+  "corn": "ข้าวโพด",
+  "@corn": {
+    "type": "text"
+  },
+  "item": "รายการ",
+  "@item": {
+    "type": "text"
+  },
+  "required": "ที่จำเป็น",
+  "@required": {
+    "type": "text"
+  },
+  "storage": "พื้นที่จัดเก็บ",
+  "@storage": {
+    "type": "text"
+  },
+  "net": "สุทธิ",
+  "@net": {
+    "type": "text"
+  },
+  "storageTime": "เวลาในการจัดเก็บ",
+  "@storageTime": {
+    "type": "text"
+  },
+  "install": "ติดตั้งเป็นเว็บแอป",
+  "@install": {
+    "type": "text"
+  },
+  "exportPrompt": "ส่งออกไฟล์ .timber",
+  "@exportPrompt": {
+    "type": "text"
+  },
+  "exportAlert": "กำลังส่งออกไฟล์ .timber",
+  "@exportAlert": {
+    "type": "text"
+  },
+  "area": "พื้นที่",
+  "@area": {
+    "type": "text"
+  },
+  "planted": "ปลูกแล้ว",
+  "@planted": {
+    "type": "text"
+  },
+  "resources": "ทรัพยากร",
+  "@resources": {
+    "type": "text"
+  },
+  "birch": "ไม้เรียว",
+  "@birch": {
+    "type": "text"
+  },
+  "pine": "ต้นสน",
+  "@pine": {
+    "type": "text"
+  },
+  "mangrove": "ป่าชายเลน",
+  "@mangrove": {
+    "type": "text"
+  },
+  "oak": "โอ๊ค",
+  "@oak": {
+    "type": "text"
+  },
+  "crops": "พืชผล",
+  "@crops": {
+    "type": "text"
+  },
+  "treesAndBushes": "ต้นไม้และพุ่มไม้",
+  "@treesAndBushes": {
+    "type": "text"
+  },
+  "plantingArea": "พื้นที่ปลูก",
+  "@plantingArea": {
+    "type": "text"
+  },
+  "grown": "เติบโต",
+  "@grown": {
+    "type": "text"
+  },
+  "treeCuttingArea": "พื้นที่ตัดต้นไม้",
+  "@treeCuttingArea": {
+    "type": "text"
+  },
+  "adultBeaver": "บีเวอร์ผู้ใหญ่",
+  "@adultBeaver": {
+    "type": "text"
+  },
+  "childBeaver": "เด็กบีเวอร์",
+  "@childBeaver": {
+    "type": "text"
+  },
+  "contact": "ติดต่อ",
+  "@contact": {
+    "type": "text"
+  },
+  "project": "โครงการ",
+  "@project": {
+    "type": "text"
+  },
+  "social": "ทางสังคม",
+  "@social": {
+    "type": "text"
+  },
+  "getTimberborn": "รับไม้",
+  "@getTimberborn": {
+    "type": "text"
+  },
+  "moreTimberborn": "ไม้แปรรูปมากขึ้น",
+  "@moreTimberborn": {
+    "type": "text"
+  },
+  "processing": "กำลังประมวลผล...",
+  "@processing": {
+    "type": "text"
+  },
+  "(perDay)": "(ต่อวัน)",
+  "@(perDay)": {
+    "type": "text"
+  },
+  "bugReport": "<i class=\"fa-solid fa-bug\"></i> รายงานข้อผิดพลาด",
+  "@bugReport": {
+    "type": "text"
+  },
+  "byCreator": "โดย Agroqirax",
+  "@byCreator": {
+    "type": "text"
+  },
+  "algae": "สาหร่าย",
+  "@algae": {
+    "type": "text"
+  },
+  "description": "คำอธิบาย",
+  "@description": {
+    "type": "text"
+  },
+  "ingredients": "วัตถุดิบ",
+  "@ingredients": {
+    "type": "text"
+  },
+  "materials": "วัสดุ",
+  "@materials": {
+    "type": "text"
+  },
+  "algaeRation": "ปันส่วนสาหร่าย",
+  "@algaeRation": {
+    "type": "text"
+  },
+  "antidote": "ยาแก้พิษ",
+  "@antidote": {
+    "type": "text"
+  },
+  "badwater": "แบดวอเตอร์",
+  "@badwater": {
+    "type": "text"
+  },
+  "berries": "เบอร์รี่",
+  "@berries": {
+    "type": "text"
+  },
+  "biofuel": "เชื้อเพลิงชีวภาพ",
+  "@biofuel": {
+    "type": "text"
+  },
+  "book": "หนังสือ",
+  "@book": {
+    "type": "text"
+  },
+  "botChassis": "แชสซีบอท",
+  "@botChassis": {
+    "type": "text"
+  },
+  "botHead": "หัวบอท",
+  "@botHead": {
+    "type": "text"
+  },
+  "botLimb": "แขนขาบอท",
+  "@botLimb": {
+    "type": "text"
+  },
+  "bread": "ขนมปัง",
+  "@bread": {
+    "type": "text"
+  },
+  "canolaOil": "น้ำมันคาโนล่า",
+  "@canolaOil": {
+    "type": "text"
+  },
+  "canolaSeeds": "เมล็ดคาโนลา",
+  "@canolaSeeds": {
+    "type": "text"
+  },
+  "carrot": "แครอท",
+  "@carrot": {
+    "type": "text"
+  },
+  "catalyst": "ตัวเร่ง",
+  "@catalyst": {
+    "type": "text"
+  },
+  "cattailFlour": "แป้งธูปฤาษี",
+  "@cattailFlour": {
+    "type": "text"
+  },
+  "cattailRoot": "รากธูปฤาษี",
+  "@cattailRoot": {
+    "type": "text"
+  },
+  "cattailCracker": "แครกเกอร์คาตัล",
+  "@cattailCracker": {
+    "type": "text"
+  },
+  "chestnut": "เกาลัด",
+  "@chestnut": {
+    "type": "text"
+  },
+  "coffee": "กาแฟ",
+  "@coffee": {
+    "type": "text"
+  },
+  "coffeeBean": "เมล็ดกาแฟ",
+  "@coffeeBean": {
+    "type": "text"
+  },
+  "cornRation": "ปันส่วนข้าวโพด",
+  "@cornRation": {
+    "type": "text"
+  },
+  "dandelion": "ดอกแดนดิไลอัน",
+  "@dandelion": {
+    "type": "text"
+  },
+  "dirt": "สิ่งสกปรก",
+  "@dirt": {
+    "type": "text"
+  },
+  "eggplant": "มะเขือ",
+  "@eggplant": {
+    "type": "text"
+  },
+  "eggplantRation": "ปันส่วนมะเขือยาว",
+  "@eggplantRation": {
+    "type": "text"
+  },
+  "explosives": "วัตถุระเบิด",
+  "@explosives": {
+    "type": "text"
+  },
+  "extract": "สารสกัด",
+  "@extract": {
+    "type": "text"
+  },
+  "fermentedCassava": "มันสำปะหลังหมัก",
+  "@fermentedCassava": {
+    "type": "text"
+  },
+  "fermentedMushroom": "เห็ดดอง",
+  "@fermentedMushroom": {
+    "type": "text"
+  },
+  "fermentedSoybean": "ถั่วเหลืองหมัก",
+  "@fermentedSoybean": {
+    "type": "text"
+  },
+  "gear": "เกียร์",
+  "@gear": {
+    "type": "text"
+  },
+  "grease": "จาระบี",
+  "@grease": {
+    "type": "text"
+  },
+  "grilledChestnut": "เกาลัดย่าง",
+  "@grilledChestnut": {
+    "type": "text"
+  },
+  "grilledPotato": "มันฝรั่งย่าง",
+  "@grilledPotato": {
+    "type": "text"
+  },
+  "grilledSpadderdock": "ปลาช่อนย่าง",
+  "@grilledSpadderdock": {
+    "type": "text"
+  },
+  "kohlrabi": "โคห์ลราบี",
+  "@kohlrabi": {
+    "type": "text"
+  },
+  "log": "บันทึก",
+  "@log": {
+    "type": "text"
+  },
+  "mangroveFruit": "ผลไม้โกงกาง",
+  "@mangroveFruit": {
+    "type": "text"
+  },
+  "maplePastry": "ขนมเมเปิ้ล",
+  "@maplePastry": {
+    "type": "text"
+  },
+  "maplySyrup": "น้ำเชื่อม Maply",
+  "@maplySyrup": {
+    "type": "text"
+  },
+  "metalBlock": "บล็อกโลหะ",
+  "@metalBlock": {
+    "type": "text"
+  },
+  "mushroom": "เห็ด",
+  "@mushroom": {
+    "type": "text"
+  },
+  "paper": "กระดาษ",
+  "@paper": {
+    "type": "text"
+  },
+  "pineResin": "เรซินสน",
+  "@pineResin": {
+    "type": "text"
+  },
+  "plank": "ไม้กระดาน",
+  "@plank": {
+    "type": "text"
+  },
+  "potato": "มันฝรั่ง",
+  "@potato": {
+    "type": "text"
+  },
+  "punchCard": "บัตรเจาะ",
+  "@punchCard": {
+    "type": "text"
+  },
+  "scrapMetal": "เศษโลหะ",
+  "@scrapMetal": {
+    "type": "text"
+  },
+  "soybean": "ถั่วเหลือง",
+  "@soybean": {
+    "type": "text"
+  },
+  "spadderdock": "สแพดเดอร์ด็อก",
+  "@spadderdock": {
+    "type": "text"
+  },
+  "sunflowerSeeds": "เมล็ดทานตะวัน",
+  "@sunflowerSeeds": {
+    "type": "text"
+  },
+  "treatedPlank": "ไม้กระดานที่ได้รับการบำบัด",
+  "@treatedPlank": {
+    "type": "text"
+  },
+  "water": "น้ำ",
+  "@water": {
+    "type": "text"
+  },
+  "wheat": "ข้าวสาลี",
+  "@wheat": {
+    "type": "text"
+  },
+  "wheatFlour": "แป้งสาลี",
+  "@wheatFlour": {
+    "type": "text"
+  },
+  "blueberry": "บลูเบอร์รี่",
+  "@blueberry": {
+    "type": "text"
+  },
+  "notifications": "การแจ้งเตือน",
+  "@notifications": {
+    "type": "text"
+  },
+  "mods": "ม็อด",
+  "@mods": {
+    "type": "text"
+  },
+  "id": "รหัส",
+  "@id": {
+    "type": "text"
+  },
+  "name": "ชื่อ",
+  "@name": {
+    "type": "text"
+  },
+  "version": "เวอร์ชัน",
+  "@version": {
+    "type": "text"
+  },
+  "misc": "อื่น ๆ",
+  "@misc": {
+    "type": "text"
+  },
+  "science": "ศาสตร์",
+  "@science": {
+    "type": "text"
+  },
+  "timberFileIcon": "<i class=\"fa-solid fa-file\"></i> รับไอคอนไฟล์สำหรับ .timber",
+  "@timberFileIcon": {
+    "type": "text"
+  },
+  "alertInstall": "การติดตั้งไอคอนไฟล์จำเป็นต้องมีการแก้ไขรีจิสทรีซึ่งอาจเป็นอันตรายได้ โปรดอ่าน README.md อย่างละเอียดและปฏิบัติตามคำแนะนำ",
+  "@alertInstall": {
+    "type": "text"
+  },
+  "(orDragNDrop)": "(หรือลากและวาง)",
+  "@(orDragNDrop)": {
+    "type": "text"
+  },
+  "pleaseSelectTimber": "โปรดเลือกไฟล์ .timber ที่ถูกต้อง",
+  "@pleaseSelectTimber": {
+    "type": "text"
+  },
+  "energy": "พลังงาน",
+  "@energy": {
+    "type": "text"
+  }
+}

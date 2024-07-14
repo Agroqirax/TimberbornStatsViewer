@@ -1,0 +1,1014 @@
+{
+  "Algae": {
+    "Id": "Algae",
+    "Name": "Algae",
+    "TranslationId": "algae",
+    "Type": "Ingredients",
+    "ProducedBy": [
+      "HydroponicGarden"
+    ],
+    "RequiredBy": [
+      "FoodFactory"
+    ],
+    "StoredIn": [
+      "SmallPile",
+      "LargePile",
+      "UndergroundPile"
+    ]
+  },
+  "AlgaeRation": {
+    "Id": "AlgaeRation",
+    "Name": "Algae ration",
+    "TranslationId": "algaeRation",
+    "Type": "Food",
+    "ProducedBy": [
+      "FoodFactory"
+    ],
+    "RequiredBy": [
+      "BeaverAdult",
+      "BeaverChild"
+    ],
+    "StoredIn": [
+      "SmallPile",
+      "LargePile",
+      "UndergroundPile"
+    ]
+  },
+  "Antidote": {
+    "Id": "Antidote",
+    "Name": "Antidote",
+    "TranslationId": "antidote",
+    "Type": "Materials",
+    "ProducedBy": [
+      "Healer"
+    ],
+    "RequiredBy": [
+      "MedicalBed"
+    ],
+    "StoredIn": [
+      "SmallTank",
+      "MediumTank",
+      "LargeTank"
+    ]
+  },
+  "Badwater": {
+    "Id": "Badwater",
+    "Name": "Badwater",
+    "TranslationId": "badwater",
+    "Type": "Materials",
+    "ProducedBy": [
+      "BadwaterPump"
+    ],
+    "RequiredBy": [
+      "Centrifuge"
+    ],
+    "StoredIn": [
+      "SmallTank",
+      "MediumTank",
+      "LargeTank"
+    ]
+  },
+  "Berries": {
+    "Id": "Berries",
+    "Name": "Berries",
+    "TranslationId": "berries",
+    "Type": "Food",
+    "ProducedBy": [
+      "GathererFlag"
+    ],
+    "RequiredBy": [
+      "BeaverAdult",
+      "BeaverChild"
+    ],
+    "StoredIn": [
+      "SmallPile",
+      "LargePile",
+      "UndergroundPile"
+    ]
+  },
+  "Biofuel": {
+    "Id": "Biofuel",
+    "Name": "Biofuel",
+    "TranslationId": "biofuel",
+    "Type": "Materials",
+    "ProducedBy": [
+      "BioFuelRefinery"
+    ],
+    "RequiredBy": null,
+    "StoredIn": [
+      "SmallTank",
+      "MediumTank",
+      "LargeTank"
+    ]
+  },
+  "Book": {
+    "Id": "Book",
+    "Name": "Book",
+    "TranslationId": "book",
+    "Type": "Materials",
+    "ProducedBy": [
+      "PrintingPress"
+    ],
+    "RequiredBy": [
+      "BeaverAdult",
+      "BeaverChild"
+    ],
+    "StoredIn": [
+      "SmallWarehouse",
+      "MediumWarehouse",
+      "LargeWarehouse"
+    ]
+  },
+  "BotChassis": {
+    "Id": "BotChassis",
+    "Name": "Bot chassis",
+    "TranslationId": "botChassis",
+    "Type": "Materials",
+    "ProducedBy": [
+      "BotPartFactory"
+    ],
+    "RequiredBy": [
+      "BotAssembler"
+    ],
+    "StoredIn": [
+      "SmallWarehouse",
+      "MediumWarehouse",
+      "LargeWarehouse"
+    ]
+  },
+  "BotHead": {
+    "Id": "BotHead",
+    "Name": "Bot head",
+    "TranslationId": "botHead",
+    "Type": "Materials",
+    "ProducedBy": [
+      "BotPartFactory"
+    ],
+    "RequiredBy": [
+      "BotAssembler"
+    ],
+    "StoredIn": [
+      "SmallWarehouse",
+      "MediumWarehouse",
+      "LargeWarehouse"
+    ]
+  },
+  "BotLimb": {
+    "Id": "BotLimb",
+    "Name": "Bot limb",
+    "TranslationId": "botLimb",
+    "Type": "Materials",
+    "ProducedBy": [
+      "BotPartFactory"
+    ],
+    "RequiredBy": [
+      "BotAssembler"
+    ],
+    "StoredIn": [
+      "SmallWarehouse",
+      "MediumWarehouse",
+      "LargeWarehouse"
+    ]
+  },
+  "Bread": {
+    "Id": "Bread",
+    "Name": "Bread",
+    "TranslationId": "bread",
+    "Type": "Food",
+    "ProducedBy": [
+      "Bakery"
+    ],
+    "RequiredBy": [
+      "BeaverAdult",
+      "BeaverChild"
+    ],
+    "StoredIn": [
+      "SmallWarehouse",
+      "MediumWarehouse",
+      "LargeWarehouse"
+    ]
+  },
+  "CanolaOil": {
+    "Id": "CanolaOil",
+    "Name": "Canola oil",
+    "TranslationId": "canolaOil",
+    "Type": "Ingredients",
+    "ProducedBy": [
+      "OilPress"
+    ],
+    "RequiredBy": [
+      "Fermenter"
+    ],
+    "StoredIn": [
+      "SmallTank",
+      "MediumTank",
+      "LargeTank"
+    ]
+  },
+  "CanolaSeeds": {
+    "Id": "CanolaSeeds",
+    "Name": "Canola seeds",
+    "TranslationId": "canolaSeeds",
+    "Type": "Ingredients",
+    "ProducedBy": [
+      "FarmHouse"
+    ],
+    "RequiredBy": [
+      "OilPress"
+    ],
+    "StoredIn": [
+      "SmallWarehouse",
+      "MediumWarehouse",
+      "LargeWarehouse"
+    ]
+  },
+  "Carrot": {
+    "Id": "Carrot",
+    "Name": "Carrot",
+    "TranslationId": "carrot",
+    "Type": "Food",
+    "ProducedBy": [
+      "FarmHouse"
+    ],
+    "RequiredBy": [
+      "BeaverAdult",
+      "BeaverChild"
+    ],
+    "StoredIn": [
+      "SmallWarehouse",
+      "MediumWarehouse",
+      "LargeWarehouse"
+    ]
+  },
+  "Cassava": {
+    "Id": "Cassava",
+    "Name": "Cassava",
+    "TranslationId": "cassava",
+    "Type": "Ingredients",
+    "ProducedBy": [
+      "FarmHouse"
+    ],
+    "RequiredBy": [
+      "Fermenter"
+    ],
+    "StoredIn": [
+      "SmallWarehouse",
+      "MediumWarehouse",
+      "LargeWarehouse"
+    ]
+  },
+  "Catalyst": {
+    "Id": "Catalyst",
+    "Name": "Catalyst",
+    "TranslationId": "catalyst",
+    "Type": "Materials",
+    "ProducedBy": [
+      "BioFuelRefinery"
+    ],
+    "RequiredBy": null,
+    "StoredIn": [
+      "SmallTank",
+      "MediumTank",
+      "LargeTank"
+    ]
+  },
+  "CattailCracker": {
+    "Id": "CattailCracker",
+    "Name": "Cattail cracker",
+    "TranslationId": "cattailCracker",
+    "Type": "Food",
+    "ProducedBy": [
+      "Bakery"
+    ],
+    "RequiredBy": [
+      "BeaverAdult",
+      "BeaverChild"
+    ],
+    "StoredIn": [
+      "SmallWarehouse",
+      "MediumWarehouse",
+      "LargeWarehouse"
+    ]
+  },
+  "CattailFlour": {
+    "Id": "CattailFlour",
+    "Name": "Cattail flour",
+    "TranslationId": "cattailFlour",
+    "Type": "Ingredients",
+    "ProducedBy": [
+      "Gristmill"
+    ],
+    "RequiredBy": null,
+    "StoredIn": [
+      "SmallWarehouse",
+      "MediumWarehouse",
+      "LargeWarehouse"
+    ]
+  },
+  "CattailRoot": {
+    "Id": "CattailRoot",
+    "Name": "Cattail root",
+    "TranslationId": "cattailRoot",
+    "Type": "Materials",
+    "ProducedBy": [
+      "AquaticFarmhouse"
+    ],
+    "RequiredBy": null,
+    "StoredIn": [
+      "SmallWarehouse",
+      "MediumWarehouse",
+      "LargeWarehouse"
+    ]
+  },
+  "Chestnut": {
+    "Id": "Chestnut",
+    "Name": "Chestnut",
+    "TranslationId": "chestnut",
+    "Type": "Ingredients",
+    "ProducedBy": [
+      "GathererFlag"
+    ],
+    "RequiredBy": [
+      "Grill"
+    ],
+    "StoredIn": [
+      "SmallWarehouse",
+      "MediumWarehouse",
+      "LargeWarehouse"
+    ]
+  },
+  "Coffee": {
+    "Id": "Coffee",
+    "Name": "Coffee",
+    "TranslationId": "coffee",
+    "Type": "Food",
+    "ProducedBy": [
+      "CoffeePress"
+    ],
+    "RequiredBy": [
+      "BeaverAdult",
+      "BeaverChild"
+    ],
+    "StoredIn": [
+      "SmallTank",
+      "MediumTank",
+      "LargeTank"
+    ]
+  },
+  "CoffeeBean": {
+    "Id": "CoffeeBean",
+    "Name": "Coffee bean",
+    "TranslationId": "coffeeBean",
+    "Type": "Ingredients",
+    "ProducedBy": [
+      "GathererFlag"
+    ],
+    "RequiredBy": null,
+    "StoredIn": [
+      "SmallWarehouse",
+      "MediumWarehouse",
+      "LargeWarehouse"
+    ]
+  },
+  "Corn": {
+    "Id": "Corn",
+    "Name": "Corn",
+    "TranslationId": "corn",
+    "Type": "Ingredients",
+    "ProducedBy": [
+      "FarmHouse"
+    ],
+    "RequiredBy": [
+      "FoodFactory"
+    ],
+    "StoredIn": [
+      "SmallWarehouse",
+      "MediumWarehouse",
+      "LargeWarehouse"
+    ]
+  },
+  "CornRation": {
+    "Id": "CornRation",
+    "Name": "Corn ration",
+    "TranslationId": "cornRation",
+    "Type": "Food",
+    "ProducedBy": [
+      "FoodFactory"
+    ],
+    "RequiredBy": [
+      "BeaverAdult",
+      "BeaverChild"
+    ],
+    "StoredIn": [
+      "SmallWarehouse",
+      "MediumWarehouse",
+      "LargeWarehouse"
+    ]
+  },
+  "Dandelion": {
+    "Id": "Dandelion",
+    "Name": "Dandelion",
+    "TranslationId": "dandelion",
+    "Type": "Ingredients",
+    "ProducedBy": [
+      "GathererFlag"
+    ],
+    "RequiredBy": null,
+    "StoredIn": [
+      "SmallWarehouse",
+      "MediumWarehouse",
+      "LargeWarehouse"
+    ]
+  },
+  "Dirt": {
+    "Id": "Dirt",
+    "Name": "Dirt",
+    "TranslationId": "dirt",
+    "Type": "Materials",
+    "ProducedBy": [
+      "DirtExcavator"
+    ],
+    "RequiredBy": null,
+    "StoredIn": [
+      "SmallPile",
+      "LargePile",
+      "UndergroundPile"
+    ]
+  },
+  "Eggplant": {
+    "Id": "Eggplant",
+    "Name": "Eggplant",
+    "TranslationId": "eggplant",
+    "Type": "Ingredients",
+    "ProducedBy": [
+      "FarmHouse"
+    ],
+    "RequiredBy": [
+      "FoodFactory"
+    ],
+    "StoredIn": [
+      "SmallWarehouse",
+      "MediumWarehouse",
+      "LargeWarehouse"
+    ]
+  },
+  "EggplantRation": {
+    "Id": "EggplantRation",
+    "Name": "Eggplant ration",
+    "TranslationId": "eggplantRation",
+    "Type": "Food",
+    "ProducedBy": [
+      "FoodFactory"
+    ],
+    "RequiredBy": [
+      "BeaverAdult",
+      "BeaverChild"
+    ],
+    "StoredIn": [
+      "SmallWarehouse",
+      "MediumWarehouse",
+      "LargeWarehouse"
+    ]
+  },
+  "Explosives": {
+    "Id": "Explosives",
+    "Name": "Explosives",
+    "TranslationId": "explosives",
+    "Type": "Materials",
+    "ProducedBy": [
+      "ExplosivesFactory"
+    ],
+    "RequiredBy": null,
+    "StoredIn": [
+      "SmallWarehouse",
+      "MediumWarehouse",
+      "LargeWarehouse"
+    ]
+  },
+  "Extract": {
+    "Id": "Extract",
+    "Name": "Extract",
+    "TranslationId": "extract",
+    "Type": "Materials",
+    "ProducedBy": [
+      "Centrifuge"
+    ],
+    "RequiredBy": [
+      "BeaverBot"
+    ],
+    "StoredIn": [
+      "SmallTank",
+      "MediumTank",
+      "LargeTank"
+    ]
+  },
+  "FermentedCassava": {
+    "Id": "FermentedCassava",
+    "Name": "Fermented cassava",
+    "TranslationId": "fermentedCassava",
+    "Type": "Food",
+    "ProducedBy": [
+      "Fermenter"
+    ],
+    "RequiredBy": [
+      "BeaverAdult",
+      "BeaverChild"
+    ],
+    "StoredIn": [
+      "SmallWarehouse",
+      "MediumWarehouse",
+      "LargeWarehouse"
+    ]
+  },
+  "FermentedMushroom": {
+    "Id": "FermentedMushroom",
+    "Name": "Fermented mushroom",
+    "TranslationId": "fermentedMushroom",
+    "Type": "Food",
+    "ProducedBy": [
+      "Fermenter"
+    ],
+    "RequiredBy": [
+      "BeaverAdult",
+      "BeaverChild"
+    ],
+    "StoredIn": [
+      "SmallWarehouse",
+      "MediumWarehouse",
+      "LargeWarehouse"
+    ]
+  },
+  "FermentedSoybean": {
+    "Id": "FermentedSoybean",
+    "Name": "Fermented soybean",
+    "TranslationId": "fermentedSoybean",
+    "Type": "Food",
+    "ProducedBy": [
+      "Fermenter"
+    ],
+    "RequiredBy": [
+      "BeaverAdult",
+      "BeaverChild"
+    ],
+    "StoredIn": [
+      "SmallWarehouse",
+      "MediumWarehouse",
+      "LargeWarehouse"
+    ]
+  },
+  "Gear": {
+    "Id": "Gear",
+    "Name": "Gear",
+    "TranslationId": "gear",
+    "Type": "Materials",
+    "ProducedBy": [
+      "GearWorkshop"
+    ],
+    "RequiredBy": null,
+    "StoredIn": [
+      "SmallWarehouse",
+      "MediumWarehouse",
+      "LargeWarehouse"
+    ]
+  },
+  "Grease": {
+    "Id": "Grease",
+    "Name": "Grease",
+    "TranslationId": "grease",
+    "Type": "Materials",
+    "ProducedBy": null,
+    "RequiredBy": null,
+    "StoredIn": [
+      "SmallTank",
+      "MediumTank",
+      "LargeTank"
+    ]
+  },
+  "GrilledChestnut": {
+    "Id": "GrilledChestnut",
+    "Name": "Grilled chestnut",
+    "TranslationId": "grilledChestnut",
+    "Type": "Food",
+    "ProducedBy": [
+      "Grill"
+    ],
+    "RequiredBy": [
+      "BeaverAdult",
+      "BeaverChild"
+    ],
+    "StoredIn": [
+      "SmallWarehouse",
+      "MediumWarehouse",
+      "LargeWarehouse"
+    ]
+  },
+  "GrilledPotato": {
+    "Id": "GrilledPotato",
+    "Name": "Grilled potato",
+    "TranslationId": "grilledPotato",
+    "Type": "Food",
+    "ProducedBy": [
+      "Grill"
+    ],
+    "RequiredBy": [
+      "BeaverAdult",
+      "BeaverChild"
+    ],
+    "StoredIn": [
+      "SmallWarehouse",
+      "MediumWarehouse",
+      "LargeWarehouse"
+    ]
+  },
+  "GrilledSpadderdock": {
+    "Id": "GrilledSpadderdock",
+    "Name": "Grilled spadderdock",
+    "TranslationId": "grilledSpadderdock",
+    "Type": "Food",
+    "ProducedBy": [
+      "Grill"
+    ],
+    "RequiredBy": [
+      "BeaverAdult",
+      "BeaverChild"
+    ],
+    "StoredIn": [
+      "SmallWarehouse",
+      "MediumWarehouse",
+      "LargeWarehouse"
+    ]
+  },
+  "Kohlrabi": {
+    "Id": "Kohlrabi",
+    "Name": "Kohlrabi",
+    "TranslationId": "kohlrabi",
+    "Type": "Food",
+    "ProducedBy": [
+      "FarmHouse"
+    ],
+    "RequiredBy": [
+      "BeaverAdult",
+      "BeaverChild"
+    ],
+    "StoredIn": [
+      "SmallWarehouse",
+      "MediumWarehouse",
+      "LargeWarehouse"
+    ]
+  },
+  "Log": {
+    "Id": "Log",
+    "Name": "Log",
+    "TranslationId": "log",
+    "Type": "Materials",
+    "ProducedBy": [
+      "LumberjackFlag"
+    ],
+    "RequiredBy": [
+      "Bakery",
+      "Centrifuge",
+      "Grill",
+      "LumberMill",
+      "Smelter"
+    ],
+    "StoredIn": [
+      "SmallPile",
+      "LargePile",
+      "UndergroundPile"
+    ]
+  },
+  "MangroveFruit": {
+    "Id": "MangroveFruit",
+    "Name": "Mangrove fruit",
+    "TranslationId": "mangroveFruit",
+    "Type": "Food",
+    "ProducedBy": [
+      "GathererFlag"
+    ],
+    "RequiredBy": [
+      "BeaverAdult",
+      "BeaverChild"
+    ],
+    "StoredIn": [
+      "SmallWarehouse",
+      "MediumWarehouse",
+      "LargeWarehouse"
+    ]
+  },
+  "MaplePastry": {
+    "Id": "MaplePastry",
+    "Name": "Maple pastry",
+    "TranslationId": "maplePastry",
+    "Type": "Food",
+    "ProducedBy": [
+      "Bakery"
+    ],
+    "RequiredBy": [
+      "BeaverAdult",
+      "BeaverChild"
+    ],
+    "StoredIn": [
+      "SmallTank",
+      "MediumTank",
+      "LargeTank"
+    ]
+  },
+  "MaplySyrup": {
+    "Id": "MaplySyrup",
+    "Name": "Maply syrup",
+    "TranslationId": "maplySyrup",
+    "Type": "Ingredients",
+    "ProducedBy": [
+      "TappersShack"
+    ],
+    "RequiredBy": [
+      "Bakery"
+    ],
+    "StoredIn": [
+      "SmallTank",
+      "MediumTank",
+      "LargeTank"
+    ]
+  },
+  "MetalBlock": {
+    "Id": "MetalBlock",
+    "Name": "Metal block",
+    "TranslationId": "metalBlock",
+    "Type": "Materials",
+    "ProducedBy": [
+      "Smelter"
+    ],
+    "RequiredBy": null,
+    "StoredIn": [
+      "SmallWarehouse",
+      "MediumWarehouse",
+      "LargeWarehouse"
+    ]
+  },
+  "Mushroom": {
+    "Id": "Mushroom",
+    "Name": "Mushroom",
+    "TranslationId": "mushroom",
+    "Type": "Ingredients",
+    "ProducedBy": [
+      "HydroponicGarden"
+    ],
+    "RequiredBy": [
+      "Fermenter"
+    ],
+    "StoredIn": [
+      "SmallWarehouse",
+      "MediumWarehouse",
+      "LargeWarehouse"
+    ]
+  },
+  "Paper": {
+    "Id": "Paper",
+    "Name": "Paper",
+    "TranslationId": "paper",
+    "Type": "Materials",
+    "ProducedBy": [
+      "PaperMill"
+    ],
+    "RequiredBy": [
+      "PrintingPress",
+      "ExplosivesFactory"
+    ],
+    "StoredIn": [
+      "SmallWarehouse",
+      "MediumWarehouse",
+      "LargeWarehouse"
+    ]
+  },
+  "PineResin": {
+    "Id": "PineResin",
+    "Name": "Pine resin",
+    "TranslationId": "pineResin",
+    "Type": "Materials",
+    "ProducedBy": [
+      "TappersShack"
+    ],
+    "RequiredBy": null,
+    "StoredIn": [
+      "SmallWarehouse",
+      "MediumWarehouse",
+      "LargeWarehouse"
+    ]
+  },
+  "Plank": {
+    "Id": "Plank",
+    "Name": "Plank",
+    "TranslationId": "plank",
+    "Type": "Materials",
+    "ProducedBy": [
+      "LumberMill"
+    ],
+    "RequiredBy": [
+      "GearWorkshop"
+    ],
+    "StoredIn": [
+      "SmallPile",
+      "LargePile",
+      "UndergroundPile"
+    ]
+  },
+  "Potato": {
+    "Id": "Potato",
+    "Name": "Potato",
+    "TranslationId": "potato",
+    "Type": "Ingredients",
+    "ProducedBy": [
+      "FarmHouse"
+    ],
+    "RequiredBy": [
+      "Grill"
+    ],
+    "StoredIn": [
+      "SmallWarehouse",
+      "MediumWarehouse",
+      "LargeWarehouse"
+    ]
+  },
+  "PunchCard": {
+    "Id": "PunchCard",
+    "Name": "Punch card",
+    "TranslationId": "punchCard",
+    "Type": "Materials",
+    "ProducedBy": [
+      "PrintingPress"
+    ],
+    "RequiredBy": [
+      "BeaverAdult",
+      "BeaverChild"
+    ],
+    "StoredIn": [
+      "SmallWarehouse",
+      "MediumWarehouse",
+      "LargeWarehouse"
+    ]
+  },
+  "ScrapMetal": {
+    "Id": "ScrapMetal",
+    "Name": "Scrap metal",
+    "TranslationId": "scrapMetal",
+    "Type": "Materials",
+    "ProducedBy": [
+      "ScavengerFlag"
+    ],
+    "RequiredBy": [
+      "Smelter"
+    ],
+    "StoredIn": [
+      "SmallPile",
+      "LargePile",
+      "UndergroundPile"
+    ]
+  },
+  "Soybean": {
+    "Id": "Soybean",
+    "Name": "Soybean",
+    "TranslationId": "soybean",
+    "Type": "Ingredients",
+    "ProducedBy": [
+      "FarmHouse"
+    ],
+    "RequiredBy": [
+      "Fermenter"
+    ],
+    "StoredIn": [
+      "SmallWarehouse",
+      "MediumWarehouse",
+      "LargeWarehouse"
+    ]
+  },
+  "Spadderdock": {
+    "Id": "Spadderdock",
+    "Name": "Spadderdock",
+    "TranslationId": "spadderdock",
+    "Type": "Ingredients",
+    "ProducedBy": [
+      "AquaticFarmhouse"
+    ],
+    "RequiredBy": [
+      "Grill"
+    ],
+    "StoredIn": [
+      "SmallWarehouse",
+      "MediumWarehouse",
+      "LargeWarehouse"
+    ]
+  },
+  "SunflowerSeeds": {
+    "Id": "SunflowerSeeds",
+    "Name": "Sunflower seeds",
+    "TranslationId": "sunflowerSeeds",
+    "Type": "Food",
+    "ProducedBy": [
+      "FarmHouse"
+    ],
+    "RequiredBy": [
+      "BeaverAdult",
+      "BeaverChild"
+    ],
+    "StoredIn": [
+      "SmallWarehouse",
+      "MediumWarehouse",
+      "LargeWarehouse"
+    ]
+  },
+  "TreatedPlank": {
+    "Id": "TreatedPlank",
+    "Name": "Treated plank",
+    "TranslationId": "treatedPlank",
+    "Type": "Materials",
+    "ProducedBy": [
+      "WoodWorkshop"
+    ],
+    "RequiredBy": null,
+    "StoredIn": [
+      "SmallPile",
+      "LargePile",
+      "UndergroundPile"
+    ]
+  },
+  "Water": {
+    "Id": "Water",
+    "Name": "Water",
+    "TranslationId": "water",
+    "Type": "Food",
+    "ProducedBy": [
+      "WaterPump"
+    ],
+    "RequiredBy": [
+      "BeaverAdult",
+      "BeaverChild"
+    ],
+    "StoredIn": [
+      "SmallTank",
+      "MediumTank",
+      "LargeTank"
+    ]
+  },
+  "Wheat": {
+    "Id": "Wheat",
+    "Name": "Wheat",
+    "TranslationId": "wheat",
+    "Type": "Ingredients",
+    "ProducedBy": [
+      "Farmhouse"
+    ],
+    "RequiredBy": [
+      "Gristmill"
+    ],
+    "StoredIn": [
+      "SmallPile",
+      "LargePile",
+      "UndergroundPile"
+    ]
+  },
+  "WheatFlour": {
+    "Id": "WheatFlour",
+    "Name": "Wheat flour",
+    "TranslationId": "wheatFlour",
+    "Type": "Ingredients",
+    "ProducedBy": [
+      "Gristmill"
+    ],
+    "RequiredBy": [
+      "Bakery"
+    ],
+    "StoredIn": [
+      "SmallPile",
+      "LargePile",
+      "UndergroundPile"
+    ]
+  },
+  "Science": {
+    "Id": "Science",
+    "Name": "Science",
+    "TranslationId": "science",
+    "Type": "Materials",
+    "ProducedBy": [
+      "Inventor",
+      "Observatory",
+      "Mine"
+    ],
+    "RequiredBy": null,
+    "StoredIn": null
+  },
+  "Energy": {
+    "Id": "Energy",
+    "Name": "Energy",
+    "TranslationId": "energy",
+    "Type": "Materials",
+    "ProducedBy": [
+      "DevPowerGenerator",
+      "WaterWheel",
+      "PowerWheel",
+      "Windmill",
+      "Engine"
+    ],
+    "RequiredBy": null,
+    "StoredIn": null
+  }
+}

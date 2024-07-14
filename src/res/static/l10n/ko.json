@@ -1,0 +1,521 @@
+{
+  "@@author": "Agroqirax",
+  "@@last_modified": "2024-07-13T19:43:45",
+  "@@locale": "ko",
+  "appTitle": "팀버본 통계 뷰어",
+  "@appTitle": {
+    "description": "The title of the application",
+    "type": "text"
+  },
+  "selectFile": ".timber 파일을 선택하세요",
+  "@selectFile": {
+    "type": "text"
+  },
+  "details": "세부",
+  "@details": {
+    "type": "text"
+  },
+  "timestamp": "타임스탬프",
+  "@timestamp": {
+    "type": "text"
+  },
+  "cycle": "주기",
+  "@cycle": {
+    "type": "text"
+  },
+  "cycleDay": "낮",
+  "@cycleDay": {
+    "type": "text"
+  },
+  "gameVersion": "게임 버전",
+  "@gameVersion": {
+    "description": "The version of the game",
+    "type": "text"
+  },
+  "mapSize": "지도 크기",
+  "@mapSize": {
+    "description": "The width of the map",
+    "type": "text"
+  },
+  "faction": "파벌",
+  "@faction": {
+    "type": "text"
+  },
+  "mapName": "지도 이름",
+  "@mapName": {
+    "description": "The name of the map",
+    "type": "text"
+  },
+  "beaversBorn": "비버 탄생",
+  "@beaversBorn": {
+    "type": "text"
+  },
+  "waterConsumed": "물 소비",
+  "@waterConsumed": {
+    "type": "text"
+  },
+  "tailsPainted": "",
+  "@tailsPainted": {
+    "type": "text"
+  },
+  "treesCut": "나무를 베다",
+  "@treesCut": {
+    "type": "text"
+  },
+  "brokenTeeth": "부러진 치아",
+  "@brokenTeeth": {
+    "type": "text"
+  },
+  "botsManufactured": "제조된 봇",
+  "@botsManufactured": {
+    "type": "text"
+  },
+  "dynamiteDetonated": "다이너마이트가 폭발했습니다",
+  "@dynamiteDetonated": {
+    "type": "text"
+  },
+  "beaversExploded": "비버가 폭발했다",
+  "@beaversExploded": {
+    "type": "text"
+  },
+  "wellbeingHighscore": "웰빙 최고 점수",
+  "@wellbeingHighscore": {
+    "type": "text"
+  },
+  "production": "생산",
+  "@production": {
+    "type": "text"
+  },
+  "food": "음식",
+  "@food": {
+    "type": "text"
+  },
+  "coffeeBush": "커피나무",
+  "@coffeeBush": {
+    "type": "text"
+  },
+  "cassava": "카사바",
+  "@cassava": {
+    "type": "text"
+  },
+  "canola": "카놀라",
+  "@canola": {
+    "type": "text"
+  },
+  "corn": "옥수수",
+  "@corn": {
+    "type": "text"
+  },
+  "item": "안건",
+  "@item": {
+    "type": "text"
+  },
+  "required": "필수의",
+  "@required": {
+    "type": "text"
+  },
+  "storage": "저장",
+  "@storage": {
+    "type": "text"
+  },
+  "net": "그물",
+  "@net": {
+    "type": "text"
+  },
+  "storageTime": "저장 시간",
+  "@storageTime": {
+    "type": "text"
+  },
+  "install": "웹앱으로 설치",
+  "@install": {
+    "type": "text"
+  },
+  "exportPrompt": ".timber 파일 내보내기",
+  "@exportPrompt": {
+    "type": "text"
+  },
+  "exportAlert": ".timber 파일 내보내기",
+  "@exportAlert": {
+    "type": "text"
+  },
+  "area": "영역",
+  "@area": {
+    "type": "text"
+  },
+  "planted": "심었습니다",
+  "@planted": {
+    "type": "text"
+  },
+  "resources": "자원",
+  "@resources": {
+    "type": "text"
+  },
+  "birch": "자작나무",
+  "@birch": {
+    "type": "text"
+  },
+  "pine": "소나무",
+  "@pine": {
+    "type": "text"
+  },
+  "mangrove": "맹그로브",
+  "@mangrove": {
+    "type": "text"
+  },
+  "oak": "오크",
+  "@oak": {
+    "type": "text"
+  },
+  "crops": "작물",
+  "@crops": {
+    "type": "text"
+  },
+  "treesAndBushes": "나무와 관목",
+  "@treesAndBushes": {
+    "type": "text"
+  },
+  "plantingArea": "재배면적",
+  "@plantingArea": {
+    "type": "text"
+  },
+  "grown": "성장",
+  "@grown": {
+    "type": "text"
+  },
+  "treeCuttingArea": "나무 베는 지역",
+  "@treeCuttingArea": {
+    "type": "text"
+  },
+  "adultBeaver": "성인 비버",
+  "@adultBeaver": {
+    "type": "text"
+  },
+  "childBeaver": "아이 비버",
+  "@childBeaver": {
+    "type": "text"
+  },
+  "contact": "연락하다",
+  "@contact": {
+    "type": "text"
+  },
+  "project": "프로젝트",
+  "@project": {
+    "type": "text"
+  },
+  "social": "사회의",
+  "@social": {
+    "type": "text"
+  },
+  "getTimberborn": "팀버본 받기",
+  "@getTimberborn": {
+    "type": "text"
+  },
+  "moreTimberborn": "더 많은 팀버본",
+  "@moreTimberborn": {
+    "type": "text"
+  },
+  "processing": "처리 중...",
+  "@processing": {
+    "type": "text"
+  },
+  "(perDay)": "(1일당)",
+  "@(perDay)": {
+    "type": "text"
+  },
+  "bugReport": "<i class=\"fa-solid fa-bug\"></i> 버그 신고",
+  "@bugReport": {
+    "type": "text"
+  },
+  "byCreator": "작성자: Agroqirax",
+  "@byCreator": {
+    "type": "text"
+  },
+  "algae": "조류",
+  "@algae": {
+    "type": "text"
+  },
+  "description": "설명",
+  "@description": {
+    "type": "text"
+  },
+  "ingredients": "재료",
+  "@ingredients": {
+    "type": "text"
+  },
+  "materials": "재료",
+  "@materials": {
+    "type": "text"
+  },
+  "algaeRation": "조류 배급",
+  "@algaeRation": {
+    "type": "text"
+  },
+  "antidote": "해독제",
+  "@antidote": {
+    "type": "text"
+  },
+  "badwater": "배드워터",
+  "@badwater": {
+    "type": "text"
+  },
+  "berries": "베리",
+  "@berries": {
+    "type": "text"
+  },
+  "biofuel": "바이오연료",
+  "@biofuel": {
+    "type": "text"
+  },
+  "book": "책",
+  "@book": {
+    "type": "text"
+  },
+  "botChassis": "봇 섀시",
+  "@botChassis": {
+    "type": "text"
+  },
+  "botHead": "봇 헤드",
+  "@botHead": {
+    "type": "text"
+  },
+  "botLimb": "봇 사지",
+  "@botLimb": {
+    "type": "text"
+  },
+  "bread": "빵",
+  "@bread": {
+    "type": "text"
+  },
+  "canolaOil": "카놀라유",
+  "@canolaOil": {
+    "type": "text"
+  },
+  "canolaSeeds": "카놀라 씨앗",
+  "@canolaSeeds": {
+    "type": "text"
+  },
+  "carrot": "당근",
+  "@carrot": {
+    "type": "text"
+  },
+  "catalyst": "촉매",
+  "@catalyst": {
+    "type": "text"
+  },
+  "cattailFlour": "부들가루",
+  "@cattailFlour": {
+    "type": "text"
+  },
+  "cattailRoot": "부들뿌리",
+  "@cattailRoot": {
+    "type": "text"
+  },
+  "cattailCracker": "카탈 크래커",
+  "@cattailCracker": {
+    "type": "text"
+  },
+  "chestnut": "밤나무",
+  "@chestnut": {
+    "type": "text"
+  },
+  "coffee": "커피",
+  "@coffee": {
+    "type": "text"
+  },
+  "coffeeBean": "커피 콩",
+  "@coffeeBean": {
+    "type": "text"
+  },
+  "cornRation": "옥수수 배급",
+  "@cornRation": {
+    "type": "text"
+  },
+  "dandelion": "민들레",
+  "@dandelion": {
+    "type": "text"
+  },
+  "dirt": "흙",
+  "@dirt": {
+    "type": "text"
+  },
+  "eggplant": "가지",
+  "@eggplant": {
+    "type": "text"
+  },
+  "eggplantRation": "가지 배급",
+  "@eggplantRation": {
+    "type": "text"
+  },
+  "explosives": "폭발물",
+  "@explosives": {
+    "type": "text"
+  },
+  "extract": "발췌",
+  "@extract": {
+    "type": "text"
+  },
+  "fermentedCassava": "발효 카사바",
+  "@fermentedCassava": {
+    "type": "text"
+  },
+  "fermentedMushroom": "발효버섯",
+  "@fermentedMushroom": {
+    "type": "text"
+  },
+  "fermentedSoybean": "발효콩",
+  "@fermentedSoybean": {
+    "type": "text"
+  },
+  "gear": "기어",
+  "@gear": {
+    "type": "text"
+  },
+  "grease": "유지",
+  "@grease": {
+    "type": "text"
+  },
+  "grilledChestnut": "구운 밤",
+  "@grilledChestnut": {
+    "type": "text"
+  },
+  "grilledPotato": "구운 감자",
+  "@grilledPotato": {
+    "type": "text"
+  },
+  "grilledSpadderdock": "구운 고등어구이",
+  "@grilledSpadderdock": {
+    "type": "text"
+  },
+  "kohlrabi": "콜라비",
+  "@kohlrabi": {
+    "type": "text"
+  },
+  "log": "통나무",
+  "@log": {
+    "type": "text"
+  },
+  "mangroveFruit": "맹그로브 열매",
+  "@mangroveFruit": {
+    "type": "text"
+  },
+  "maplePastry": "메이플 페이스트리",
+  "@maplePastry": {
+    "type": "text"
+  },
+  "maplySyrup": "메이플리시럽",
+  "@maplySyrup": {
+    "type": "text"
+  },
+  "metalBlock": "금속 블록",
+  "@metalBlock": {
+    "type": "text"
+  },
+  "mushroom": "버섯",
+  "@mushroom": {
+    "type": "text"
+  },
+  "paper": "종이",
+  "@paper": {
+    "type": "text"
+  },
+  "pineResin": "소나무수지",
+  "@pineResin": {
+    "type": "text"
+  },
+  "plank": "널빤지",
+  "@plank": {
+    "type": "text"
+  },
+  "potato": "감자",
+  "@potato": {
+    "type": "text"
+  },
+  "punchCard": "펀치 카드",
+  "@punchCard": {
+    "type": "text"
+  },
+  "scrapMetal": "고철",
+  "@scrapMetal": {
+    "type": "text"
+  },
+  "soybean": "콩",
+  "@soybean": {
+    "type": "text"
+  },
+  "spadderdock": "스패더독",
+  "@spadderdock": {
+    "type": "text"
+  },
+  "sunflowerSeeds": "해바라기 씨",
+  "@sunflowerSeeds": {
+    "type": "text"
+  },
+  "treatedPlank": "처리된 판자",
+  "@treatedPlank": {
+    "type": "text"
+  },
+  "water": "물",
+  "@water": {
+    "type": "text"
+  },
+  "wheat": "밀",
+  "@wheat": {
+    "type": "text"
+  },
+  "wheatFlour": "밀가루",
+  "@wheatFlour": {
+    "type": "text"
+  },
+  "blueberry": "블루베리",
+  "@blueberry": {
+    "type": "text"
+  },
+  "notifications": "알림",
+  "@notifications": {
+    "type": "text"
+  },
+  "mods": "모드",
+  "@mods": {
+    "type": "text"
+  },
+  "id": "ID",
+  "@id": {
+    "type": "text"
+  },
+  "name": "이름",
+  "@name": {
+    "type": "text"
+  },
+  "version": "버전",
+  "@version": {
+    "type": "text"
+  },
+  "misc": "기타",
+  "@misc": {
+    "type": "text"
+  },
+  "science": "과학",
+  "@science": {
+    "type": "text"
+  },
+  "timberFileIcon": "<i class=\"fa-solid fa-file\"></i> .timber용 파일 아이콘 가져오기",
+  "@timberFileIcon": {
+    "type": "text"
+  },
+  "alertInstall": "파일 아이콘을 설치하려면 레지스트리 편집이 필요하므로 위험할 수 있습니다. README.md를 주의 깊게 읽고 지침을 따르십시오.",
+  "@alertInstall": {
+    "type": "text"
+  },
+  "(orDragNDrop)": "(또는 드래그 앤 드롭)",
+  "@(orDragNDrop)": {
+    "type": "text"
+  },
+  "pleaseSelectTimber": "유효한 .timber 파일을 선택하세요.",
+  "@pleaseSelectTimber": {
+    "type": "text"
+  },
+  "energy": "에너지",
+  "@energy": {
+    "type": "text"
+  }
+}

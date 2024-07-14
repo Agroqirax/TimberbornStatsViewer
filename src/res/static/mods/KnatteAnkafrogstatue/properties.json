@@ -1,0 +1,49 @@
+{
+  "game": {
+    "Entities": {
+      "FrogStatue": {
+        "Id": "FrogStatue",
+        "Name": "Frog statue",
+        "TranslatId": "frogStatue",
+        "Versions": [
+          {
+            "TemplateId": "FrogStatue.Folktails",
+            "Faction": "Folktails",
+            "MaxVisitors": 3,
+            "BuildingMaterials": {
+              "Log": 2,
+              "MetalBlock": 3,
+              "TreatedPlank": "4"
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          },
+          {
+            "TemplateId": "FrogStatue.IronTeeth",
+            "Faction": "IronTeeth",
+            "MaxVisitors": 3,
+            "BuildingMaterials": {
+              "Log": 2,
+              "MetalBlock": 3,
+              "TreatedPlank": "4"
+            },
+            "Recipes": {
+              ".default": {
+                ".duration": 1,
+                "Output": {
+                  "Wellbeing": 1
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

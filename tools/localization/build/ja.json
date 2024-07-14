@@ -1,0 +1,521 @@
+{
+  "@@author": "Agroqirax",
+  "@@last_modified": "2024-07-13T19:43:45",
+  "@@locale": "ja",
+  "appTitle": "ティンバーボーン統計ビューア",
+  "@appTitle": {
+    "description": "The title of the application",
+    "type": "text"
+  },
+  "selectFile": ".timber ファイルを選択します",
+  "@selectFile": {
+    "type": "text"
+  },
+  "details": "詳細",
+  "@details": {
+    "type": "text"
+  },
+  "timestamp": "タイムスタンプ",
+  "@timestamp": {
+    "type": "text"
+  },
+  "cycle": "サイクル",
+  "@cycle": {
+    "type": "text"
+  },
+  "cycleDay": "日",
+  "@cycleDay": {
+    "type": "text"
+  },
+  "gameVersion": "ゲームバージョン",
+  "@gameVersion": {
+    "description": "The version of the game",
+    "type": "text"
+  },
+  "mapSize": "マップサイズ",
+  "@mapSize": {
+    "description": "The width of the map",
+    "type": "text"
+  },
+  "faction": "派",
+  "@faction": {
+    "type": "text"
+  },
+  "mapName": "マップ名",
+  "@mapName": {
+    "description": "The name of the map",
+    "type": "text"
+  },
+  "beaversBorn": "ビーバーの誕生",
+  "@beaversBorn": {
+    "type": "text"
+  },
+  "waterConsumed": "水の消費量",
+  "@waterConsumed": {
+    "type": "text"
+  },
+  "tailsPainted": "",
+  "@tailsPainted": {
+    "type": "text"
+  },
+  "treesCut": "伐採された木",
+  "@treesCut": {
+    "type": "text"
+  },
+  "brokenTeeth": "折れた歯",
+  "@brokenTeeth": {
+    "type": "text"
+  },
+  "botsManufactured": "製造されたボット",
+  "@botsManufactured": {
+    "type": "text"
+  },
+  "dynamiteDetonated": "ダイナマイトが爆発した",
+  "@dynamiteDetonated": {
+    "type": "text"
+  },
+  "beaversExploded": "ビーバーが爆発した",
+  "@beaversExploded": {
+    "type": "text"
+  },
+  "wellbeingHighscore": "健康ハイスコア",
+  "@wellbeingHighscore": {
+    "type": "text"
+  },
+  "production": "生産",
+  "@production": {
+    "type": "text"
+  },
+  "food": "食べ物",
+  "@food": {
+    "type": "text"
+  },
+  "coffeeBush": "コーヒーブッシュ",
+  "@coffeeBush": {
+    "type": "text"
+  },
+  "cassava": "キャッサバ",
+  "@cassava": {
+    "type": "text"
+  },
+  "canola": "キャノーラ",
+  "@canola": {
+    "type": "text"
+  },
+  "corn": "トウモロコシ",
+  "@corn": {
+    "type": "text"
+  },
+  "item": "アイテム",
+  "@item": {
+    "type": "text"
+  },
+  "required": "必須",
+  "@required": {
+    "type": "text"
+  },
+  "storage": "ストレージ",
+  "@storage": {
+    "type": "text"
+  },
+  "net": "ネット",
+  "@net": {
+    "type": "text"
+  },
+  "storageTime": "保管時間",
+  "@storageTime": {
+    "type": "text"
+  },
+  "install": "Webアプリとしてインストール",
+  "@install": {
+    "type": "text"
+  },
+  "exportPrompt": ".timberファイルをエクスポートする",
+  "@exportPrompt": {
+    "type": "text"
+  },
+  "exportAlert": ".timber ファイルのエクスポート",
+  "@exportAlert": {
+    "type": "text"
+  },
+  "area": "エリア",
+  "@area": {
+    "type": "text"
+  },
+  "planted": "植えた",
+  "@planted": {
+    "type": "text"
+  },
+  "resources": "リソース",
+  "@resources": {
+    "type": "text"
+  },
+  "birch": "シラカバ",
+  "@birch": {
+    "type": "text"
+  },
+  "pine": "パイン",
+  "@pine": {
+    "type": "text"
+  },
+  "mangrove": "マングローブ",
+  "@mangrove": {
+    "type": "text"
+  },
+  "oak": "オーク",
+  "@oak": {
+    "type": "text"
+  },
+  "crops": "作物",
+  "@crops": {
+    "type": "text"
+  },
+  "treesAndBushes": "木々や茂み",
+  "@treesAndBushes": {
+    "type": "text"
+  },
+  "plantingArea": "植栽面積",
+  "@plantingArea": {
+    "type": "text"
+  },
+  "grown": "成長した",
+  "@grown": {
+    "type": "text"
+  },
+  "treeCuttingArea": "樹木伐採エリア",
+  "@treeCuttingArea": {
+    "type": "text"
+  },
+  "adultBeaver": "大人のビーバー",
+  "@adultBeaver": {
+    "type": "text"
+  },
+  "childBeaver": "子ビーバー",
+  "@childBeaver": {
+    "type": "text"
+  },
+  "contact": "接触",
+  "@contact": {
+    "type": "text"
+  },
+  "project": "プロジェクト",
+  "@project": {
+    "type": "text"
+  },
+  "social": "社交",
+  "@social": {
+    "type": "text"
+  },
+  "getTimberborn": "ティンバーボーンを入手",
+  "@getTimberborn": {
+    "type": "text"
+  },
+  "moreTimberborn": "もっと木材生まれの",
+  "@moreTimberborn": {
+    "type": "text"
+  },
+  "processing": "処理...",
+  "@processing": {
+    "type": "text"
+  },
+  "(perDay)": "(1日当たり)",
+  "@(perDay)": {
+    "type": "text"
+  },
+  "bugReport": "<i class=\"fa-solid fa-bug\"></i> バグレポート",
+  "@bugReport": {
+    "type": "text"
+  },
+  "byCreator": "アグロキラックス著",
+  "@byCreator": {
+    "type": "text"
+  },
+  "algae": "藻類",
+  "@algae": {
+    "type": "text"
+  },
+  "description": "説明",
+  "@description": {
+    "type": "text"
+  },
+  "ingredients": "材料",
+  "@ingredients": {
+    "type": "text"
+  },
+  "materials": "材料",
+  "@materials": {
+    "type": "text"
+  },
+  "algaeRation": "藻類の供給",
+  "@algaeRation": {
+    "type": "text"
+  },
+  "antidote": "解毒剤",
+  "@antidote": {
+    "type": "text"
+  },
+  "badwater": "バッドウォーター",
+  "@badwater": {
+    "type": "text"
+  },
+  "berries": "ベリー類",
+  "@berries": {
+    "type": "text"
+  },
+  "biofuel": "バイオ燃料",
+  "@biofuel": {
+    "type": "text"
+  },
+  "book": "本",
+  "@book": {
+    "type": "text"
+  },
+  "botChassis": "ボットシャーシ",
+  "@botChassis": {
+    "type": "text"
+  },
+  "botHead": "ボットヘッド",
+  "@botHead": {
+    "type": "text"
+  },
+  "botLimb": "ボットの四肢",
+  "@botLimb": {
+    "type": "text"
+  },
+  "bread": "パン",
+  "@bread": {
+    "type": "text"
+  },
+  "canolaOil": "キャノーラ油",
+  "@canolaOil": {
+    "type": "text"
+  },
+  "canolaSeeds": "キャノーラの種",
+  "@canolaSeeds": {
+    "type": "text"
+  },
+  "carrot": "にんじん",
+  "@carrot": {
+    "type": "text"
+  },
+  "catalyst": "触媒",
+  "@catalyst": {
+    "type": "text"
+  },
+  "cattailFlour": "ガマ粉",
+  "@cattailFlour": {
+    "type": "text"
+  },
+  "cattailRoot": "ガマの根",
+  "@cattailRoot": {
+    "type": "text"
+  },
+  "cattailCracker": "カタルクラッカー",
+  "@cattailCracker": {
+    "type": "text"
+  },
+  "chestnut": "栗",
+  "@chestnut": {
+    "type": "text"
+  },
+  "coffee": "コーヒー",
+  "@coffee": {
+    "type": "text"
+  },
+  "coffeeBean": "コーヒー豆",
+  "@coffeeBean": {
+    "type": "text"
+  },
+  "cornRation": "トウモロコシの配給量",
+  "@cornRation": {
+    "type": "text"
+  },
+  "dandelion": "タンポポ",
+  "@dandelion": {
+    "type": "text"
+  },
+  "dirt": "泥",
+  "@dirt": {
+    "type": "text"
+  },
+  "eggplant": "ナス",
+  "@eggplant": {
+    "type": "text"
+  },
+  "eggplantRation": "ナスの配給",
+  "@eggplantRation": {
+    "type": "text"
+  },
+  "explosives": "爆発物",
+  "@explosives": {
+    "type": "text"
+  },
+  "extract": "抽出する",
+  "@extract": {
+    "type": "text"
+  },
+  "fermentedCassava": "発酵キャッサバ",
+  "@fermentedCassava": {
+    "type": "text"
+  },
+  "fermentedMushroom": "発酵キノコ",
+  "@fermentedMushroom": {
+    "type": "text"
+  },
+  "fermentedSoybean": "発酵大豆",
+  "@fermentedSoybean": {
+    "type": "text"
+  },
+  "gear": "装備",
+  "@gear": {
+    "type": "text"
+  },
+  "grease": "グリース",
+  "@grease": {
+    "type": "text"
+  },
+  "grilledChestnut": "焼き栗",
+  "@grilledChestnut": {
+    "type": "text"
+  },
+  "grilledPotato": "グリルポテト",
+  "@grilledPotato": {
+    "type": "text"
+  },
+  "grilledSpadderdock": "スパダードックのグリル",
+  "@grilledSpadderdock": {
+    "type": "text"
+  },
+  "kohlrabi": "コールラビ",
+  "@kohlrabi": {
+    "type": "text"
+  },
+  "log": "ログ",
+  "@log": {
+    "type": "text"
+  },
+  "mangroveFruit": "マングローブの果実",
+  "@mangroveFruit": {
+    "type": "text"
+  },
+  "maplePastry": "メープルペストリー",
+  "@maplePastry": {
+    "type": "text"
+  },
+  "maplySyrup": "メープルシロップ",
+  "@maplySyrup": {
+    "type": "text"
+  },
+  "metalBlock": "金属ブロック",
+  "@metalBlock": {
+    "type": "text"
+  },
+  "mushroom": "キノコ",
+  "@mushroom": {
+    "type": "text"
+  },
+  "paper": "紙",
+  "@paper": {
+    "type": "text"
+  },
+  "pineResin": "松ヤニ",
+  "@pineResin": {
+    "type": "text"
+  },
+  "plank": "板",
+  "@plank": {
+    "type": "text"
+  },
+  "potato": "じゃがいも",
+  "@potato": {
+    "type": "text"
+  },
+  "punchCard": "パンチカード",
+  "@punchCard": {
+    "type": "text"
+  },
+  "scrapMetal": "金属くず",
+  "@scrapMetal": {
+    "type": "text"
+  },
+  "soybean": "大豆",
+  "@soybean": {
+    "type": "text"
+  },
+  "spadderdock": "スパダードック",
+  "@spadderdock": {
+    "type": "text"
+  },
+  "sunflowerSeeds": "ヒマワリの種",
+  "@sunflowerSeeds": {
+    "type": "text"
+  },
+  "treatedPlank": "処理された板",
+  "@treatedPlank": {
+    "type": "text"
+  },
+  "water": "水",
+  "@water": {
+    "type": "text"
+  },
+  "wheat": "小麦",
+  "@wheat": {
+    "type": "text"
+  },
+  "wheatFlour": "小麦粉",
+  "@wheatFlour": {
+    "type": "text"
+  },
+  "blueberry": "ブルーベリー",
+  "@blueberry": {
+    "type": "text"
+  },
+  "notifications": "通知",
+  "@notifications": {
+    "type": "text"
+  },
+  "mods": "改造",
+  "@mods": {
+    "type": "text"
+  },
+  "id": "ID",
+  "@id": {
+    "type": "text"
+  },
+  "name": "名前",
+  "@name": {
+    "type": "text"
+  },
+  "version": "バージョン",
+  "@version": {
+    "type": "text"
+  },
+  "misc": "その他",
+  "@misc": {
+    "type": "text"
+  },
+  "science": "科学",
+  "@science": {
+    "type": "text"
+  },
+  "timberFileIcon": "<i class=\"fa-solid fa-file\"></i> .timber のファイル アイコンを取得",
+  "@timberFileIcon": {
+    "type": "text"
+  },
+  "alertInstall": "ファイル アイコンをインストールするにはレジストリの編集が必要であり、危険を伴う可能性があります。 README.mdをよく読み、その指示に従ってください。",
+  "@alertInstall": {
+    "type": "text"
+  },
+  "(orDragNDrop)": "(またはドラッグアンドドロップ)",
+  "@(orDragNDrop)": {
+    "type": "text"
+  },
+  "pleaseSelectTimber": "有効な .timber ファイルを選択してください",
+  "@pleaseSelectTimber": {
+    "type": "text"
+  },
+  "energy": "エネルギー",
+  "@energy": {
+    "type": "text"
+  }
+}
