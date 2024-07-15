@@ -1,3 +1,5 @@
+# data-script
+
 ## Overview
 
 The `data-script` attribute allows you to define custom JavaScript code that returns a value to be used as the new

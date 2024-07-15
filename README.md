@@ -16,7 +16,7 @@ The Timberborn Stats Viewer aims to give users insight into their Timberborn sav
 
 ### Using the Site
 
-You can use the site by visiting [Timberborn Stats Viewer](https://Agroqirax.github.io/TimberbornStatsViewer).
+You can use the site by visiting [Timberborn Stats Viewer](https://Agroqirax.github.io/TimberbornStatsViewer/src/index.html).
 
 ### Hosting the Project
 
@@ -27,26 +27,21 @@ git clone https://github.com/Agroqirax/TimberbornStatsViewer.git
 cd TimberbornStatsViewer
 ```
 
-# Contributing
+## Contributing
 
-See `/.github/CONTRIBUTING.md`
+See [`/.github/CONTRIBUTING.md`](.github/CONTRIBUTING.md)
+
+## Code of conduct
+
+See [`/.github/CODE_OF_CONDUCT.md`](.github/CODE_OF_CONDUCT.md)
 
 ## Localization
 
-This project is localized with the `data-translate` property.
-The text in data-translate refers to the context column in the localization spreadsheet, which must be in lowerCamelCase.
+See [`/docs/localization.md`](docs/Localization.md)
 
-Languages Supported: The site is translated into the same languages as the game (en, de, es, fr, it, ja, ko, pl, pt, ru, th, tr, uk, zh) and nl.
-Translation Files: The translations are defined in `/src/res/static/l10n`.
+## License
 
-Google Sheets is used for reference due to the =GOOGLETRANSLATE function.
-To edit, please copy [the spreadsheet](https://docs.google.com/spreadsheets/d/1kcJ1upHCf6Abe9_b4EIYnWTUTxNDetIpvz8H2ajMg38/edit?usp=sharing) and modify your own copy.
-
-Conversion Tool: `/tools/localization` contains a Python script to convert a CSV to the JSON translation files.
-
-# License
-
-This project is licensed under the MIT License. See the LICENSE.md file for more details.
+This project is licensed under the MIT License. See [`LICENSE.md`](LICENSE.md) file for more details.
 
 # Contact
 

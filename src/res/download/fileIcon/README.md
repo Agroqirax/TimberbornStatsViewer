@@ -18,7 +18,7 @@ If something went wrong, re-run the script with the default values.
 If issues persist you can:
 
 1. Create a bug report @ https://forms.gle/NyCKFR2kQGNfsajN9
-2. Create a new github issue @ https://github.com/agroqirax/timberbornstatviewer/issues
+2. Create a new github issue @ https://github.com/agroqirax/TimberbornStatsViewer/issues
 3. Contact the author @ rickiedev60@gmail.com
 
 # Usage
